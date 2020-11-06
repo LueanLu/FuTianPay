@@ -57,7 +57,7 @@ export default {
     Ch: '中国',
     Th: '泰国',
     Vi: '越南',
-    En: 'USTD',
+    En: 'USDT',
     News: '最新消息',
     Shop: '线上商店',
     Cart: '购物车',

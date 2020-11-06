@@ -63,7 +63,7 @@ new Vue({
     pageSize: 6, // 每頁顯示條目個數
     pagerCount: 5, // 頁碼按鈕數量
     total: 600, // 總條數目
-    curretPage: '', // 當前頁數
+    curretPage: null, // 當前頁數
   },
   methods: {
     // 判斷裝置
