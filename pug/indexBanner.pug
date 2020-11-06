@@ -6,17 +6,17 @@ section#digital-header.py-0.overflow-hidden.IndexBanner
     .row.min-vh-100.align-items-center.align-items-lg-end.py-8.justify-content-center.text-left
       .col-lg-8.col-xl-7(data-zanim-timeline="{}" data-zanim-trigger="scroll")
         .text-white.overflow-hidden.parallax(data-rellax-speed="5")
-          .font-weight-normal(data-zanim-xs='{"delay":1}')
+          .font-weight-normal(data-zanim-xs='{"delay":1,"duration":2}')
             h4.Title {{ $t('IndexBanner.Title'/*福鈿聚合*/) }}
         .text-white.parallax(data-rellax-speed="3")
           span.overflow-hidden.d-block
-            span.d-inline-block.MainTitle(data-zanim-xs='{"delay":1.2}')
+            span.d-inline-block.MainTitle(data-zanim-xs='{"delay":2,"duration":2}')
               h2.MainTitleOne.d-inline.pr-2 {{ $t('IndexBanner.MainTitleOne'/*Give You*/) }}
               h2.MainTitleTwo.d-inline {{ $t('IndexBanner.MainTitleTwo'/*World-Wild*/) }}
           span.overflow-hidden.d-block
-            h4.MainTitleThree.d-inline-block.d-block(data-zanim-xs='{"delay":1.6}') {{ $t('IndexBanner.MainTitleThree'/*Payment Solution*/) }}
+            h4.MainTitleThree.d-inline-block.d-block(data-zanim-xs='{"delay":3,"duration":2}') {{ $t('IndexBanner.MainTitleThree'/*Payment Solution*/) }}
         .text-white.overflow-hidden.parallax(data-rellax-speed="1")
-          .font-weight-normal.d-flex.flex-column(data-zanim-xs='{"delay":2}')
+          .font-weight-normal.d-flex.flex-column(data-zanim-xs='{"delay":4,"duration":2}')
             span.Subheading.d-inline-block {{ $t('IndexBanner.SubheadingOne'/*支援多國、虛擬幣交易收付款*/) }}
             span.Subheading.d-inline-block {{ $t('IndexBanner.SubheadingTwo'/*嚴謹的收付款监控系统*/) }}
             span.Subheading.d-inline-block {{ $t('IndexBanner.SubheadingThree'/*四方聚合平台*/) }}
