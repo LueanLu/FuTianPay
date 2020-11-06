@@ -64,7 +64,7 @@ html
                 el-pagination.Pagination(@current-change="handleCurrentChange", :page-size='pageSize', :pager-count='pagerCount', :total='total', :current-page.sync="curretPage", layout="prev, pager, next", background)
             
             //- NewsList Content
-            .row.justify-content-between.py-5
+            .row.justify-content-center.justify-content-lg-between.py-5
               .col-lg-4.px-lg-3(data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll")
                 a.NewsLink(href='newsDetail.html')
                   .NewsImg.overflow-hidden.d-flex.justify-content-center.align-items-center

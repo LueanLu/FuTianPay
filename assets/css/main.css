@@ -629,6 +629,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     border-top: 1px dashed #d6d6d6;
     border-bottom: 1px dashed #d6d6d6; }
     .NewsDetail .NewsDetailCont .NewsDetailImg {
+      min-height: 240px;
       max-height: 240px;
       background: url("/assets/img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
       background-size: 100px, 100%; }
