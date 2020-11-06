@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fu Tian Pay</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
+    <link href="assets/lib/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/element-ui.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-sparrow">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/Logo.png" alt="sparrow" height="40"></a>
+          <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown1" aria-controls="navbarNavDropdown1" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="fancynavbar" type="button" data-toggle="collapse" data-target="#navbarNavDropdown1" aria-controls="navbarNavDropdown1" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="fancynavbar-togglerbar">
+                <div class="fancynavbar-toggler">
+                  <svg class="fancynavbar-toggler-icon" viewbox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" data-zanim-lg="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;x&quot;:45},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;x&quot;:0},&quot;ease&quot;:&quot;CubicBezier&quot;,&quot;duration&quot;:0.8,&quot;delay&quot;:0.5}" data-zanim-trigger="scroll">
+                    <path id="path-top" d="M20,25c0,0,22,0,30,0c16,0,18.89,40.71-.15,21.75C38.7,35.65,19.9,16.8,19.9,16.8"></path>
+                    <path id="path-middle" d="M20,32h30"></path>
+                    <path id="path-bottom" d="M19.9,46.98c0,0,18.8-18.85,29.95-29.95C68.89-1.92,66,38.78,50,38.78c-8,0-30,0-30,0"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown1">
+            <ul class="navbar-nav ml-auto d-lg-flex align-items-lg-center">
+              <li class="nav-item"><a class="nav-link" href="index.html#top" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.Index'/*首頁*/) }}</a></li>
+              <li class="nav-item dropdown DropdownForm"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $t('Nav.Service'/*服務項目*/) }}</a>
+                <div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdownMenuLink1">
+                  <div class="d-flex flex-row text-center ServiceDropdown">
+                    <div class="dropdown-item">{{ $t('Nav.Country'/*服務國家*/) }}</div><a class="dropdown-item" href="serviceTw.html">{{ $t('Nav.Tw'/*台灣*/) }}</a><a class="dropdown-item" href="serviceCh.html">{{ $t('Nav.Ch'/*中國*/) }}</a><a class="dropdown-item" href="serviceTh.html">{{ $t('Nav.Th'/*泰國*/) }}</a><a class="dropdown-item" href="serviceVi.html">{{ $t('Nav.Vi'/*越南*/) }}</a><a class="dropdown-item" href="serviceUSDT.html">{{ $t('Nav.En'/*USTD*/) }}</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="news.html">{{ $t('Nav.News'/*最新消息*/) }}</a></li>
+              <li class="nav-item"><a class="nav-link" href="shop.html">{{ $t('Nav.Shop'/*線上商店*/) }}</a></li>
+              <li class="nav-item d-lg-none d-block"><a class="nav-link" href="cart.html">{{ $t('Nav.Cart'/*購物車*/) }}</a></li>
+              <li class="nav-item d-lg-none d-block"><a class="nav-link" href="#digital-contact" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.Contact'/*聯絡我們*/) }}</a></li>
+              <div class="navLineOne d-none d-lg-block mx-3"></div>
+              <div class="navLineTwo d-block d-lg-none my-3"></div>
+              <li class="nav-item"><a class="nav-link" href="login.html">{{ $t('Nav.Login'/*登入*/) }}</a></li>
+              <li class="nav-item dropdown DropdownForm"><a class="nav-link dropdown-toggle NavFlag" id="navbarDropdownMenuLink2" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img :src="&quot;/assets/img/flag/&quot;+flag+&quot;.svg&quot;"></a>
+                <div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdownMenuLink2">
+                  <div class="d-flex flex-row flex-lg-column justify-content-between text-center FlagDropdown"><a class="dropdown-item MenuFlag" @click="switchLanguage(&quot;zh-tw&quot;)"><img src="/assets/img/flag/zh-tw.svg"></a><a class="dropdown-item MenuFlag" @click="switchLanguage(&quot;zh-cn&quot;)"><img src="/assets/img/flag/zh-cn.svg"></a><a class="dropdown-item MenuFlag" @click="switchLanguage(&quot;en&quot;)"><img src="/assets/img/flag/en.svg"></a><a class="dropdown-item MenuFlag" @click="switchLanguage(&quot;th&quot;)"><img src="/assets/img/flag/th.svg"></a><a class="dropdown-item MenuFlag" @click="switchLanguage(&quot;vi&quot;)"><img src="/assets/img/flag/vi.svg"></a><a class="dropdown-item MenuFlag" @click="switchLanguage(&quot;ms&quot;)"><img src="/assets/img/flag/ms.svg"></a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="Fixed" data-zanim-timeline="{&quot;delay&quot;:1}" data-zanim-trigger="scroll" data-fancyscroll="data-fancyscroll">
+        <div class="FixedForm d-flex flex-column align-items-end" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:30},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:-5,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:0.4,&quot;delay&quot;:0.25}"><a class="FixedBtn" href="#top" data-fancyscroll="data-fancyscroll">
+            <div class="FixedBackTop"><img src="assets/img/icon/IconArrow.svg"></div></a><a class="FixedBtn" href="cart.html">
+            <el-badge class="CartBadge" :value="cartAmount &gt; 0 ? cartAmount : ''" :max="10">
+              <div class="FixedCart"><img src="assets/img/icon/IconCart.svg"></div>
+            </el-badge></a><a class="FixedBtn d-none d-lg-block" href="index.html#digital-contact" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">
+            <div class="FixedContact">
+              <div class="FixedContactCont">Contact</div>
+            </div></a><a class="FixedBtn" href="#">
+            <div class="FixedTelegram"><img src="assets/img/icon/IconTelegram.svg"></div></a><a class="FixedBtn" href="https://join.skype.com/invite/fEqsIfeCatRu?source=qr-ios" target="_blank">
+            <div class="FixedSkype"><img src="assets/img/icon/IconSkype.svg"></div></a></div>
+      </div>
+      <main class="main min-vh-100" id="top">
+        <div class="preloader" id="preloader">
+          <div class="loader">
+            <div class="line-scale-pulse-out-rapid">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <section class="py-0 overflow-hidden" id="page-banner">
+          <div class="bg-holder" data-zanim-xs="{&quot;delay&quot;:0.4,&quot;animation&quot;:&quot;zoom-out&quot;}" data-zanim-trigger="scroll" style="background-image:url(assets/img/pageBanner/PageBannerTwo.jpg);"></div>
+          <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-9 pt-9 pb-7">
+                <div class="media">
+                  <div class="media-body pl-3">
+                    <div class="overflow-hidden text-right">
+                      <h2 class="fs-2 fs-lg-4 text-white display-4 display-lg-4 pb-2" data-zanim-xs="{&quot;delay&quot;:0.6}" data-zanim-trigger="scroll">{{ $t('PageBannerTwo.MainTitle'/*24小時專人在線*/) }}</h2>
+                    </div>
+                    <div class="overflow-hidden text-right">
+                      <h5 class="ls-1 text-white text-uppercase mb-0" data-zanim-xs="{&quot;delay&quot;:0.8}" data-zanim-trigger="scroll">{{ $t('PageBannerTwo.Subheading'/*全年無休、疑難排解、技術支援、系統教學*/) }}</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-lg-5 Service overflow-hidden" id="page-news">
+          <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="col-lg-7 TitleFormB">
+                <h2 class="Title">{{ $t('Service.Title'/*SERVICES*/) }}</h2>
+                <div class="MainTitle">{{ $t('Service.MainTitle'/*服務項目*/) }} / {{ $t('IndexServiceItems.Vietnam'/*越南*/) }}</div>
+              </div>
+            </div>
+            <div class="row justify-content-between py-4">
+              <div class="col-lg-4 px-lg-3" data-zanim-timeline="{&quot;delay&quot;:0.1}" data-zanim-trigger="scroll">
+                <div class="ServiceItem">
+                  <div class="ServiceItemImg overflow-hidden d-flex justify-content-center align-items-center"><img class="h-100 w-auto" src="assets/img/service/01.jpg" alt="" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;zoom-in&quot;}"></div>
+                  <div class="overflow-hidden d-flex flex-column align-items-center text-center p-3">
+                    <div class="ServiceItemTitle" data-zanim-xs="{&quot;delay&quot;:0.2}">{{ $t('ServiceItem.ServiceItemMainOne'/*網銀、手銀收付款監控*/) }}</div>
+                    <div class="ServiceItemInfo" data-zanim-xs="{&quot;delay&quot;:0.3}">{{ $t('ServiceItem.ServiceItemInfoOne'/*支援多國電子行動支付監控、網銀監控、手銀監控、虛擬幣USDT幣幣交易。*/) }}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 px-lg-3 pt-5 pt-lg-0" data-zanim-timeline="{&quot;delay&quot;:0.2}" data-zanim-trigger="scroll">
+                <div class="ServiceItem">
+                  <div class="ServiceItemImg overflow-hidden d-flex justify-content-center align-items-center"><img class="h-100 w-auto" src="assets/img/service/02.jpg" alt="" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;zoom-in&quot;}"></div>
+                  <div class="overflow-hidden d-flex flex-column align-items-center text-center p-3">
+                    <div class="ServiceItemTitle" data-zanim-xs="{&quot;delay&quot;:0.2}">{{ $t('ServiceItem.ServiceItemMainTwo'/*四方聚合平台*/) }}</div>
+                    <div class="ServiceItemInfo" data-zanim-xs="{&quot;delay&quot;:0.3}">{{ $t('ServiceItem.ServiceItemInfoTwo'/*可對接各種行動支付產品。除監控系統外，可另外支持對接微信、支付寶、雲閃付等三方渠道。*/) }}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 px-lg-3 pt-5 pt-lg-0" data-zanim-timeline="{&quot;delay&quot;:0.3}" data-zanim-trigger="scroll">
+                <div class="ServiceItem">
+                  <div class="ServiceItemImg overflow-hidden d-flex justify-content-center align-items-center"><img class="h-100 w-auto" src="assets/img/service/03.jpg" alt="" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;zoom-in&quot;}"></div>
+                  <div class="overflow-hidden d-flex flex-column align-items-center text-center p-3">
+                    <div class="ServiceItemTitle" data-zanim-xs="{&quot;delay&quot;:0.2}">{{ $t('ServiceItem.ServiceItemMainThree'/*技術支持、24小時在線客服*/) }}</div>
+                    <div class="ServiceItemInfo" data-zanim-xs="{&quot;delay&quot;:0.3}">{{ $t('ServiceItem.ServiceItemInfoThree'/*支付產品對接、系統維護、排解疑難、系統操作教學。*/) }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="IndexServiceItems">
+              <div class="text-sans-serif">
+                <div class="container">
+                  <div class="row IndexServicesForm px-3 py-md-0 py-lg-3 mb-lg-5">
+                    <div class="ServicesForm col-lg-6 pb-3 pb-md-0">
+                      <div class="media text-sans-serif overflow-hidden d-flex flex-column" data-zanim-timeline="{&quot;delay&quot;:0.1}">
+                        <div class="MainTitle d-flex flex-row align-items-center pb-3"><img class="mr-3" src="assets/img/icon/IconReceive.svg" alt="icon" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}">
+                          <div class="overflow-hidden">
+                            <h4 data-zanim-xs="{&quot;delay&quot;:0.3,&quot;animation&quot;:&quot;slide-right&quot;}">Receive payment</h4>
+                            <h5 class="Subheading" data-zanim-xs="{&quot;delay&quot;:0.4,&quot;animation&quot;:&quot;slide-right&quot;}">{{ $t('IndexServiceItems.Receive'/*收款*/) }}</h5>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <div class="overflow-hidden">
+                            <div class="mb-0 ServicesFormCont" data-zanim-xs="{&quot;delay&quot;:0.5,&quot;animation&quot;:&quot;slide-right&quot;}">
+                              <ul>
+                                <li>{{ $t('IndexServicesVi.ReceiveWOne'/*銀行卡轉銀行卡：*/) }}
+                                  <ul>
+                                    <li>{{ $t('IndexServicesVi.ReceiveWTwo'/*手機銀行明細回調：Mobile端安裝手機銀行APP*/) }}</li>
+                                    <li>{{ $t('IndexServicesVi.ReceiveWThree'/*網路銀行明細回調：PC端安裝腳本程式*/) }}</li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ServicesForm col-lg-6 pt-3 pt-md-0 pl-lg-4">
+                      <div class="media text-sans-serif overflow-hidden d-flex flex-column" data-zanim-timeline="{&quot;delay&quot;:0.2}">
+                        <div class="MainTitle d-flex flex-row align-items-center pb-3"><img class="mr-3" src="assets/img/icon/IconDispensing.svg" alt="icon" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}">
+                          <div class="overflow-hidden">
+                            <h4 data-zanim-xs="{&quot;delay&quot;:0.3,&quot;animation&quot;:&quot;slide-right&quot;}">Dispensing</h4>
+                            <h5 class="Subheading" data-zanim-xs="{&quot;delay&quot;:0.4,&quot;animation&quot;:&quot;slide-right&quot;}">{{ $t('IndexServiceItems.Dispensing'/*出款*/) }}</h5>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <div class="overflow-hidden">
+                            <div class="mb-0 ServicesFormCont" data-zanim-xs="{&quot;delay&quot;:0.5,&quot;animation&quot;:&quot;slide-right&quot;}">
+                              <ul>
+                                <li>{{ $t('IndexServicesVi.DispensingWOne'/*手機銀行腳本出款：可搭配手機銀行資料雲端備份功能跨機操作*/) }}</li>
+                                <li>{{ $t('IndexServicesVi.DispensingWTwo'/*網路銀行腳本出款：使用PC端外掛腳本自動出款、並能同時收款回調*/) }}</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <section class="WebMonitor text-sans-serif">
+                <div class="container">
+                  <div class="row justify-content-center text-center">
+                    <div class="col-lg-7 TitleFormB">
+                      <h2 class="Title">{{ $t('WebMonitor.MainTitle'/*WEB MONITOR*/) }}</h2>
+                      <div class="MainTitle">{{ $t('WebMonitor.Subheading'/*網銀監控收款、付款*/) }}</div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center mt-6">
+                    <div class="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center">
+                      <div class="CardItem px-3 d-flex flex-row justify-content-start align-items-center" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;zoom-in&quot;}" data-zanim-trigger="scroll">
+                        <div class="CardImg"><img src="assets/img/bankVi/ACB.svg"></div>
+                        <div class="CardInfo">
+                          <div class="MainTitle">{{ $t('IndexServicesVi.WebMainOne'/*亞洲商業銀行*/) }}</div>
+                          <div class="Subheading">ACB</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center mt-4 mt-md-0">
+                      <div class="CardItem px-3 d-flex flex-row justify-content-start align-items-center" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;zoom-in&quot;}" data-zanim-trigger="scroll">
+                        <div class="CardImg"><img src="assets/img/bankVi/BIDV.svg"></div>
+                        <div class="CardInfo">
+                          <div class="MainTitle">{{ $t('IndexServicesVi.WebMainTwo'/*越南投資發展銀行*/) }}</div>
+                          <div class="Subheading">BIDV</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center mt-4 mt-lg-0">
+                      <div class="CardItem px-3 d-flex flex-row justify-content-start align-items-center" data-zanim-xs="{&quot;delay&quot;:0.3,&quot;animation&quot;:&quot;zoom-in&quot;}" data-zanim-trigger="scroll">
+                        <div class="CardImg"><img src="assets/img/bankVi/VICB.svg"></div>
+                        <div class="CardInfo">
+                          <div class="MainTitle">{{ $t('IndexServicesVi.WebMainThree'/*越南外貿股份商業銀行*/) }}</div>
+                          <div class="Subheading">Vietcombank</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center mt-4">
+                      <div class="CardItem px-3 d-flex flex-row justify-content-start align-items-center" data-zanim-xs="{&quot;delay&quot;:0.4,&quot;animation&quot;:&quot;zoom-in&quot;}" data-zanim-trigger="scroll">
+                        <div class="CardImg"><img src="assets/img/bankVi/SCB.svg"></div>
+                        <div class="CardInfo">
+                          <div class="MainTitle">{{ $t('IndexServicesVi.WebMainFour'/*西貢商信銀行*/) }}</div>
+                          <div class="Subheading">Sacombank</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center mt-4">
+                      <div class="CardItem px-3 d-flex flex-row justify-content-start align-items-center" data-zanim-xs="{&quot;delay&quot;:0.5,&quot;animation&quot;:&quot;zoom-in&quot;}" data-zanim-trigger="scroll">
+                        <div class="CardImg"><img src="assets/img/bankVi/TCB.svg"></div>
+                        <div class="CardInfo">
+                          <div class="MainTitle">{{ $t('IndexServicesVi.WebMainFives'/*越南科技及商業股份銀行*/) }}</div>
+                          <div class="Subheading">TECHCOMBANK</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center mt-4">
+                      <div class="CardItem px-3 d-flex flex-row justify-content-start align-items-center" data-zanim-xs="{&quot;delay&quot;:0.6,&quot;animation&quot;:&quot;zoom-in&quot;}" data-zanim-trigger="scroll">
+                        <div class="CardImg"><img src="assets/img/bankVi/VIIB.svg"></div>
+                        <div class="CardInfo">
+                          <div class="MainTitle">{{ $t('IndexServicesVi.WebMainSix'/*越南工商銀行*/) }}</div>
+                          <div class="Subheading">VietinBank</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+        <section class="py-lg-5 ServiceShop overflow-hidden" id="page-shop">
+          <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="col-lg-7 TitleFormB">
+                <h2 class="Title">{{ $t('Shop.Title'/*COMMODITY*/) }}</h2>
+                <div class="MainTitle">{{ $t('Shop.MainTitle'/*商品列表*/) }}</div>
+              </div>
+            </div>
+            <div class="row justify-content-center text-center">
+              <div class="col-lg-5 justify-content-center text-center pt-3">
+                <el-pagination class="Pagination" @current-change="handleCurrentChange" :page-size="pageSize" :pager-count="pagerCount" :total="total" :current-page.sync="curretPage" layout="prev, pager, next" background></el-pagination>
+              </div>
+            </div>
+            <div class="row ShopList d-flex flex-row pt-4 pb-4 pb-lg-5">
+              <div class="col-lg-3 px-lg-3 d-flex justify-content-center justify-content-lg-start" data-zanim-timeline="{&quot;delay&quot;:0.1}" data-zanim-trigger="scroll">
+                <div class="ShopCont">
+                  <div class="ShopImg overflow-hidden d-flex justify-content-center align-items-center"><img class="h-lg-100 w-lg-auto h-100" src="assets/img/shopImg/01.png" alt="" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;zoom-in&quot;}"></div>
+                  <div class="overflow-hidden d-flex flex-column align-items-center text-center px-3">
+                    <div class="ShopName" data-zanim-xs="{&quot;delay&quot;:0.2}">DemoProduct</div>
+                    <div class="ShopAmount d-flex flex-row justify-content-center align-items-center" data-zanim-xs="{&quot;delay&quot;:0.3}">
+                      <del class="Rebate">$199.00</del>
+                      <div class="NewAmount">$99.00</div>
+                    </div>
+                    <el-button class="BtnRed" type="submit" @click="addCart" data-zanim-xs="{&quot;delay&quot;:0.4}">{{ $t('Btn.AddCart'/*加入購物車*/) }}</el-button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 px-lg-3 d-flex justify-content-center justify-content-lg-start pt-5 pt-lg-0" data-zanim-timeline="{&quot;delay&quot;:0.2}" data-zanim-trigger="scroll">
+                <div class="ShopCont">
+                  <div class="ShopImg overflow-hidden d-flex justify-content-center align-items-center"><img class="h-lg-100 w-lg-auto h-100" src="assets/img/shopImg/02.png" alt="" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;zoom-in&quot;}"></div>
+                  <div class="overflow-hidden d-flex flex-column align-items-center text-center px-3">
+                    <div class="ShopName" data-zanim-xs="{&quot;delay&quot;:0.2}">DemoProduct</div>
+                    <div class="ShopAmount d-flex flex-row justify-content-center align-items-center" data-zanim-xs="{&quot;delay&quot;:0.3}">
+                      <del class="Rebate">$199.00</del>
+                      <div class="NewAmount">$99.00</div>
+                    </div>
+                    <el-button class="BtnRed" type="submit" @click="addCart" data-zanim-xs="{&quot;delay&quot;:0.4}">{{ $t('Btn.AddCart'/*加入購物車*/) }}</el-button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 px-lg-3 d-flex justify-content-center justify-content-lg-start pt-5 pt-lg-0" data-zanim-timeline="{&quot;delay&quot;:0.3}" data-zanim-trigger="scroll">
+                <div class="ShopCont">
+                  <div class="ShopImg overflow-hidden d-flex justify-content-center align-items-center"><img class="h-lg-100 w-lg-auto h-100" src="assets/img/shopImg/03.png" alt="" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;zoom-in&quot;}"></div>
+                  <div class="overflow-hidden d-flex flex-column align-items-center text-center px-3">
+                    <div class="ShopName" data-zanim-xs="{&quot;delay&quot;:0.2}">DemoProduct</div>
+                    <div class="ShopAmount d-flex flex-row justify-content-center align-items-center" data-zanim-xs="{&quot;delay&quot;:0.3}">
+                      <del class="Rebate">$199.00</del>
+                      <div class="NewAmount">$99.00</div>
+                    </div>
+                    <el-button class="BtnRed" type="submit" @click="addCart" data-zanim-xs="{&quot;delay&quot;:0.4}">{{ $t('Btn.AddCart'/*加入購物車*/) }}</el-button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 px-lg-3 d-flex justify-content-center justify-content-lg-start pt-5 pt-lg-0" data-zanim-timeline="{&quot;delay&quot;:0.4}" data-zanim-trigger="scroll">
+                <div class="ShopCont">
+                  <div class="ShopImg overflow-hidden d-flex justify-content-center align-items-center"><img class="h-lg-100 w-lg-auto h-100" src="assets/img/shopImg/04.png" alt="" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;zoom-in&quot;}"></div>
+                  <div class="overflow-hidden d-flex flex-column align-items-center text-center px-3">
+                    <div class="ShopName" data-zanim-xs="{&quot;delay&quot;:0.2}">DemoProduct</div>
+                    <div class="ShopAmount d-flex flex-row justify-content-center align-items-center" data-zanim-xs="{&quot;delay&quot;:0.3}">
+                      <del class="Rebate">$199.00</del>
+                      <div class="NewAmount">$99.00</div>
+                    </div>
+                    <el-button class="BtnRed" type="submit" @click="addCart" data-zanim-xs="{&quot;delay&quot;:0.4}">{{ $t('Btn.AddCart'/*加入購物車*/) }}</el-button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 px-lg-3 d-flex justify-content-center justify-content-lg-start pt-5" data-zanim-timeline="{&quot;delay&quot;:0.5}" data-zanim-trigger="scroll">
+                <div class="ShopCont">
+                  <div class="ShopImg overflow-hidden d-flex justify-content-center align-items-center"><img class="h-lg-100 w-lg-auto h-100" src="assets/img/shopImg/05.png" alt="" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;zoom-in&quot;}"></div>
+                  <div class="overflow-hidden d-flex flex-column align-items-center text-center px-3">
+                    <div class="ShopName" data-zanim-xs="{&quot;delay&quot;:0.2}">DemoProduct</div>
+                    <div class="ShopAmount d-flex flex-row justify-content-center align-items-center" data-zanim-xs="{&quot;delay&quot;:0.3}">
+                      <del class="Rebate">$199.00</del>
+                      <div class="NewAmount">$99.00</div>
+                    </div>
+                    <el-button class="BtnRed" type="submit" @click="addCart" data-zanim-xs="{&quot;delay&quot;:0.4}">{{ $t('Btn.AddCart'/*加入購物車*/) }}</el-button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 px-lg-3 d-flex justify-content-center justify-content-lg-start pt-5" data-zanim-timeline="{&quot;delay&quot;:0.6}" data-zanim-trigger="scroll">
+                <div class="ShopCont">
+                  <div class="ShopImg overflow-hidden d-flex justify-content-center align-items-center"></div>
+                  <div class="overflow-hidden d-flex flex-column align-items-center text-center px-3">
+                    <div class="ShopName" data-zanim-xs="{&quot;delay&quot;:0.2}">DemoProduct</div>
+                    <div class="ShopAmount d-flex flex-row justify-content-center align-items-center" data-zanim-xs="{&quot;delay&quot;:0.3}">
+                      <del class="Rebate">$199.00</del>
+                      <div class="NewAmount">$99.00</div>
+                    </div>
+                    <el-button class="BtnRed" type="submit" @click="addCart" data-zanim-xs="{&quot;delay&quot;:0.4}">{{ $t('Btn.AddCart'/*加入購物車*/) }}</el-button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 px-lg-3 d-flex justify-content-center justify-content-lg-start pt-5" data-zanim-timeline="{&quot;delay&quot;:0.6}" data-zanim-trigger="scroll">
+                <div class="ShopCont">
+                  <div class="ShopImg overflow-hidden d-flex justify-content-center align-items-center"></div>
+                  <div class="overflow-hidden d-flex flex-column align-items-center text-center px-3">
+                    <div class="ShopName" data-zanim-xs="{&quot;delay&quot;:0.2}">DemoProduct</div>
+                    <div class="ShopAmount d-flex flex-row justify-content-center align-items-center" data-zanim-xs="{&quot;delay&quot;:0.3}">
+                      <del class="Rebate">$199.00</del>
+                      <div class="NewAmount">$99.00</div>
+                    </div>
+                    <el-button class="BtnRed" type="submit" @click="addCart" data-zanim-xs="{&quot;delay&quot;:0.4}">{{ $t('Btn.AddCart'/*加入購物車*/) }}</el-button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 px-lg-3 d-flex justify-content-center justify-content-lg-start pt-5" data-zanim-timeline="{&quot;delay&quot;:0.6}" data-zanim-trigger="scroll">
+                <div class="ShopCont">
+                  <div class="ShopImg overflow-hidden d-flex justify-content-center align-items-center"></div>
+                  <div class="overflow-hidden d-flex flex-column align-items-center text-center px-3">
+                    <div class="ShopName" data-zanim-xs="{&quot;delay&quot;:0.2}">DemoProduct</div>
+                    <div class="ShopAmount d-flex flex-row justify-content-center align-items-center" data-zanim-xs="{&quot;delay&quot;:0.3}">
+                      <del class="Rebate">$199.00</del>
+                      <div class="NewAmount">$99.00</div>
+                    </div>
+                    <el-button class="BtnRed" type="submit" @click="addCart" data-zanim-xs="{&quot;delay&quot;:0.4}">{{ $t('Btn.AddCart'/*加入購物車*/) }}</el-button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center text-center">
+              <div class="col-lg-5 justify-content-center text-center">
+                <el-pagination class="Pagination" @current-change="handleCurrentChange" :page-size="pageSize" :pager-count="pagerCount" :total="total" :current-page.sync="curretPage" layout="prev, pager, next" background></el-pagination>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="text-center text-sans-serif Company" id="digital-socials">
+          <div class="container">
+            <div class="row d-flex flex-row justify-content-center align-items-center">
+              <div class="CompanyCont col-md-6 col-lg-4 d-flex flex-row justify-content-center justify-content-lg-end align-items-center text-md-center"><img src="assets/img/icon/IconPhone.svg"><a class="CompanyInfo pl-2" href="tel:+1234567-891">+1 (234) 567-891</a></div>
+              <div class="CompanyLine mx-2 d-lg-block d-none"></div>
+              <div class="CompanyCont col-md-6 col-lg-4 d-flex flex-row justify-content-center justify-content-lg-start align-items-center text-md-center"><img src="assets/img/icon/IconEmail.svg"><a class="CompanyInfo pl-2" href="mailto:futian@futian.com">futian@futian.com</a></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer text-center overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <p class="fs--1 text-uppercase ls font-weight-bold mb-0">Copyright © 2020 All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/lib/loaders.css/loaders.css.js"></script>
+    <script src="assets/js/stickyfill.min.js"></script>
+    <script src="assets/lib/is_js/is.min.js"></script>
+    <script src="assets/lib/jtap/jquery.tap.js"></script>
+    <script src="assets/js/rellax.min.js"></script>
+    <script src="assets/lib/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/lib/owl.carousel/owl.carousel.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/httpVueLoader.js"></script>
+    <script src="assets/js/vue-i18n.min.js"></script>
+    <script src="assets/js/element-ui.js"></script>
+    <script src="assets/js/main.js" type="module"></script>
+  </body>
+</html>

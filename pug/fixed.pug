@@ -1,0 +1,23 @@
+.Fixed(data-zanim-timeline='{"delay":1}' data-zanim-trigger="scroll" data-fancyscroll="data-fancyscroll")
+  .FixedForm.d-flex.flex-column.align-items-end(data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.25}')
+    //- BankTop
+    a.FixedBtn(href="#top" data-fancyscroll="data-fancyscroll")
+      .FixedBackTop
+        img(src='assets/img/icon/IconArrow.svg')
+    //- Cart List
+    a.FixedBtn(href="cart.html")
+      el-badge.CartBadge(:value="cartAmount > 0 ? cartAmount : ''" :max="10")
+        .FixedCart
+          img(src='assets/img/icon/IconCart.svg')
+    //- Contact
+    a.FixedBtn.d-none.d-lg-block(href="index.html#digital-contact" data-zanim-timeline='{"delay":1}' data-fancyscroll="data-fancyscroll" data-offset="70")
+      .FixedContact
+        .FixedContactCont Contact
+    //- Telegram
+    a.FixedBtn(href="#")
+      .FixedTelegram
+        img(src='assets/img/icon/IconTelegram.svg')
+    //- Skype
+    a.FixedBtn(href="https://join.skype.com/invite/fEqsIfeCatRu?source=qr-ios" target='_blank')
+      .FixedSkype
+        img(src='assets/img/icon/IconSkype.svg')
