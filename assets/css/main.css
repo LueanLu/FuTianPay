@@ -102,6 +102,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
           height: 50px; }
           .navbar .navbar-toggler .fancynavbar .fancynavbar-togglerbar .fancynavbar-toggler .fancynavbar-toggler-icon path {
             stroke: rgba(255, 255, 255, 0.75); }
+  .navbar .navbar-collapse {
+    max-width: 100%; }
   .navbar .navLineOne {
     width: 1px;
     height: 10px;

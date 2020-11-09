@@ -22,7 +22,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top.navbar-sparrow
         li.nav-item.dropdown.DropdownForm
           a#navbarDropdownMenuLink1.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") {{ $t('Nav.Service'/*服務項目*/) }}
           .dropdown-menu.dropdown-menu-center(aria-labelledby="navbarDropdownMenuLink1")
-            .d-flex.flex-row.text-center.ServiceDropdown
+            .d-flex.flex-row.text-center.ServiceDropdown.overflow-hidden-y
               .dropdown-item {{ $t('Nav.Country'/*服務國家*/) }}
               a.dropdown-item(href="serviceTw.html") {{ $t('Nav.Tw'/*台灣*/) }}
               a.dropdown-item(href="serviceCh.html") {{ $t('Nav.Ch'/*中國*/) }}

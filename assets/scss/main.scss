@@ -137,6 +137,9 @@ input, textarea, select {
       };
     };
   };
+  .navbar-collapse {
+    max-width: 100%;
+  };
   .navLineOne {
     width: 1px;
     height: 10px;

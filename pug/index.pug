@@ -60,9 +60,9 @@ html
               .row.justify-content-center.align-items-center.text-center
                 .col-lg-7.TitleFormB
                   h2.Title {{ $t('IndexServiceItems.Title'/*SERVICES*/) }}
-                  .d-flex.flex-row.justify-content-center.align-items-center
+                  .d-flex.flex-wrap.justify-content-center.align-items-center
                     .IndexServiceMainTitle {{ $t('IndexServiceItems.ServiceCounty'/*服務國家*/) }}
-                    ol.carousel-indicators
+                    ol.carousel-indicators.d-flex.flex-wrap
                       li(data-target="#carouselExampleIndicators" data-slide-to="0" class="active")
                         span {{ $t('IndexServiceItems.Taiwan'/*台灣*/) }}
                       li(data-target="#carouselExampleIndicators" data-slide-to="1")
