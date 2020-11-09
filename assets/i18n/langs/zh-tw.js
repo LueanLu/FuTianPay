@@ -72,7 +72,7 @@ export default {
     MainTitleTwo: 'World-Wild',
     MainTitleThree: 'Payment Solution',
     SubheadingOne: '支援多國、虛擬幣交易收付款',
-    SubheadingTwo: '嚴謹的收付款监控系统',
+    SubheadingTwo: '嚴謹的收付款監控系统',
     SubheadingThree: '四方聚合平台',
   },
   // PageBannerOne
