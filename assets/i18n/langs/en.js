@@ -110,24 +110,24 @@ export default {
   // WebMonitor
   WebMonitor: {
     MainTitle: 'WEB MONITOR',
-    Subheading: '網銀監控收款、付款',
+    Subheading: 'Online banking despoit and payment monitoring',
   },
   // MessageMonitor
   MessageMonitor: {
     MainTitle: 'MESSAGE MONITOR',
-    Subheading: '銀行簡訊監控收款回調',
-    Support: '支持銀行無限制，可視需求新增',
+    Subheading: 'Sms of bank deposit callback',
+    Support: 'Support unlimited banks, can be supplemented according to demand',
   },
   // AppMonitor
   AppMonitor: {
     MainTitle: 'APP MONITOR',
     Subheading: 'Electronic mobile payment monitoring deposit function',
-    SubheadingTwo: '手機銀行APP監控收款、付款',
+    SubheadingTwo: 'Mobile banking despoit and payment monitoring',
   },
   // USDTMonitor
   USDTMonitor: {
     MainTitle: 'USDT MONITOR',
-    Subheading: '監控USDT收款回調',
+    Subheading: 'USDT despoit callback',
   },
   // IndexServicesTw
   IndexServicesTw: {
@@ -223,29 +223,29 @@ export default {
   // NewsDetail
   NewsDetail: {
     Title: 'NEWS DETAIL',
-    MainTitle: 'Latest news content',
+    MainTitle: 'Content of news',
   },
   // Shop
   Shop: {
     Title: 'COMMODITY',
     MainTitle: 'Product list',
-    OptionOne: '預設排序',
-    OptionTwo: '依熱銷度',
-    OptionThree: '依最新項目排序',
-    OptionFour: '依價格排序:低至高',
-    OptionFive: '依價格排序:高至低',
+    OptionOne: 'Default sort',
+    OptionTwo: 'Sort by popularity',
+    OptionThree: 'Sort by latest item',
+    OptionFour: 'Sort by price: low to high',
+    OptionFive: 'Sort by price: high to low',
   },
   // Cart
   Cart: {
     Title: 'YOUR CART',
     MainTitle: 'Cart list',
     BackShop: 'Back To Shop',
-    GoodsImg: '商品圖',
-    GoodsName: '商品名稱',
-    GoodsAmount: '數量',
-    Amount: '金額',
-    DeleteGoods: '刪除商品',
-    TotalAmount: '購買總金額：',
+    GoodsImg: 'Product Picture',
+    GoodsName: 'Product name',
+    GoodsAmount: 'Quantity',
+    Amount: 'Amount',
+    DeleteGoods: 'Delete product',
+    TotalAmount: 'Total amount：',
   },
   // IndexContact
   IndexContact: {
@@ -253,7 +253,7 @@ export default {
     MainTitle: 'Contact us',
     InputName: 'Your Name',
     InputEmail: 'Your Email',
-    InputTitle: '主旨',
+    InputTitle: 'Subject',
     InputMsg: 'Your Message',
   },
 };
