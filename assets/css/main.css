@@ -62,24 +62,24 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   .TitleFormW .Title {
     color: white;
     font-size: 38px;
-    word-break: break-all; }
+    word-break: break-word; }
   .TitleFormW .MainTitle {
     color: #d6d6d6;
     font-size: 18px;
     font-weight: 600;
-    word-break: break-all; }
+    word-break: break-word; }
 
 .TitleFormB {
   padding-bottom: 20px; }
   .TitleFormB .Title {
     color: #202020;
     font-size: 38px;
-    word-break: break-all; }
+    word-break: break-word; }
   .TitleFormB .MainTitle {
     color: #737373;
     font-size: 18px;
     font-weight: 600;
-    word-break: break-all; }
+    word-break: break-word; }
 
 .navbar {
   padding: 10px 15px;
