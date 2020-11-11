@@ -7,6 +7,7 @@ import enLang from '../i18n/langs/en.js';
 import thLang from '../i18n/langs/th.js';
 import viLang from '../i18n/langs/vi.js';
 import msLang from '../i18n/langs/ms.js';
+import inLang from '../i18n/langs/in.js';
 
 // 定義語系物件
 const messages = {
@@ -16,6 +17,7 @@ const messages = {
   th: { ...thLang },
   vi: { ...viLang },
   ms: { ...msLang },
+  in: { ...inLang },
 };
 
 // 預設語系

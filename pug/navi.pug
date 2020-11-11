@@ -54,7 +54,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top.navbar-sparrow
           a#navbarDropdownMenuLink2.nav-link.dropdown-toggle.NavFlag(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
             img(:src='"/assets/img/flag/"+flag+".svg"')
           .dropdown-menu.dropdown-menu-center(aria-labelledby="navbarDropdownMenuLink2")
-            .d-flex.flex-row.flex-lg-column.justify-content-between.text-center.FlagDropdown
+            .d-flex.flex-row.flex-lg-column.justify-content-between.text-center.FlagDropdown.overflow-hidden-y
               //- 繁體中文
               a.dropdown-item.MenuFlag(@click='switchLanguage("zh-tw")')
                 img(src='/assets/img/flag/zh-tw.svg')
@@ -73,3 +73,6 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top.navbar-sparrow
               //- Bahasa Melayu
               a.dropdown-item.MenuFlag(@click='switchLanguage("ms")')
                 img(src='/assets/img/flag/ms.svg')
+              //- Duyin
+              a.dropdown-item.MenuFlag(@click='switchLanguage("in")')
+                img(src='/assets/img/flag/in.svg')
