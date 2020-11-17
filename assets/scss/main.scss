@@ -165,9 +165,9 @@ input, textarea, select {
   .DropdownForm {
     .dropdown-menu {
       min-width: unset;
-      background: rgba(0,0,0,0.75);
+      background: rgba(24,24,24,1);
       .dropdown-item {
-        padding: 15px 10px;
+        padding: 15px 15px;
         color: rgba(214,214,214,1);
         background: linear-gradient(0deg, rgba(255,255,255,0.5), rgba(255,255,255,0.5)) 100% 50% no-repeat;
         background-size: 1px 10px;
@@ -186,6 +186,13 @@ input, textarea, select {
         background-size: auto 13px;
       };
       &:nth-child(6) {
+        background: unset;
+      };
+    };
+  };
+  .MemberDropdown {
+    .dropdown-item {
+      &:nth-child(3) {
         background: unset;
       };
     };
@@ -315,8 +322,8 @@ input, textarea, select {
   };
 }
 
-.Login, .Register, .Forget {
-  .LoginForm, .RegisterForm, .ForgetForm {
+.Login, .Register, .Forget, .Member {
+  .LoginForm, .RegisterForm, .ForgetForm, .MemberForm {
     .OtherLinkForm {
       padding: 10px 0 30px;
       .OtherLink {
@@ -799,7 +806,7 @@ input, textarea, select {
       transition: all 0.3s;
       cursor: pointer;
       .ShopImg {
-        max-width: 250;
+        max-width: 250px;
         height: 200px;
         background: url('/assets/img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
         background-size: 100px, 100%;
@@ -849,7 +856,7 @@ input, textarea, select {
       transition: all 0.3s;
       cursor: pointer;
       .ShopImg {
-        max-width: 250;
+        max-width: 250px;
         height: 200px;
         background: url('/assets/img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
         background-size: 100px, 100%;
@@ -885,6 +892,146 @@ input, textarea, select {
     width: 290px;
   };
 }
+
+.Member {
+  // background: linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 0 no-repeat, linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 100% no-repeat, rgba(248,249,250,1);
+  background-size: 100% 1px, 100% 1px, 100%;
+  .MemberTab {
+    .el-tabs__nav-wrap {
+      .el-tabs__nav-scroll {
+        display: flex;
+        justify-content: center;
+        background: rgba(244,244,244,1);
+        border-radius: 4px;
+      };
+      .el-tabs__item {
+        height: 60px;
+        color: rgba(115,115,115,1);
+        font-size: 18px;
+        line-height: 60px;
+        &:hover {
+          color: rgba(216,67,35,0.5);
+          font-weight: 600;
+        };
+      };
+      .el-tabs__item.is-active {
+        color: rgba(216,67,35,1);
+        font-size: 18px;
+        font-weight: 600;
+      };
+      .el-tabs__active-bar {
+        height: 2px;
+        background: rgba(216,67,35,1);
+      };
+    };
+    .el-tabs__nav-wrap::after {
+      height: unset;
+    };
+  };
+  .MemberDetail {
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    border-bottom: 1px dashed rgba(214,214,214,1);
+    .MemberInfo {
+      .MemberTitle {
+        padding: 0 0 10px;
+        color: rgba(115,115,115,1);
+        font-size: 18px;
+        font-weight: 600;
+      };
+      .MemberCont {
+        font-size: 15px;
+      };
+    };
+  };
+  .SearchForm {
+    .el-select {
+      width: 100%;
+      max-width: 240px;
+    };
+    .el-input {
+      width: 100%;
+      max-width: 240px;
+    };
+  };
+  .OrderPagination {
+    margin: 4px 0 26px;
+  };
+  .OrderListItem {
+    border-top: 1px dashed rgba(214,214,214,1);
+    border-bottom: 1px dashed rgba(214,214,214,1);
+    .OrderListItemName {
+      color: rgba(115,115,115,1);
+      font-size: 15px;
+    };
+  };
+  .OrderList {
+    color: rgba(115,115,115,1);
+    font-size: 15px;
+    border-bottom: 1px dashed rgba(214,214,214,1);
+    &:nth-child(1) {
+      border-top: 1px dashed rgba(214,214,214,1);
+    };
+    .OrderListTitle {
+      min-width: 80px;
+    };
+  };
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        align-items: center;
+        color: rgba(115,115,115,1);
+        font-size: 18px;
+        font-weight: 600;
+        border-bottom: 1px dashed rgba(214,214,214,1);
+        .el-button {
+          padding: unset;
+          font-size: 20px;
+        };
+        .el-button--text {
+          color: rgba(141,141,141,1);
+        };
+      };
+      .modal-body {};
+      .modal-footer {
+        justify-content: center;
+        padding: 20px;
+        border-top: 1px dashed rgba(214,214,214,1);
+      };
+    };
+  };
+  .ShopCont {
+    display: block;
+    min-width: 250px;
+    transition: all 0.3s;
+    cursor: pointer;
+    .ShopImg {
+      max-width: 250px;
+      height: 200px;
+      background: url('/assets/img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
+      background-size: 100px, 100%;
+    };
+    .ShopName {
+      padding: 20px 0 0;
+      color: rgba(115,115,115,1);
+      font-size: 15px;
+      line-height: 30px;
+    };
+    .ShopAmount {
+      padding: 20px 0;
+      font-size: 15px;
+      line-height: 30px;
+      .Rebate {
+        padding: 0 10px;
+        color: rgba(214,214,214,1);
+      };
+      .NewAmount {
+        padding: 0 10px;
+        color: rgba(216,67,35,1);
+      };
+    };
+  };
+};
 
 .Cart {
   background: linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 0 no-repeat, linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 100% no-repeat, rgba(248,249,250,1);

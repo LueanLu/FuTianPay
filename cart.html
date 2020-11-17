@@ -49,13 +49,17 @@
               </li>
               <li class="nav-item"><a class="nav-link" href="news.html">{{ $t('Nav.News'/*最新消息*/) }}</a></li>
               <li class="nav-item"><a class="nav-link" href="shop.html">{{ $t('Nav.Shop'/*線上商店*/) }}</a></li>
-              <li class="nav-item d-lg-none d-block"><a class="nav-link" href="cart.html">{{ $t('Nav.Cart'/*購物車*/) }}</a></li>
+              <li class="nav-item dropdown DropdownForm"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $t('Nav.Member'/*會員中心*/) }}</a>
+                <div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdownMenuLink2">
+                  <div class="d-flex flex-row text-center MemberDropdown overflow-hidden-y"><a class="dropdown-item" href="member.html" v-on:click="goMember(&quot;information&quot;)">{{ $t('Nav.Information'/*會員資料*/) }}</a><a class="dropdown-item" href="member.html" v-on:click="goMember(&quot;order&quot;)">{{ $t('Nav.Order'/*訂單查詢*/) }}</a><a class="dropdown-item" href="cart.html">{{ $t('Nav.Cart'/*購物車*/) }}</a></div>
+                </div>
+              </li>
               <li class="nav-item d-lg-none d-block"><a class="nav-link" href="#digital-contact" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.Contact'/*聯絡我們*/) }}</a></li>
               <div class="navLineOne d-none d-lg-block mx-3"></div>
               <div class="navLineTwo d-block d-lg-none my-3"></div>
               <li class="nav-item"><a class="nav-link" href="login.html">{{ $t('Nav.Login'/*登入*/) }}</a></li>
-              <li class="nav-item dropdown DropdownForm"><a class="nav-link dropdown-toggle NavFlag" id="navbarDropdownMenuLink2" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img :src="&quot;/assets/img/flag/&quot;+flag+&quot;.svg&quot;"></a>
-                <div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdownMenuLink2">
+              <li class="nav-item dropdown DropdownForm"><a class="nav-link dropdown-toggle NavFlag" id="navbarDropdownMenuLink3" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img :src="&quot;/assets/img/flag/&quot;+flag+&quot;.svg&quot;"></a>
+                <div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdownMenuLink3">
                   <div class="d-flex flex-row flex-lg-column justify-content-between text-center FlagDropdown overflow-hidden-y"><a class="dropdown-item MenuFlag" @click="switchLanguage(&quot;zh-tw&quot;)"><img src="/assets/img/flag/zh-tw.svg"></a><a class="dropdown-item MenuFlag" @click="switchLanguage(&quot;zh-cn&quot;)"><img src="/assets/img/flag/zh-cn.svg"></a><a class="dropdown-item MenuFlag" @click="switchLanguage(&quot;en&quot;)"><img src="/assets/img/flag/en.svg"></a><a class="dropdown-item MenuFlag" @click="switchLanguage(&quot;th&quot;)"><img src="/assets/img/flag/th.svg"></a><a class="dropdown-item MenuFlag" @click="switchLanguage(&quot;vi&quot;)"><img src="/assets/img/flag/vi.svg"></a><a class="dropdown-item MenuFlag" @click="switchLanguage(&quot;ms&quot;)"><img src="/assets/img/flag/ms.svg"></a><a class="dropdown-item MenuFlag" @click="switchLanguage(&quot;in&quot;)"><img src="/assets/img/flag/in.svg"></a></div>
                 </div>
               </li>
@@ -117,8 +121,8 @@
             <div class="row py-3">
               <div class="col"><a class="btn btn-link px-0 text-secondary" href="shop.html"><span class="fas fa-chevron-left" data-fa-transform="down-1"></span><span class="pl-2">{{ $t('Cart.BackShop'/*Back To Shop*/) }}</span></a></div>
             </div>
-            <div class="row d-lg-block d-none">
-              <div class="col-12">
+            <div class="row d-lg-block d-none" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="col-12" data-rellax-speed="1" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:-150,&quot;scale&quot;:1},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:0,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:1,&quot;delay&quot;:1}">
                 <div class="row CartListItem d-flex flex-row py-3">
                   <div class="col-2 text-center">
                     <div class="CartListItemName">{{ $t('Cart.GoodsImg'/*商品圖*/) }}</div>
@@ -186,8 +190,8 @@
                 </div>
               </div>
             </div>
-            <div class="row d-lg-none">
-              <div class="col-12">
+            <div class="row d-lg-none" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="col-12" data-rellax-speed="1" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:-150,&quot;scale&quot;:1},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:0,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:1,&quot;delay&quot;:1}">
                 <div class="row CartList d-flex flex-column justify-content-center align-items-center py-3 text-center">
                   <div class="col-12">
                     <div class="row d-flex flex-row align-items-center">
@@ -269,7 +273,7 @@
                 </div>
                 <div class="row justify-content-end mt-4">
                   <div class="col-12">
-                    <el-button class="BtnRed" type="submit" @click="addCart" data-zanim-xs="{&quot;delay&quot;:0.2}">{{ $t('Btn.Checkout'/*結帳*/) }}</el-button>
+                    <el-button class="BtnRed" type="submit" @click="" data-zanim-xs="{&quot;delay&quot;:0.2}">{{ $t('Btn.Checkout'/*結帳*/) }}</el-button>
                   </div>
                 </div>
               </div>

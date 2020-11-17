@@ -7,6 +7,10 @@ export default {
     AddCart: 'Add to Shopping Cart',
     Checkout: 'Checkout',
     Delete: 'Delete',
+    View: 'View',
+    Modify: 'Modify',
+    Cancel: 'Cancel',
+    Close: 'Close',
   },
   // Login
   Login: {
@@ -51,19 +55,22 @@ export default {
   // Nav
   Nav: {
     Index: 'Index',
-    Service: 'Service items',
-    Country: 'Service country',
+    Service: 'Service Items',
+    Country: 'Service Country',
     Tw: 'Taiwan',
     Ch: 'China',
     Th: 'Thailand',
     Vi: 'Vietnam',
     En: 'USDT',
     News: 'News',
-    Shop: 'Online store',
+    Shop: 'Online Store',
+    Member: 'Member Centre',
+    Information: 'Member Information',
+    Order: 'Order Tracking',
     Cart: 'Cart',
-    Contact: 'Contact us',
-    Login: 'Sign in',
-    Logout: 'Sign out',
+    Contact: 'Contact Us',
+    Login: 'Sign In',
+    Logout: 'Sign Out',
   },
   // IndexBanner
   IndexBanner: {
@@ -80,7 +87,7 @@ export default {
     MainTitle: '24 hours online customer service ',
     Subheading: 'all the year round, troubleshooting, IT support, system operation teaching',
   },
-  // PageBannerOne
+  // PageBannerTwo
   PageBannerTwo: {
     MainTitle: '24 hours online customer service ',
     Subheading: 'all the year round, troubleshooting, IT support, system operation teaching',
@@ -94,6 +101,11 @@ export default {
   PageBannerFour: {
     MainTitle: 'Latest product information',
     Subheading: 'All the year round, troubleshooting, IT support, system operation teaching',
+  },
+  // PageBannerFive
+  PageBannerFive: {
+    MainTitle: '24 hours online customer service ',
+    Subheading: 'all the year round, troubleshooting, IT support, system operation teaching',
   },
   // IndexServiceItems
   IndexServiceItems: {

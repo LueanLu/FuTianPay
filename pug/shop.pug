@@ -58,8 +58,8 @@ html
               .col-lg-7.TitleFormB
                 h2.Title {{ $t('Shop.Title'/*COMMODITY*/) }}
                 .MainTitle {{ $t('Shop.MainTitle'/*商品列表*/) }}
-            //- Pagination
             .row.justify-content-center
+              //- Select
               .col-lg-6.text-lg-left.text-center
                 el-form
                   el-form-item(label='')
@@ -68,9 +68,10 @@ html
                       el-option(value='2', :label="$t('Shop.OptionThree'/*依最新項目排序*/)")
                       el-option(value='3', :label="$t('Shop.OptionFour'/*依價格排序:低至高*/)")
                       el-option(value='4', :label="$t('Shop.OptionFive'/*依價格排序:高至低*/)")
+              //- Pagination
               .col-lg-6.text-lg-right.text-center
                 el-pagination.Pagination.ShopPagination(@current-change="handleCurrentChange", :page-size='pageSize', :pager-count='pagerCount', :total='total', :current-page.sync="curretPage", layout="prev, pager, next", background)
-            
+
             //- ShopList Content
             .row.ShopList.d-flex.flex-row.pt-4.pb-4.pb-lg-5
               .col-12.col-lg-9.justify-content-between

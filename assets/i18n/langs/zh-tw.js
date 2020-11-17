@@ -7,6 +7,10 @@ export default {
     AddCart: '加入購物車',
     Checkout: '結帳',
     Delete: '刪除',
+    View: '查看',
+    Modify: '修改',
+    Cancel: '取消',
+    Close: '關閉',
   },
   // Login
   Login: {
@@ -60,6 +64,9 @@ export default {
     En: 'USDT',
     News: '最新消息',
     Shop: '線上商店',
+    Member: '會員中心',
+    Information: '會員資料',
+    Order: '訂單查詢',
     Cart: '購物車',
     Contact: '聯絡我們',
     Login: '登入',
@@ -80,7 +87,7 @@ export default {
     MainTitle: '24小時專人在線',
     Subheading: '全年無休、疑難排解、技術支援、系統教學',
   },
-  // PageBannerOne
+  // PageBannerTwo
   PageBannerTwo: {
     MainTitle: '24小時專人在線',
     Subheading: '全年無休、疑難排解、技術支援、系統教學',
@@ -93,6 +100,11 @@ export default {
   // PageBannerFour
   PageBannerFour: {
     MainTitle: '最新商品資訊',
+    Subheading: '全年無休、疑難排解、技術支援、系統教學',
+  },
+  // PageBannerFive
+  PageBannerFive: {
+    MainTitle: '24小時專人在線',
     Subheading: '全年無休、疑難排解、技術支援、系統教學',
   },
   // IndexServiceItems
@@ -234,6 +246,57 @@ export default {
     OptionThree: '依最新項目排序',
     OptionFour: '依價格排序:低至高',
     OptionFive: '依價格排序:高至低',
+  },
+  // Member
+  Member: {
+    Title: 'MEMBER',
+    MainTitle: '會員中心',
+    Information: '會員資料',
+    Company: '公司名稱：',
+    Account: '會員帳號：',
+    RealName: '真實姓名：',
+    Password: '密碼：',
+    Phone: '手機號碼：',
+    Email: '電子信箱：',
+    Address: '地址：',
+    Skype: 'Skype：',
+    Telegram: 'Telegram：',
+    // Input
+    EditPassword: '修改密碼',
+    LabelOldPassword: '舊密碼：',
+    LabelPassword: '新密碼：',
+    InputPassword: '請輸入密碼',
+    LabelCheckPassword: '確認密碼：',
+    InputCheckPassword: '請再次輸入密碼',
+    EditPhone: '修改手機',
+    LabelPhone: '手機號碼：',
+    InputPhone: '請輸入正確手機號碼',
+    EditEmail: '修改信箱',
+    LabelEmail: '電子信箱：',
+    InputEmail: '請輸入E-mail',
+    EditAddress: '修改地址',
+    LabelAddress: '地址：',
+    InputAddress: '請輸入正確地址',
+    EditSkype: '修改Skype',
+    LabelSkype: 'Skype：',
+    InputSkype: '請輸入Skype',
+    EditTelegram: '修改Telegram',
+    LabelTelegram: 'Telegram：',
+    InputTelegram: '請輸入Telegram',
+    // Input End
+    OptionOne: '请选择',
+    OptionTwo: '訂單編號',
+    OptionThree: '配送方式',
+    OptionFour: '是否付款',
+    InputOrderSearch: '请输入内容',
+    Order: '訂單查詢',
+    OrderNo: '訂單編號',
+    OrderDate: '訂單日期',
+    OrderAmount: '訂單金額',
+    DeliveryMode: '配送方式',
+    Payment: '是否付款',
+    Commodity: '購買商品',
+    CommodityDetail: '商品詳情',
   },
   // Cart
   Cart: {

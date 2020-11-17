@@ -7,6 +7,10 @@ export default {
     AddCart: 'शॉपिंग कार्ट में जोड़',
     Checkout: 'चेक आउट',
     Delete: 'हटाना',
+    View: 'राय',
+    Modify: 'संशोधित',
+    Cancel: 'रद्द करना',
+    Close: 'बंद करना',
   },
   // Login
   Login: {
@@ -60,6 +64,9 @@ export default {
     En: 'USDT',
     News: 'ताज़ा खबर',
     Shop: 'ऑनलाइन स्टोर',
+    Member: 'सदस्य केंद्र',
+    Information: 'सदस्य प्रोफ़ाइल',
+    Order: 'दिए गए आदेश की खोज',
     Cart: 'शॉपिंग कार्ट',
     Contact: 'संपर्क करें',
     Login: 'साइन इन करें',
@@ -80,7 +87,7 @@ export default {
     MainTitle: '24 घंटे के किसी ऑनलाइन',
     Subheading: 'पूरे साल, समस्या निवारण, तकनीकी सहायता, शिक्षा प्रणाली खोलें',
   },
-  // PageBannerOne
+  // PageBannerTwo
   PageBannerTwo: {
     MainTitle: '24 घंटे के किसी ऑनलाइन',
     Subheading: 'पूरे साल, समस्या निवारण, तकनीकी सहायता, शिक्षा प्रणाली खोलें',
@@ -93,6 +100,11 @@ export default {
   // PageBannerFour
   PageBannerFour: {
     MainTitle: 'नवीनतम उत्पाद जानकारी',
+    Subheading: 'पूरे साल, समस्या निवारण, तकनीकी सहायता, शिक्षा प्रणाली खोलें',
+  },
+  // PageBannerFive
+  PageBannerFive: {
+    MainTitle: '24 घंटे के किसी ऑनलाइन',
     Subheading: 'पूरे साल, समस्या निवारण, तकनीकी सहायता, शिक्षा प्रणाली खोलें',
   },
   // IndexServiceItems
@@ -131,10 +143,10 @@ export default {
   },
   // IndexServicesTw
   IndexServicesTw: {
-    ReceiveWOne: 'LINE Pay、街口支付',
+    ReceiveWOne: 'LINE Pay、JKO Pay',
     DispensingWOne: 'ऑनलाइन बैंकिंग स्वचालित वितरण',
     AppMainTitleOne: 'LINE Pay',
-    AppMainTitleTwo: '街口支付',
+    AppMainTitleTwo: 'JKO Pay',
     AppSubheadingTwo: 'JKOPAY',
   },
   // IndexServicesCh

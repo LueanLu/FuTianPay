@@ -34,13 +34,18 @@ new Vue({
   el: '#app',
   i18n, // 多語系
   data: {
-    isMobile: false, // 裝置
-    bodyWidth: '', // 視窗寬度
-    flag: '', // 國旗
+    // 裝置
+    isMobile: false,
+    // 視窗寬度
+    bodyWidth: '',
+    // 國旗
+    flag: '',
+    // 登入
     loginForm: {
       Account: '',
       Password: '',
     },
+    // 註冊
     registerForm: {
       Account: '',
       RealName: '',
@@ -49,10 +54,23 @@ new Vue({
       Phone: '',
       Email: '',
     },
+    // 忘記密碼
     forgetForm: {
       Phone: '',
       Email: '',
     },
+    // 會員中心
+    memberForm: {
+      OldPassword: '',
+      Password: '',
+      CheckPassword: '',
+      Phone: '',
+      Email: '',
+      Address: '',
+      Skype: '',
+      Telegram: '',
+    },
+    // 聯絡我們
     contact: {
       Name: '',
       Email: '',
@@ -60,12 +78,23 @@ new Vue({
       Content: '',
     },
     cartAmount: 0,
+    // Shop Select
     shopSelect: '',
     goodsAmount: '',
-    pageSize: 6, // 每頁顯示條目個數
-    pagerCount: 5, // 頁碼按鈕數量
-    total: 600, // 總條數目
-    curretPage: null, // 當前頁數
+    // 每頁顯示條目個數
+    pageSize: 6,
+    // 頁碼按鈕數量
+    pagerCount: 5,
+    // 總條數目
+    total: 600,
+    // 當前頁數
+    curretPage: null,
+    // Member Tab
+    activeName: 'information',
+    // Order Select
+    orderSelect: '',
+    // Order Search
+    orderSearch: '',
   },
   methods: {
     // 判斷裝置
@@ -119,7 +148,7 @@ new Vue({
     addCart() {
       this.cartAmount = this.cartAmount + 1;
     },
-    // 
+    // 刪除購物車
     deleteCart() {
       if (this.cartAmount > 0) {
         this.cartAmount = this.cartAmount - 1;
@@ -127,6 +156,14 @@ new Vue({
         console.log('No Cart')
         return false;
       }
+    },
+    // Member Tab
+    tabHandleClick(tab, event) {
+      window.localStorage.setItem('TabActive', tab.name);
+    },
+    // Go To Member
+    goMember(val) {
+      window.localStorage.setItem('TabActive', val);
     },
   },
 	created() {
@@ -136,6 +173,12 @@ new Vue({
     }
     // 預設語系
     this.setLanguage();
+    // 判斷 Member Tab
+    if (!window.localStorage.TabActive) {
+      this.activeName = 'information';
+    } else {
+      this.activeName = window.localStorage.TabActive;
+    }
   },
   mounted() {
     // 取視窗寬度

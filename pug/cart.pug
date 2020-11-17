@@ -66,8 +66,8 @@ html
                   span.fas.fa-chevron-left(data-fa-transform="down-1")
                   span.pl-2 {{ $t('Cart.BackShop'/*Back To Shop*/) }}
             //- -------------------- PC版面 --------------------
-            .row.d-lg-block.d-none
-              .col-12
+            .row.d-lg-block.d-none(data-zanim-timeline='{}' data-zanim-trigger="scroll")
+              .col-12(data-rellax-speed="1" data-zanim-xs='{"from":{"opacity":0,"y":-150,"scale":1},"to":{"opacity":1,"y":0,"scale":1},"ease":"Back.easeOut","duration":1,"delay":1}')
                 //- 項目
                 .row.CartListItem.d-flex.flex-row.py-3
                   .col-2.text-center
@@ -120,8 +120,8 @@ html
             //- -------------------- PC版面 End --------------------
 
             //- -------------------- Mobile版面 --------------------
-            .row.d-lg-none
-              .col-12
+            .row.d-lg-none(data-zanim-timeline='{}' data-zanim-trigger="scroll")
+              .col-12(data-rellax-speed="1" data-zanim-xs='{"from":{"opacity":0,"y":-150,"scale":1},"to":{"opacity":1,"y":0,"scale":1},"ease":"Back.easeOut","duration":1,"delay":1}')
                 //- 購物車列表
                 .row.CartList.d-flex.flex-column.justify-content-center.align-items-center.py-3.text-center
                   .col-12
@@ -183,7 +183,7 @@ html
                     span.TextR $495.00
                 .row.justify-content-end.mt-4
                   .col-12
-                    el-button.BtnRed(type="submit", @click="addCart", data-zanim-xs='{"delay":0.2}') {{ $t('Btn.Checkout'/*結帳*/) }}
+                    el-button.BtnRed(type="submit", @click="", data-zanim-xs='{"delay":0.2}') {{ $t('Btn.Checkout'/*結帳*/) }}
 
         //- <section> Advertising
         include advertising.pug

@@ -7,6 +7,10 @@ export default {
     AddCart: '加入购物车',
     Checkout: '结帐',
     Delete: '删除',
+    View: '查看',
+    Modify: '修改',
+    Cancel: '取消',
+    Close: '关闭',
   },
   // Login
   Login: {
@@ -60,6 +64,9 @@ export default {
     En: 'USDT',
     News: '最新消息',
     Shop: '线上商店',
+    Member: '会员中心',
+    Information: '会员资料',
+    Order: '订单查询',
     Cart: '购物车',
     Contact: '联络我们',
     Login: '登录',
@@ -80,7 +87,7 @@ export default {
     MainTitle: '24小时专人在线',
     Subheading: '全年无休、疑难排解、技术支持、系统教学',
   },
-  // PageBannerOne
+  // PageBannerTwo
   PageBannerTwo: {
     MainTitle: '24小时专人在线',
     Subheading: '全年无休、疑难排解、技术支持、系统教学',
@@ -93,6 +100,11 @@ export default {
   // PageBannerFour
   PageBannerFour: {
     MainTitle: '最新商品资讯',
+    Subheading: '全年无休、疑难排解、技术支持、系统教学',
+  },
+  // PageBannerFive
+  PageBannerFive: {
+    MainTitle: '24小时专人在线',
     Subheading: '全年无休、疑难排解、技术支持、系统教学',
   },
   // IndexServiceItems

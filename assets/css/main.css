@@ -120,9 +120,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     height: 20px; }
   .navbar .DropdownForm .dropdown-menu {
     min-width: unset;
-    background: rgba(0, 0, 0, 0.75); }
+    background: #181818; }
     .navbar .DropdownForm .dropdown-menu .dropdown-item {
-      padding: 15px 10px;
+      padding: 15px 15px;
       color: #d6d6d6;
       background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))) 100% 50% no-repeat;
       background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 100% 50% no-repeat;
@@ -137,6 +137,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     background: url("/assets/img/icon/IconArrowRW.svg") 100% 50% no-repeat;
     background-size: auto 13px; }
   .navbar .ServiceDropdown .dropdown-item:nth-child(6) {
+    background: unset; }
+  .navbar .MemberDropdown .dropdown-item:nth-child(3) {
     background: unset; }
   .navbar .FlagDropdown .dropdown-item:nth-child(1), .navbar .FlagDropdown .dropdown-item:nth-child(2), .navbar .FlagDropdown .dropdown-item:nth-child(3), .navbar .FlagDropdown .dropdown-item:nth-child(4), .navbar .FlagDropdown .dropdown-item:nth-child(5), .navbar .FlagDropdown .dropdown-item:nth-child(6), .navbar .FlagDropdown .dropdown-item:nth-child(7) {
     background: unset; }
@@ -267,14 +269,14 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     top: unset;
     bottom: 30px; } }
 
-.Login .LoginForm .OtherLinkForm, .Login .RegisterForm .OtherLinkForm, .Login .ForgetForm .OtherLinkForm, .Register .LoginForm .OtherLinkForm, .Register .RegisterForm .OtherLinkForm, .Register .ForgetForm .OtherLinkForm, .Forget .LoginForm .OtherLinkForm, .Forget .RegisterForm .OtherLinkForm, .Forget .ForgetForm .OtherLinkForm {
+.Login .LoginForm .OtherLinkForm, .Login .RegisterForm .OtherLinkForm, .Login .ForgetForm .OtherLinkForm, .Login .MemberForm .OtherLinkForm, .Register .LoginForm .OtherLinkForm, .Register .RegisterForm .OtherLinkForm, .Register .ForgetForm .OtherLinkForm, .Register .MemberForm .OtherLinkForm, .Forget .LoginForm .OtherLinkForm, .Forget .RegisterForm .OtherLinkForm, .Forget .ForgetForm .OtherLinkForm, .Forget .MemberForm .OtherLinkForm, .Member .LoginForm .OtherLinkForm, .Member .RegisterForm .OtherLinkForm, .Member .ForgetForm .OtherLinkForm, .Member .MemberForm .OtherLinkForm {
   padding: 10px 0 30px; }
-  .Login .LoginForm .OtherLinkForm .OtherLink, .Login .RegisterForm .OtherLinkForm .OtherLink, .Login .ForgetForm .OtherLinkForm .OtherLink, .Register .LoginForm .OtherLinkForm .OtherLink, .Register .RegisterForm .OtherLinkForm .OtherLink, .Register .ForgetForm .OtherLinkForm .OtherLink, .Forget .LoginForm .OtherLinkForm .OtherLink, .Forget .RegisterForm .OtherLinkForm .OtherLink, .Forget .ForgetForm .OtherLinkForm .OtherLink {
+  .Login .LoginForm .OtherLinkForm .OtherLink, .Login .RegisterForm .OtherLinkForm .OtherLink, .Login .ForgetForm .OtherLinkForm .OtherLink, .Login .MemberForm .OtherLinkForm .OtherLink, .Register .LoginForm .OtherLinkForm .OtherLink, .Register .RegisterForm .OtherLinkForm .OtherLink, .Register .ForgetForm .OtherLinkForm .OtherLink, .Register .MemberForm .OtherLinkForm .OtherLink, .Forget .LoginForm .OtherLinkForm .OtherLink, .Forget .RegisterForm .OtherLinkForm .OtherLink, .Forget .ForgetForm .OtherLinkForm .OtherLink, .Forget .MemberForm .OtherLinkForm .OtherLink, .Member .LoginForm .OtherLinkForm .OtherLink, .Member .RegisterForm .OtherLinkForm .OtherLink, .Member .ForgetForm .OtherLinkForm .OtherLink, .Member .MemberForm .OtherLinkForm .OtherLink {
     padding: 0 20px;
     color: #219bd9;
     font-size: 15px;
     font-weight: 600; }
-    .Login .LoginForm .OtherLinkForm .OtherLink:nth-child(2), .Login .RegisterForm .OtherLinkForm .OtherLink:nth-child(2), .Login .ForgetForm .OtherLinkForm .OtherLink:nth-child(2), .Register .LoginForm .OtherLinkForm .OtherLink:nth-child(2), .Register .RegisterForm .OtherLinkForm .OtherLink:nth-child(2), .Register .ForgetForm .OtherLinkForm .OtherLink:nth-child(2), .Forget .LoginForm .OtherLinkForm .OtherLink:nth-child(2), .Forget .RegisterForm .OtherLinkForm .OtherLink:nth-child(2), .Forget .ForgetForm .OtherLinkForm .OtherLink:nth-child(2) {
+    .Login .LoginForm .OtherLinkForm .OtherLink:nth-child(2), .Login .RegisterForm .OtherLinkForm .OtherLink:nth-child(2), .Login .ForgetForm .OtherLinkForm .OtherLink:nth-child(2), .Login .MemberForm .OtherLinkForm .OtherLink:nth-child(2), .Register .LoginForm .OtherLinkForm .OtherLink:nth-child(2), .Register .RegisterForm .OtherLinkForm .OtherLink:nth-child(2), .Register .ForgetForm .OtherLinkForm .OtherLink:nth-child(2), .Register .MemberForm .OtherLinkForm .OtherLink:nth-child(2), .Forget .LoginForm .OtherLinkForm .OtherLink:nth-child(2), .Forget .RegisterForm .OtherLinkForm .OtherLink:nth-child(2), .Forget .ForgetForm .OtherLinkForm .OtherLink:nth-child(2), .Forget .MemberForm .OtherLinkForm .OtherLink:nth-child(2), .Member .LoginForm .OtherLinkForm .OtherLink:nth-child(2), .Member .RegisterForm .OtherLinkForm .OtherLink:nth-child(2), .Member .ForgetForm .OtherLinkForm .OtherLink:nth-child(2), .Member .MemberForm .OtherLinkForm .OtherLink:nth-child(2) {
       border-left: 1px solid rgba(52, 58, 64, 0.2); }
 
 .IndexBanner .IndexBannerContent {
@@ -685,7 +687,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     transition: all 0.3s;
     cursor: pointer; }
     .Shop .ShopList .ShopCont .ShopImg {
-      max-width: 250;
+      max-width: 250px;
       height: 200px;
       background: url("/assets/img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
       background-size: 100px, 100%; }
@@ -728,7 +730,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   transition: all 0.3s;
   cursor: pointer; }
   .ServiceShop .ShopList .ShopCont .ShopImg {
-    max-width: 250;
+    max-width: 250px;
     height: 200px;
     background: url("/assets/img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
     background-size: 100px, 100%; }
@@ -759,6 +761,114 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
 
 .ServiceShop .ShopBanner {
   width: 290px; }
+
+.Member {
+  background-size: 100% 1px, 100% 1px, 100%; }
+  .Member .MemberTab .el-tabs__nav-wrap .el-tabs__nav-scroll {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #f4f4f4;
+    border-radius: 4px; }
+  .Member .MemberTab .el-tabs__nav-wrap .el-tabs__item {
+    height: 60px;
+    color: #737373;
+    font-size: 18px;
+    line-height: 60px; }
+    .Member .MemberTab .el-tabs__nav-wrap .el-tabs__item:hover {
+      color: rgba(216, 67, 35, 0.5);
+      font-weight: 600; }
+  .Member .MemberTab .el-tabs__nav-wrap .el-tabs__item.is-active {
+    color: #d84323;
+    font-size: 18px;
+    font-weight: 600; }
+  .Member .MemberTab .el-tabs__nav-wrap .el-tabs__active-bar {
+    height: 2px;
+    background: #d84323; }
+  .Member .MemberTab .el-tabs__nav-wrap::after {
+    height: unset; }
+  .Member .MemberDetail {
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    border-bottom: 1px dashed #d6d6d6; }
+    .Member .MemberDetail .MemberInfo .MemberTitle {
+      padding: 0 0 10px;
+      color: #737373;
+      font-size: 18px;
+      font-weight: 600; }
+    .Member .MemberDetail .MemberInfo .MemberCont {
+      font-size: 15px; }
+  .Member .SearchForm .el-select {
+    width: 100%;
+    max-width: 240px; }
+  .Member .SearchForm .el-input {
+    width: 100%;
+    max-width: 240px; }
+  .Member .OrderPagination {
+    margin: 4px 0 26px; }
+  .Member .OrderListItem {
+    border-top: 1px dashed #d6d6d6;
+    border-bottom: 1px dashed #d6d6d6; }
+    .Member .OrderListItem .OrderListItemName {
+      color: #737373;
+      font-size: 15px; }
+  .Member .OrderList {
+    color: #737373;
+    font-size: 15px;
+    border-bottom: 1px dashed #d6d6d6; }
+    .Member .OrderList:nth-child(1) {
+      border-top: 1px dashed #d6d6d6; }
+    .Member .OrderList .OrderListTitle {
+      min-width: 80px; }
+  .Member .modal-dialog .modal-content .modal-header {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #737373;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px dashed #d6d6d6; }
+    .Member .modal-dialog .modal-content .modal-header .el-button {
+      padding: unset;
+      font-size: 20px; }
+    .Member .modal-dialog .modal-content .modal-header .el-button--text {
+      color: #8d8d8d; }
+  .Member .modal-dialog .modal-content .modal-footer {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 20px;
+    border-top: 1px dashed #d6d6d6; }
+  .Member .ShopCont {
+    display: block;
+    min-width: 250px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer; }
+    .Member .ShopCont .ShopImg {
+      max-width: 250px;
+      height: 200px;
+      background: url("/assets/img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
+      background-size: 100px, 100%; }
+    .Member .ShopCont .ShopName {
+      padding: 20px 0 0;
+      color: #737373;
+      font-size: 15px;
+      line-height: 30px; }
+    .Member .ShopCont .ShopAmount {
+      padding: 20px 0;
+      font-size: 15px;
+      line-height: 30px; }
+      .Member .ShopCont .ShopAmount .Rebate {
+        padding: 0 10px;
+        color: #d6d6d6; }
+      .Member .ShopCont .ShopAmount .NewAmount {
+        padding: 0 10px;
+        color: #d84323; }
 
 .Cart {
   background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, #f8f9fa;

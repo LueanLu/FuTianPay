@@ -7,6 +7,10 @@ export default {
     AddCart: '加入購物車',
     Checkout: '結帳',
     Delete: '刪除',
+    View: '查看',
+    Modify: '修改',
+    Cancel: '取消',
+    Close: '關閉',
   },
   // Login
   Login: {
@@ -60,6 +64,9 @@ export default {
     En: 'USDT',
     News: '最新消息',
     Shop: '線上商店',
+    Member: '會員中心',
+    Information: '會員基本資料',
+    Order: '訂單查詢',
     Cart: '購物車',
     Contact: '聯絡我們',
     Login: '登入',
@@ -80,7 +87,7 @@ export default {
     MainTitle: '24小時專人在線',
     Subheading: '全年無休、疑難排解、技術支援、系統教學',
   },
-  // PageBannerOne
+  // PageBannerTwo
   PageBannerTwo: {
     MainTitle: '24小時專人在線',
     Subheading: '全年無休、疑難排解、技術支援、系統教學',
@@ -93,6 +100,11 @@ export default {
   // PageBannerFour
   PageBannerFour: {
     MainTitle: '最新商品資訊',
+    Subheading: '全年無休、疑難排解、技術支援、系統教學',
+  },
+  // PageBannerFive
+  PageBannerFive: {
+    MainTitle: '24小時專人在線',
     Subheading: '全年無休、疑難排解、技術支援、系統教學',
   },
   // IndexServiceItems

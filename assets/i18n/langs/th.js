@@ -7,6 +7,10 @@ export default {
     AddCart: 'เพิ่มในรถเข็น',
     Checkout: 'เช็คเอาท์',
     Delete: 'ลบ',
+    View: 'ดู',
+    Modify: 'แก้ไข',
+    Cancel: 'ยกเลิก',
+    Close: 'ปิดตัวลง',
   },
   // Login
   Login: {
@@ -60,6 +64,9 @@ export default {
     En: 'USDT',
     News: 'ข่าวล่าสุด',
     Shop: 'ร้านค้าออนไลน์',
+    Member: 'ศูนย์สมาชิก',
+    Information: 'ข้อมูลพื้นฐานของสมาชิก',
+    Order: 'ติดตามการสั่งซื้อ',
     Cart: 'ตะกร้าสินค้า',
     Contact: 'ติดต่อเรา',
     Login: 'เข้าสู่ระบบ',
@@ -80,7 +87,7 @@ export default {
     MainTitle: 'บริการลูกค้าออนไลน์ตลอด 24 ชั่วโมง',
     Subheading: 'ตลอดทั้งปีการแก้ไขปัญหาการสนับสนุนด้านไอทีการสอนการใช้งานระบบ',
   },
-  // PageBannerOne
+  // PageBannerTwo
   PageBannerTwo: {
     MainTitle: 'บริการลูกค้าออนไลน์ตลอด 24 ชั่วโมง',
     Subheading: 'ตลอดทั้งปีการแก้ไขปัญหาการสนับสนุนด้านไอทีการสอนการใช้งานระบบ',
@@ -93,6 +100,11 @@ export default {
   // PageBannerFour
   PageBannerFour: {
     MainTitle: 'ผลิตภัณฑ์ใหม่',
+    Subheading: 'ตลอดทั้งปีการแก้ไขปัญหาการสนับสนุนด้านไอทีการสอนการใช้งานระบบ',
+  },
+  // PageBannerFive
+  PageBannerFive: {
+    MainTitle: 'บริการลูกค้าออนไลน์ตลอด 24 ชั่วโมง',
     Subheading: 'ตลอดทั้งปีการแก้ไขปัญหาการสนับสนุนด้านไอทีการสอนการใช้งานระบบ',
   },
   // IndexServiceItems

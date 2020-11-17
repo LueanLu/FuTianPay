@@ -35,9 +35,16 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top.navbar-sparrow
         //- 線上商店
         li.nav-item
           a.nav-link(href="shop.html") {{ $t('Nav.Shop'/*線上商店*/) }}
-        //- 購物車
-        li.nav-item.d-lg-none.d-block
-          a.nav-link(href="cart.html") {{ $t('Nav.Cart'/*購物車*/) }}
+
+        //- 會員中心
+        li.nav-item.dropdown.DropdownForm
+          a#navbarDropdownMenuLink2.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") {{ $t('Nav.Member'/*會員中心*/) }}
+          .dropdown-menu.dropdown-menu-center(aria-labelledby="navbarDropdownMenuLink2")
+            .d-flex.flex-row.text-center.MemberDropdown.overflow-hidden-y
+              a.dropdown-item(href="member.html" v-on:click='goMember("information")') {{ $t('Nav.Information'/*會員資料*/) }}
+              a.dropdown-item(href="member.html" v-on:click='goMember("order")') {{ $t('Nav.Order'/*訂單查詢*/) }}
+              a.dropdown-item(href="cart.html") {{ $t('Nav.Cart'/*購物車*/) }}
+
         //- 聯絡我們
         li.nav-item.d-lg-none.d-block
           a.nav-link(href="#digital-contact" data-zanim-timeline='{"delay":1}' data-fancyscroll="data-fancyscroll" data-offset="70") {{ $t('Nav.Contact'/*聯絡我們*/) }}
@@ -51,9 +58,9 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top.navbar-sparrow
           a.nav-link(href="login.html") {{ $t('Nav.Logout'/*登出*/) }}
         //- Language
         li.nav-item.dropdown.DropdownForm
-          a#navbarDropdownMenuLink2.nav-link.dropdown-toggle.NavFlag(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+          a#navbarDropdownMenuLink3.nav-link.dropdown-toggle.NavFlag(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
             img(:src='"/assets/img/flag/"+flag+".svg"')
-          .dropdown-menu.dropdown-menu-center(aria-labelledby="navbarDropdownMenuLink2")
+          .dropdown-menu.dropdown-menu-center(aria-labelledby="navbarDropdownMenuLink3")
             .d-flex.flex-row.flex-lg-column.justify-content-between.text-center.FlagDropdown.overflow-hidden-y
               //- 繁體中文
               a.dropdown-item.MenuFlag(@click='switchLanguage("zh-tw")')
