@@ -127,8 +127,8 @@ export default {
   // MessageMonitor
   MessageMonitor: {
     MainTitle: 'MESSAGE MONITOR',
-    Subheading: '銀行簡訊監控收款回調',
-    Support: '支持銀行無限制，可視需求新增',
+    Subheading: 'Sms của khoản tiền gửi ngân hàng gọi lại ',
+    Support: 'Hỗ trợ ngân hàng không giới hạn, có thể bổ sung theo nhu cầu ',
   },
   // AppMonitor
   AppMonitor: {
@@ -304,16 +304,16 @@ export default {
     MainTitle: 'Danh sách giỏ hàng',
     BackShop: 'Back To Shop',
     GoodsImg: 'Hình ảnh sản phẩm',
-    GoodsName: '商品名稱',
-    GoodsAmount: '數量',
+    GoodsName: 'tên sản phẩm',
+    GoodsAmount: 'Định lượng',
     Amount: 'số tiền',
     DeleteGoods: 'Xóa sản phẩm',
-    TotalAmount: '購買總金額：',
+    TotalAmount: 'tổng cộng',
   },
   // IndexContact
   IndexContact: {
     Title: 'CONTACT INFORMATION',
-    MainTitle: '聯絡我們',
+    MainTitle: 'liên hệ chúng tôi',
     InputName: 'tên của bạn',
     InputEmail: 'email của bạn',
     InputTitle: 'Môn học',
