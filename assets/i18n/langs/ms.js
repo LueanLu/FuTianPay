@@ -65,7 +65,7 @@ export default {
     News: '最新消息',
     Shop: '線上商店',
     Member: '會員中心',
-    Information: '會員基本資料',
+    Information: '會員資料',
     Order: '訂單查詢',
     Cart: '購物車',
     Contact: '聯絡我們',

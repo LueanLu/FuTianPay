@@ -122,24 +122,24 @@ export default {
   // WebMonitor
   WebMonitor: {
     MainTitle: 'WEB MONITOR',
-    Subheading: '網銀監控收款、付款',
+    Subheading: 'ऑनलाइन बैंकिंग भुगतान, भुगतान की निगरानी करें',
   },
   // MessageMonitor
   MessageMonitor: {
     MainTitle: 'MESSAGE MONITOR',
-    Subheading: '銀行簡訊監控收款回調',
-    Support: '支持銀行無限制，可視需求新增',
+    Subheading: 'बैंक प्राप्तियों कॉलबैक की निगरानी कर रहे',
+    Support: 'असीमित बैंक का समर्थन करता है, नए दृश्य मांग',
   },
   // AppMonitor
   AppMonitor: {
     MainTitle: 'APP MONITOR',
     Subheading: 'इलेक्ट्रॉनिक मोबाइल भुगतान समारोह निगरानी प्राप्तियों',
-    SubheadingTwo: '手機銀行APP監控收款、付款',
+    SubheadingTwo: 'मोबाइल बैंकिंग एप्लिकेशन निगरानी संग्रह, भुगतान',
   },
   // USDTMonitor
   USDTMonitor: {
     MainTitle: 'USDT MONITOR',
-    Subheading: '監控USDT收款回調',
+    Subheading: 'USDT निगरानी प्राप्तियों कॉलबैक',
   },
   // IndexServicesTw
   IndexServicesTw: {
@@ -181,10 +181,10 @@ export default {
   },
   // IndexServicesTh
   IndexServicesTh: {
-    ReceiveWOne: '銀行卡轉銀行卡：',
-    ReceiveWTwo: '網路銀行明細回調：PC端安裝腳本程式',
+    ReceiveWOne: 'बैंक कार्ड हस्तांतरण बैंक कार्ड：',
+    ReceiveWTwo: 'इंटरनेट बैंक विवरण कॉलबैक: पीसी अंत प्रोग्राम स्थापना स्क्रिप्ट',
     ReceiveWThree: 'भुगतान करने के लिए PromptPay स्कैन कोड',
-    DispensingWOne: '網路銀行腳本出款：使用PC端外掛腳本自動出款、並能同時收款回調',
+    DispensingWOne: 'इंटरनेट बैंकिंग स्क्रिप्ट वितरण: वितरण स्वचालित करने के लिए पीसी प्लग में स्क्रिप्ट का उपयोग करना है, और कर सकते हैं एक साथ प्राप्तियों कॉलबैक',
     WebMainOne: 'KBANK',
     WebMainTwo: 'BANGKOK',
     WebMainThree: 'KTB (केवल संग्रह का समर्थन करता है)',
@@ -195,11 +195,11 @@ export default {
   },
   // IndexServicesVi
   IndexServicesVi: {
-    ReceiveWOne: '銀行卡轉銀行卡：',
-    ReceiveWTwo: '手機銀行明細回調：Mobile端安裝手機銀行APP',
-    ReceiveWThree: '網路銀行明細回調：PC端安裝腳本程式',
-    DispensingWOne: '手機銀行腳本出款：可搭配手機銀行資料雲端備份功能跨機操作',
-    DispensingWTwo: '網路銀行腳本出款：使用PC端外掛腳本自動出款、並能同時收款回調',
+    ReceiveWOne: 'बैंक कार्ड हस्तांतरण बैंक कार्ड：',
+    ReceiveWTwo: 'मोबाइल बैंकिंग विवरण कॉलबैक: मोबाइल फोन बैंकिंग ग्राहक स्थापना एपीपी',
+    ReceiveWThree: 'इंटरनेट बैंक विवरण कॉलबैक: पीसी अंत प्रोग्राम स्थापना स्क्रिप्ट',
+    DispensingWOne: 'पैसे से बाहर मोबाइल बैंकिंग स्क्रिप्ट: ऑपरेटिंग बादल बैकअप भर में मोबाइल बैंकिंग डेटा के साथ इस्तेमाल किया जा सकता',
+    DispensingWTwo: 'इंटरनेट बैंकिंग स्क्रिप्ट वितरण: वितरण स्वचालित करने के लिए पीसी प्लग में स्क्रिप्ट का उपयोग करना है, और कर सकते हैं एक साथ प्राप्तियों कॉलबैक',
     WebMainOne: 'ACB',
     WebMainTwo: 'BIDV',
     WebMainThree: 'VCB',
@@ -224,7 +224,7 @@ export default {
     ServiceItemInfoOne: 'बहुराष्ट्रीय इलेक्ट्रॉनिक निगरानी मोबाइल भुगतान का समर्थन, ऑनलाइन बैंकिंग पर नजर रखी, चांदी हाथ मॉनिटर, USDT आभासी मुद्रा मुद्रा मुद्रा व्यापार।',
     ServiceItemMainTwo: 'चौकड़ी एकत्रीकरण मंच',
     ServiceItemInfoTwo: 'Dockable विभिन्न मोबाइल भुगतान उत्पादों। निगरानी प्रणाली के अलावा अतिरिक्त सूक्ष्म पत्र डॉकिंग का समर्थन करता है हो सकता है, Alipay, बादल बिजली त्रिपक्षीय पे चैनलों।',
-    ServiceItemMainThree: '技術支持、24小時在線客服',
+    ServiceItemMainThree: 'तकनीकी सहायता, 24-घंटे ऑनलाइन ग्राहक सेवा',
     ServiceItemInfoThree: 'भुगतान उत्पादों, प्रणाली रखरखाव, समस्या निवारण, शिक्षण प्रणाली आपरेशन डॉकिंग।',
   },
   // News
@@ -241,11 +241,11 @@ export default {
   Shop: {
     Title: 'COMMODITY',
     MainTitle: 'उत्पाद सूची',
-    OptionOne: '預設排序',
-    OptionTwo: '依熱銷度',
-    OptionThree: '依最新項目排序',
-    OptionFour: '依價格排序:低至高',
-    OptionFive: '依價格排序:高至低',
+    OptionOne: 'डिफ़ॉल्ट क्रमबद्ध',
+    OptionTwo: 'बेचने की डिग्री पर निर्भर करता है',
+    OptionThree: 'क्रमबद्ध नवीनतम परियोजना के अनुसार',
+    OptionFour: 'क्रमबद्ध करें कीमत द्वारा: कम उच्च करने के लिए',
+    OptionFive: 'क्रमबद्ध करें कीमत द्वारा: उच्च कम करने के लिए',
   },
   // Member
   Member: {
@@ -301,14 +301,14 @@ export default {
   // Cart
   Cart: {
     Title: 'YOUR CART',
-    MainTitle: '購物車列表',
+    MainTitle: 'शॉपिंग कार्ट सूची',
     BackShop: 'Back To Shop',
-    GoodsImg: '商品圖',
-    GoodsName: '商品名稱',
-    GoodsAmount: '數量',
-    Amount: '金額',
-    DeleteGoods: '刪除商品',
-    TotalAmount: '購買總金額：',
+    GoodsImg: 'इमेजिस',
+    GoodsName: 'उत्पाद का नाम',
+    GoodsAmount: 'मात्रा',
+    Amount: 'पैसे',
+    DeleteGoods: 'चीज़ें हटाएं',
+    TotalAmount: 'कुल खरीद राशि:',
   },
   // IndexContact
   IndexContact: {
@@ -316,7 +316,7 @@ export default {
     MainTitle: 'संपर्क करें',
     InputName: 'आपका नाम',
     InputEmail: 'आपका मेलबॉक्स',
-    InputTitle: 'विषय',
+    InputTitle: 'जोर',
     InputMsg: 'आपका सन्देश',
   },
 };
