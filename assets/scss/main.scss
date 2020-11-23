@@ -107,6 +107,7 @@ input, textarea, select {
 .navbar {
   padding: 10px 15px;
   font-size: 15px;
+  z-index: 1500;
   .navbar-brand {
     padding: 5px;
     font-size: unset;
