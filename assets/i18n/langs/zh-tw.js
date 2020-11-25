@@ -347,6 +347,6 @@ export default {
     InputEmail: '您的信箱',
     InputTitle: 'Skype、Telegram',
     InputMsg: '您的訊息',
-    Notes: '為了致上我們最好的服務與產品體驗，请留下您的信息，我们将盡快與您聯繫。',
+    Notes: '為了致上我們最好的服務與產品體驗，請留下您的信息，我们將盡快與您聯繫。',
   },
 };
