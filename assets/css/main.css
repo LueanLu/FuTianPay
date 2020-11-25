@@ -382,6 +382,38 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
       .IndexBanner .AnimateBg .BgY img {
         opacity: 0.75; } }
 
+.Advantage {
+  padding: 0 15px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, #f8f9fa;
+  background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
+  background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
+  background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
+  background-size: 100% 1px, 100% 1px, 100%; }
+  .Advantage .AdvantageForm {
+    border-right: 1px dashed #d6d6d6; }
+    .Advantage .AdvantageForm:last-child {
+      border: unset; }
+    .Advantage .AdvantageForm .AdvantageImg {
+      max-width: 360;
+      border-radius: 4px; }
+      .Advantage .AdvantageForm .AdvantageImg img {
+        width: 150px; }
+    .Advantage .AdvantageForm .AdvantageTitle {
+      max-width: 100%;
+      padding: 10px 0;
+      color: #d84323;
+      font-size: 18px;
+      font-weight: 600; }
+    .Advantage .AdvantageForm .AdvantageInfo {
+      color: #737373;
+      font-size: 15px;
+      line-height: 25px; }
+
+@media screen and (max-width: 425px) {
+  .Advantage .AdvantageForm {
+    border-right: unset;
+    border-bottom: 1px dashed #d6d6d6; } }
+
 .IndexServiceItems {
   padding-top: 50px; }
   .IndexServiceItems .IndexServiceMainTitle {

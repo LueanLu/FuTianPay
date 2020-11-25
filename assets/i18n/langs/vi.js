@@ -163,6 +163,12 @@ export default {
     ReceiveWSeven: 'Gọi lại tiền gửi SMS: Cài đặt ứng dụng đọc SMS trên điện thoại di động',
     ReceiveWEight: 'Mobile Banking: Cài đặt ứng dụng Mobile Banking trên điện thoại di động của bạn',
     ReceiveWNine: 'Gọi lại chi tiết ngân hàng trực tuyến: cài đặt chương trình script trên PC',
+    ReceiveWTen: '跑分：',
+    ReceiveWEleven: '人工確認上分',
+    ReceiveWTwelve: '支持後台新增交易員',
+    ReceiveWThirteen: '可上掛微信、支付寶收款碼',
+    ReceiveWFourteen: '交易員自動搶單功能',
+    ReceiveWFifteen: '交易員分潤獎勵機制',
     DispensingWOne: 'Rút tập lệnh ngân hàng di động: có thể được sử dụng với chức năng sao lưu dữ liệu ngân hàng di động trên đám mây cho hoạt động trên nhiều máy',
     DispensingWTwo: 'Thanh toán tập lệnh ngân hàng trực tuyến: Sử dụng tập lệnh bên ngoài phía PC để tự động rút tiền và nhận các cuộc gọi lại cùng một lúc',
     DispensingWThree: 'Thanh toán UnionPay ba bên',
@@ -219,6 +225,17 @@ export default {
     ReceiveWOne: 'Hỗ trợ gọi lại USDT despoit',
     ReceiveWTwo: 'Phần mềm front-end độc quyền dành cho thương nhân (thiết bị đầu cuối di động + thiết bị đầu cuối PC)',
     ReceiveWThree: 'Có thể tạo nhà giao dịch trong nền và thêm địa chỉ ví mới của nhà giao dịch',
+  },
+  // Advantage
+  Advantage: {
+    Title: 'ADVANTAGE',
+    MainTitle: '平台優勢',
+    AdvantageMainOne: '資安防護',
+    AdvantageInfoOne: 'SSL加密傳輸，機密資料不外洩、CDN應用，有效防止惡意攻擊',
+    AdvantageMainTwo: '收款出款',
+    AdvantageInfoTwo: '應用腳本自動化任務、自動執行出款任務、明細及馀額查詢任務、並做到最快速回調',
+    AdvantageMainThree: 'API調用方便',
+    AdvantageInfoThree: '整合型平台、無須擔心對接問題、技術人員處理快速',
   },
   // Service
   Service: {

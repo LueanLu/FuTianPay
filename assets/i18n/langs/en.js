@@ -163,6 +163,12 @@ export default {
     ReceiveWSeven: 'SMS deposit callback:Install SMS reading app on mobile',
     ReceiveWEight: ' Mobile Banking: Install Mobile Banking APP on your Mobile',
     ReceiveWNine: 'Online banking details callback: install script program on PC',
+    ReceiveWTen: 'Trader manual control callback system：',
+    ReceiveWEleven: 'Manual control callback',
+    ReceiveWTwelve: 'Support registered  traders in the background',
+    ReceiveWThirteen: 'Support upload Wechat、Alipay receive code',
+    ReceiveWFourteen: 'Support  automatic order grab',
+    ReceiveWFifteen: 'Trader profit sharing reward mechanism',
     DispensingWOne: 'Mobile banking script withdrawal: can be used with mobile banking data cloud backup function for cross-machine operation',
     DispensingWTwo: 'Online Banking Script Payment: Use PC-side external scripts to automatically withdraw funds, and receive callbacks at the same time',
     DispensingWThree: 'Three-party UnionPay payment',
@@ -219,6 +225,17 @@ export default {
     ReceiveWOne: 'Support USDT despoit callback',
     ReceiveWTwo: 'Exclusive front-end software for traders (mobile terminal + PC terminal)',
     ReceiveWThree: "Can create a trader in the background and add a new trader's wallet address",
+  },
+  // Advantage
+  Advantage: {
+    Title: 'ADVANTAGE',
+    MainTitle: '平台優勢',
+    AdvantageMainOne: '資安防護',
+    AdvantageInfoOne: 'SSL加密傳輸，機密資料不外洩、CDN應用，有效防止惡意攻擊',
+    AdvantageMainTwo: '收款出款',
+    AdvantageInfoTwo: '應用腳本自動化任務、自動執行出款任務、明細及馀額查詢任務、並做到最快速回調',
+    AdvantageMainThree: 'API調用方便',
+    AdvantageInfoThree: '整合型平台、無須擔心對接問題、技術人員處理快速',
   },
   // Service
   Service: {

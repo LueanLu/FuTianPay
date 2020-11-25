@@ -465,6 +465,45 @@ input, textarea, select {
   };
 };
 
+.Advantage {
+  padding: 0 15px;
+  background: linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 0 no-repeat, linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 100% no-repeat, rgba(248,249,250,1);
+  background-size: 100% 1px, 100% 1px, 100%;
+  .AdvantageForm {
+    border-right: 1px dashed rgba(214,214,214,1);
+    &:last-child {
+      border: unset;
+    };
+    .AdvantageImg {
+      max-width: 360;
+      border-radius: 4px;
+      img {
+        width: 150px;
+      };
+    };
+    .AdvantageTitle {
+      max-width: 100%;
+      padding: 10px 0;
+      color: rgba(216,67,35,1);
+      font-size: 18px;
+      font-weight: 600;
+    };
+    .AdvantageInfo {
+      color: rgba(115,115,115,1);
+      font-size: 15px;
+      line-height: 25px;
+    };
+  };
+};
+@media screen and (max-width: 425px) {
+  .Advantage {
+    .AdvantageForm {
+      border-right: unset;
+      border-bottom: 1px dashed rgba(214,214,214,1);
+    };
+  };
+}
+
 .IndexServiceItems {
   padding-top: 50px;
   .IndexServiceMainTitle {

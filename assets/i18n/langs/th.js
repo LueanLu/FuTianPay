@@ -163,6 +163,12 @@ export default {
     ReceiveWSeven: 'SMS ฝากโทรกลับ: ติดตั้งแอปอ่าน SMS บนมือถือ',
     ReceiveWEight: 'Mobile Banking: ติดตั้งแอพ Mobile Banking บนมือถือของคุณ',
     ReceiveWNine: 'รายละเอียดธนาคารออนไลน์โทรกลับ: ติดตั้งโปรแกรมสคริปต์บนพีซี',
+    ReceiveWTen: '跑分：',
+    ReceiveWEleven: '人工確認上分',
+    ReceiveWTwelve: '支持後台新增交易員',
+    ReceiveWThirteen: '可上掛微信、支付寶收款碼',
+    ReceiveWFourteen: '交易員自動搶單功能',
+    ReceiveWFifteen: '交易員分潤獎勵機制',
     DispensingWOne: 'การถอนสคริปต์ธนาคารบนมือถือ: สามารถใช้กับฟังก์ชันการสำรองข้อมูลระบบคลาวด์ข้อมูลธนาคารบนมือถือสำหรับการทำงานข้ามเครื่อง',
     DispensingWTwo: 'การชำระเงินสคริปต์ธนาคารออนไลน์: ใช้สคริปต์ภายนอกฝั่งพีซีเพื่อถอนเงินโดยอัตโนมัติและรับการโทรกลับในเวลาเดียวกัน',
     DispensingWThree: 'การชำระเงิน UnionPay แบบสามฝ่าย',
@@ -219,6 +225,17 @@ export default {
     ReceiveWOne: 'สนับสนุนการเรียกเงินฝาก USDT',
     ReceiveWTwo: 'ซอฟต์แวร์ฟรอนต์เอนด์พิเศษสำหรับผู้ค้า (เทอร์มินัลมือถือ + เทอร์มินัลพีซี)',
     ReceiveWThree: 'สามารถสร้างผู้ซื้อขายในพื้นหลังและเพิ่มที่อยู่กระเป๋าเงินของผู้ซื้อขายใหม่',
+  },
+  // Advantage
+  Advantage: {
+    Title: 'ADVANTAGE',
+    MainTitle: '平台優勢',
+    AdvantageMainOne: '資安防護',
+    AdvantageInfoOne: 'SSL加密傳輸，機密資料不外洩、CDN應用，有效防止惡意攻擊',
+    AdvantageMainTwo: '收款出款',
+    AdvantageInfoTwo: '應用腳本自動化任務、自動執行出款任務、明細及馀額查詢任務、並做到最快速回調',
+    AdvantageMainThree: 'API調用方便',
+    AdvantageInfoThree: '整合型平台、無須擔心對接問題、技術人員處理快速',
   },
   // Service
   Service: {

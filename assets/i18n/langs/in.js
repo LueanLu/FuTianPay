@@ -163,6 +163,12 @@ export default {
     ReceiveWSeven: 'एसएमएस बिलिंग कॉलबैक: मोबाइल टर्मिनल स्थापना संदेशों को पढ़ने एपीपी',
     ReceiveWEight: 'मोबाइल बैंकिंग विवरण कॉलबैक: मोबाइल फोन बैंकिंग ग्राहक स्थापना एपीपी',
     ReceiveWNine: 'इंटरनेट बैंक विवरण कॉलबैक: पीसी अंत प्रोग्राम स्थापना स्क्रिप्ट',
+    ReceiveWTen: '跑分：',
+    ReceiveWEleven: '人工確認上分',
+    ReceiveWTwelve: '支持後台新增交易員',
+    ReceiveWThirteen: '可上掛微信、支付寶收款碼',
+    ReceiveWFourteen: '交易員自動搶單功能',
+    ReceiveWFifteen: '交易員分潤獎勵機制',
     DispensingWOne: 'पैसे से बाहर मोबाइल बैंकिंग स्क्रिप्ट: ऑपरेटिंग बादल बैकअप भर में मोबाइल बैंकिंग डेटा के साथ इस्तेमाल किया जा सकता',
     DispensingWTwo: 'इंटरनेट बैंकिंग स्क्रिप्ट वितरण: वितरण स्वचालित करने के लिए पीसी प्लग में स्क्रिप्ट का उपयोग करना है, और कर सकते हैं एक साथ प्राप्तियों कॉलबैक',
     DispensingWThree: 'कप त्रिपक्षीय भुगतान',
@@ -219,6 +225,17 @@ export default {
     ReceiveWOne: 'USDT प्राप्तियों कॉलबैक समर्थन',
     ReceiveWTwo: 'मालिकाना व्यापारियों सामने के अंत सॉफ्टवेयर <+ पीसी मोबाइल टर्मिनल छोर>',
     ReceiveWThree: 'पृष्ठभूमि के लिए अपने स्वयं व्यापारियों बना सकते हैं, नए व्यापारियों बटुआ भुगतान पता',
+  },
+  // Advantage
+  Advantage: {
+    Title: 'ADVANTAGE',
+    MainTitle: '平台優勢',
+    AdvantageMainOne: '資安防護',
+    AdvantageInfoOne: 'SSL加密傳輸，機密資料不外洩、CDN應用，有效防止惡意攻擊',
+    AdvantageMainTwo: '收款出款',
+    AdvantageInfoTwo: '應用腳本自動化任務、自動執行出款任務、明細及馀額查詢任務、並做到最快速回調',
+    AdvantageMainThree: 'API調用方便',
+    AdvantageInfoThree: '整合型平台、無須擔心對接問題、技術人員處理快速',
   },
   // Service
   Service: {

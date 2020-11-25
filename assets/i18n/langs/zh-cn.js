@@ -163,6 +163,12 @@ export default {
     ReceiveWSeven: '短信收款回调：Mobile端安装短信读取APP',
     ReceiveWEight: '手机银行明细回调：Mobile端安装手机银行APP',
     ReceiveWNine: '网络银行明细回调：PC端安装脚本程序',
+    ReceiveWTen: '跑分：',
+    ReceiveWEleven: '人工确认上分',
+    ReceiveWTwelve: '支持后台新增交易员',
+    ReceiveWThirteen: '可上挂微信、支付宝收款码',
+    ReceiveWFourteen: '交易员自动抢单功能',
+    ReceiveWFifteen: '交易员分润奖励机制',
     DispensingWOne: '手机银行脚本出款：可搭配手机银行资料云端备份功能跨机操作',
     DispensingWTwo: '网络银行脚本出款：使用PC端外挂脚本自动出款、并能同时收款回调',
     DispensingWThree: '三方银联代付',
@@ -219,6 +225,17 @@ export default {
     ReceiveWOne: '支持USDT收款回调',
     ReceiveWTwo: '专属交易员前端软件〈手机端+PC端〉',
     ReceiveWThree: '可自行于后台创建交易员、新增交易员收款钱包地址',
+  },
+  // Advantage
+  Advantage: {
+    Title: 'ADVANTAGE',
+    MainTitle: '平台优势',
+    AdvantageMainOne: '资安防护',
+    AdvantageInfoOne: 'SSL加密传输，机密资料不外泄、CDN应用，有效防止恶意攻击',
+    AdvantageMainTwo: '收款出款',
+    AdvantageInfoTwo: '应用脚本自动化任务、自动执行出款任务、明细及馀额查询任务、并做到最快速回调',
+    AdvantageMainThree: 'API调用方便',
+    AdvantageInfoThree: '整合型平台、无须担心对接问题、技术人员处理快速',
   },
   // Service
   Service: {

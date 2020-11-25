@@ -163,6 +163,12 @@ export default {
     ReceiveWSeven: 'Panggilan balik deposit SMS: Pasang aplikasi membaca SMS di telefon bimbit',
     ReceiveWEight: 'Perbankan Mudah Alih: Pasang Aplikasi Perbankan Mudah Alih di Mudah Alih anda',
     ReceiveWNine: 'Panggilan balik perincian dalam talian: pasang program skrip pada PC',
+    ReceiveWTen: '跑分：',
+    ReceiveWEleven: '人工確認上分',
+    ReceiveWTwelve: '支持後台新增交易員',
+    ReceiveWThirteen: '可上掛微信、支付寶收款碼',
+    ReceiveWFourteen: '交易員自動搶單功能',
+    ReceiveWFifteen: '交易員分潤獎勵機制',
     DispensingWOne: 'Pengeluaran skrip perbankan mudah alih: dapat digunakan dengan fungsi sandaran awan data perbankan bergerak untuk operasi lintas mesin',
     DispensingWTwo: 'Pembayaran Skrip Perbankan Dalam Talian: Gunakan skrip luaran sisi PC untuk mengeluarkan dana secara automatik, dan menerima panggilan balik pada masa yang sama',
     DispensingWThree: 'Bayaran UnionPay tiga pihak',
@@ -219,6 +225,17 @@ export default {
     ReceiveWOne: 'Sokong panggilan balik Simpanan USDT',
     ReceiveWTwo: 'Perisian front-end eksklusif untuk peniaga (terminal mudah alih + terminal PC)',
     ReceiveWThree: 'Boleh membuat pedagang di latar belakang dan menambahkan alamat dompet peniaga baru',
+  },
+  // Advantage
+  Advantage: {
+    Title: 'ADVANTAGE',
+    MainTitle: '平台優勢',
+    AdvantageMainOne: '資安防護',
+    AdvantageInfoOne: 'SSL加密傳輸，機密資料不外洩、CDN應用，有效防止惡意攻擊',
+    AdvantageMainTwo: '收款出款',
+    AdvantageInfoTwo: '應用腳本自動化任務、自動執行出款任務、明細及馀額查詢任務、並做到最快速回調',
+    AdvantageMainThree: 'API調用方便',
+    AdvantageInfoThree: '整合型平台、無須擔心對接問題、技術人員處理快速',
   },
   // Service
   Service: {
