@@ -323,7 +323,7 @@ export default {
     MainTitle: 'Hubungi Kami',
     InputName: 'Nama anda',
     InputEmail: 'E-mel anda',
-    InputTitle: 'Subjek',
+    InputTitle: 'Skype、Telegram',
     InputMsg: 'Message',
   },
 };

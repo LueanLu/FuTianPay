@@ -323,7 +323,7 @@ export default {
     MainTitle: 'Liên hệ chúng tôi',
     InputName: 'Tên của bạn',
     InputEmail: 'Email của bạn',
-    InputTitle: 'Môn học',
+    InputTitle: 'Skype、Telegram',
     InputMsg: 'Thông điệp',
   },
 };

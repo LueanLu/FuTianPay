@@ -323,7 +323,7 @@ export default {
     MainTitle: 'ติดต่อเรา',
     InputName: 'ชื่อของคุณ',
     InputEmail: 'อีเมลของคุณ',
-    InputTitle: 'เรื่อง',
+    InputTitle: 'Skype、Telegram',
     InputMsg: 'ข้อความ',
   },
 };

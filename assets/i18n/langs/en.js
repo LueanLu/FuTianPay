@@ -323,7 +323,7 @@ export default {
     MainTitle: 'Contact us',
     InputName: 'Your Name',
     InputEmail: 'Your Email',
-    InputTitle: 'Subject',
+    InputTitle: 'Skype、Telegram',
     InputMsg: 'Your Message',
   },
 };

@@ -323,7 +323,7 @@ export default {
     MainTitle: 'संपर्क करें',
     InputName: 'आपका नाम',
     InputEmail: 'आपका मेलबॉक्स',
-    InputTitle: 'जोर',
+    InputTitle: 'Skype、Telegram',
     InputMsg: 'आपका सन्देश',
   },
 };

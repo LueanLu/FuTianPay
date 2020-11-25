@@ -323,7 +323,7 @@ export default {
     MainTitle: '联络我们',
     InputName: '您的姓名',
     InputEmail: '您的邮箱',
-    InputTitle: '主旨',
+    InputTitle: 'Skype、Telegram',
     InputMsg: '您的讯息',
   },
 };

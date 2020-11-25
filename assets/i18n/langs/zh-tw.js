@@ -323,7 +323,7 @@ export default {
     MainTitle: '聯絡我們',
     InputName: '您的姓名',
     InputEmail: '您的信箱',
-    InputTitle: '主旨',
+    InputTitle: 'Skype、Telegram',
     InputMsg: '您的訊息',
   },
 };
