@@ -325,5 +325,6 @@ export default {
     InputEmail: 'E-mel anda',
     InputTitle: 'Skype、Telegram',
     InputMsg: 'Message',
+    Notes: '為了致上我們最好的服務與產品體驗，请留下您的信息，我们将盡快與您聯繫。',
   },
 };

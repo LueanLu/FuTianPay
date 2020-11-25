@@ -115,7 +115,7 @@ input, textarea, select {
   .nav-item {
     .nav-link:hover {
       // background: rgba(216,67,35,1);
-      color: rgba(253,211,55,1);;
+      color: rgba(253,211,55,1);
     };
   };
   .navbar-toggler {
@@ -1075,6 +1075,13 @@ input, textarea, select {
 .IndexContact {
   background: url('/assets/img/contact/MapImg.png') 50% 50% no-repeat, rgba(33,37,41,1);
   background-size: auto 100%;
+  .IndexContactNotes {
+    padding-bottom: 20px;
+    color: rgba(253,211,55,1);
+    font-size: 15px;
+    font-weight: 600;
+    word-break: break-word;
+  };
   .IndexContactForm {
     .IndexContactLine {
       width: 1px;

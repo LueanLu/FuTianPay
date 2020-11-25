@@ -325,5 +325,6 @@ export default {
     InputEmail: 'Your Email',
     InputTitle: 'Skype、Telegram',
     InputMsg: 'Your Message',
+    Notes: 'In order to provide our best service and product experience, please leave your message and we will contact you as soon as possible.',
   },
 };

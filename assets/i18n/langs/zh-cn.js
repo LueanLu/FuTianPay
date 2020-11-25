@@ -325,5 +325,6 @@ export default {
     InputEmail: '您的邮箱',
     InputTitle: 'Skype、Telegram',
     InputMsg: '您的讯息',
+    Notes: '为了致上我们最好的服务与产品体验，请留下您的信息，我们将尽快与您联系。',
   },
 };

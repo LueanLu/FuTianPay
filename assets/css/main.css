@@ -904,6 +904,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
 .IndexContact {
   background: url("/assets/img/contact/MapImg.png") 50% 50% no-repeat, #212529;
   background-size: auto 100%; }
+  .IndexContact .IndexContactNotes {
+    padding-bottom: 20px;
+    color: #fdd337;
+    font-size: 15px;
+    font-weight: 600;
+    word-break: break-word; }
   .IndexContact .IndexContactForm .IndexContactLine {
     width: 1px;
     height: 200px;
