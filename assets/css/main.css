@@ -380,7 +380,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
       width: 490px;
       position: absolute;
       z-index: 2;
-      top: 24%; }
+      top: 27vh; }
       .IndexBanner .AnimateBg .BgR img {
         opacity: 0.75; }
     .IndexBanner .AnimateBg .BgY {
@@ -388,7 +388,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
       margin-right: 80px;
       position: absolute;
       z-index: 1;
-      top: 15.5%; }
+      top: 20vh; }
       .IndexBanner .AnimateBg .BgY img {
         opacity: 0.75; } }
 
