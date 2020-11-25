@@ -145,6 +145,9 @@ export default {
   IndexServicesTw: {
     ReceiveWOne: 'LINE Pay、街口支付',
     DispensingWOne: '網銀自動出款',
+    DispensingWTwo: '星展銀行',
+    DispensingWThree: '富邦銀行',
+    DispensingWFour: '彰化銀行',
     AppMainTitleOne: 'LINE Pay',
     AppMainTitleTwo: '街口支付',
     AppSubheadingTwo: 'JKOPAY',
@@ -192,6 +195,8 @@ export default {
     WebMainFives: '軍人銀行',
     WebMainSix: '大城銀行',
     WebMainSeven: 'Kiatnakin',
+    WebMainEight: 'Prompt Pay',
+    WebMainNine: 'LINE Pay',
   },
   // IndexServicesVi
   IndexServicesVi: {
@@ -206,6 +211,8 @@ export default {
     WebMainFour: '西貢商信銀行',
     WebMainFives: '越南科技及商業股份銀行',
     WebMainSix: '越南工商銀行',
+    WebMainSeven: 'ZaloPay',
+    WebMainEight: 'MoMoPay',
   },
   // IndexServicesUSDT
   IndexServicesUSDT: {

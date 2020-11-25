@@ -416,6 +416,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
             .IndexServiceItems .IndexServicesForm .ServicesForm .ServicesFormCont ul li ul li {
               padding: unset;
               background: unset; }
+      .IndexServiceItems .IndexServicesForm .ServicesForm .ServicesFormCont img {
+        height: 20px; }
     .IndexServiceItems .IndexServicesForm .ServicesForm:nth-child(2) {
       border-left: 1px solid #d6d6d6; }
   .IndexServiceItems .WebMonitor {

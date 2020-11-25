@@ -145,6 +145,9 @@ export default {
   IndexServicesTw: {
     ReceiveWOne: 'LINE Bayar JKO Bayar',
     DispensingWOne: 'Perbankan Dalam Talian secara automatik menarik diri',
+    DispensingWTwo: 'DBS Bank Limited',
+    DispensingWThree: 'Fubonbank',
+    DispensingWFour: 'Chang Hwa Commercial Bank',
     AppMainTitleOne: 'LINE Bayar',
     AppMainTitleTwo: 'JKO Bayar',
     AppSubheadingTwo: 'JKOPAY',
@@ -192,6 +195,8 @@ export default {
     WebMainFives: 'TMB',
     WebMainSix: 'BAY',
     WebMainSeven: 'Kiatnakin',
+    WebMainEight: 'Prompt Pay',
+    WebMainNine: 'LINE Pay',
   },
   // IndexServicesVi
   IndexServicesVi: {
@@ -206,6 +211,8 @@ export default {
     WebMainFour: 'Sacombank',
     WebMainFives: 'Techcombank',
     WebMainSix: 'Vietin',
+    WebMainSeven: 'ZaloPay',
+    WebMainEight: 'MoMoPay',
   },
   // IndexServicesUSDT
   IndexServicesUSDT: {

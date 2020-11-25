@@ -28,6 +28,15 @@
               .mb-0.ServicesFormCont(data-zanim-xs='{"delay":0.5,"animation":"slide-right"}')
                 ul
                   li {{ $t('IndexServicesTw.DispensingWOne'/*網銀自動出款*/) }}
+                  li.d-flex.flex-row.align-items-center
+                    img(src='assets/img/bankTw/DBS.png')
+                    span.pl-1 - {{ $t('IndexServicesTw.DispensingWTwo'/*星展銀行*/) }}
+                  li.d-flex.flex-row.align-items-center
+                    img(src='assets/img/bankTw/FBB.png')
+                    span.pl-1 - {{ $t('IndexServicesTw.DispensingWThree'/*富邦銀行*/) }}
+                  li.d-flex.flex-wrap.align-items-center
+                    img(src='assets/img/bankTw/CHB.png')
+                    span.pl-1 - {{ $t('IndexServicesTw.DispensingWFour'/*彰化銀行*/) }}
 //- 電子行動支付監控收款功能
 section.AppMonitor.text-sans-serif
   .container
