@@ -54,7 +54,7 @@ export default {
   },
   // Nav
   Nav: {
-    Index: 'Index',
+    Index: 'Homepage',
     Service: 'Service Items',
     Country: 'Service Country',
     Tw: 'Taiwan',
