@@ -38,10 +38,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     background: #d95d41 !important; }
 
 .BtnOrange {
-  background: #dd8910 !important;
+  background: #f09d10 !important;
   color: white !important; }
   .BtnOrange:hover {
-    background: #fdd337 !important; }
+    background: #fdb537 !important; }
 
 .BtnBlue {
   background: #219bd9 !important;
