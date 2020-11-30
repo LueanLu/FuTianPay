@@ -191,7 +191,7 @@ input, textarea, select {
     .dropdown-item {
       &:nth-child(1) {
         padding-right: 20px;
-        background: url('/assets/img/icon/IconArrowRW.svg') 100% 50% no-repeat;
+        background: url('../img/icon/IconArrowRW.svg') 100% 50% no-repeat;
         background-size: auto 13px;
       };
       &:nth-child(6) {
@@ -516,7 +516,7 @@ input, textarea, select {
   padding-top: 50px;
   .IndexServiceMainTitle {
     padding-right: 20px;
-    background: url('/assets/img/icon/IconArrowR.svg') 100% 50% no-repeat;
+    background: url('../img/icon/IconArrowR.svg') 100% 50% no-repeat;
     background-size: auto 15px;
     color: rgba(115,115,115,1);
     font-size: 18px;
@@ -563,7 +563,7 @@ input, textarea, select {
     };
   };
   .WebMonitor {
-    background: linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 0 no-repeat, linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 100% no-repeat, url('/assets/img/indexServices/WebMonitorBg.jpg') 50% 50% no-repeat;
+    background: linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 0 no-repeat, linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 100% no-repeat, url('../img/indexServices/WebMonitorBg.jpg') 50% 50% no-repeat;
     background-size: 100% 1px, 100% 1px, cover;
   };
   .MessageMonitor {
@@ -571,7 +571,7 @@ input, textarea, select {
     background-size: 100% 1px, 100% 1px, 100%;
   };
   .AppMonitor {
-    background: linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 0 no-repeat, linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 100% no-repeat, url('/assets/img/indexServices/AppMonitorBg.jpg') 50% 50% no-repeat;
+    background: linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 0 no-repeat, linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 100% no-repeat, url('../img/indexServices/AppMonitorBg.jpg') 50% 50% no-repeat;
     background-size: 100% 1px, 100% 1px, cover;
   };
   .WebMonitor, .MessageMonitor, .AppMonitor {
@@ -668,10 +668,10 @@ input, textarea, select {
     -o-transition: opacity 0.15s ease;
     transition: opacity 0.15s ease;
     .carousel-control-prev-icon {
-      background: url('/assets/img/icon/IconArrowL.svg') no-repeat;
+      background: url('../img/icon/IconArrowL.svg') no-repeat;
     };
     .carousel-control-next-icon {
-      background: url('/assets/img/icon/IconArrowR.svg') no-repeat;
+      background: url('../img/icon/IconArrowR.svg') no-repeat;
     };
   };
 }
@@ -699,7 +699,7 @@ input, textarea, select {
     .ServiceItemImg {
       max-width: 360;
       height: 240px;
-      background: url('/assets/img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
+      background: url('../img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
       background-size: 100px, 100%;
       border-radius: 4px;
     };
@@ -732,7 +732,7 @@ input, textarea, select {
     .NewsImg {
       max-width: 360;
       height: 240px;
-      background: url('/assets/img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
+      background: url('../img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
       background-size: 100px, 100%;
     };
     .NewsTag {
@@ -807,7 +807,7 @@ input, textarea, select {
     .NewsDetailImg {
       height: 240px;
       max-height: 240px;
-      background: url('/assets/img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
+      background: url('../img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
       background-size: 100px, 100%;
     };
     .NewsDetailTag {
@@ -859,7 +859,7 @@ input, textarea, select {
       .ShopImg {
         max-width: 250px;
         height: 200px;
-        background: url('/assets/img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
+        background: url('../img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
         background-size: 100px, 100%;
       };
       .ShopName {
@@ -909,7 +909,7 @@ input, textarea, select {
       .ShopImg {
         max-width: 250px;
         height: 200px;
-        background: url('/assets/img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
+        background: url('../img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
         background-size: 100px, 100%;
       };
       .ShopName {
@@ -1059,7 +1059,7 @@ input, textarea, select {
     .ShopImg {
       max-width: 250px;
       height: 200px;
-      background: url('/assets/img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
+      background: url('../img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
       background-size: 100px, 100%;
     };
     .ShopName {
@@ -1105,7 +1105,7 @@ input, textarea, select {
     .CartListImg {
       max-width: 125px;
       height: 100px;
-      background: url('/assets/img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
+      background: url('../img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
       background-size: 100px, 100%;
     };
     .CartListTitle {
@@ -1120,7 +1120,7 @@ input, textarea, select {
 }
 
 .IndexContact {
-  background: url('/assets/img/contact/MapImg.png') 50% 50% no-repeat, rgba(33,37,41,1);
+  background: url('../img/contact/MapImg.png') 50% 50% no-repeat, rgba(33,37,41,1);
   background-size: auto 100%;
   .IndexContactNotes {
     padding-bottom: 20px;

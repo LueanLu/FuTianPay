@@ -145,7 +145,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
         color: #fdd337; }
   .navbar .ServiceDropdown .dropdown-item:nth-child(1) {
     padding-right: 20px;
-    background: url("/assets/img/icon/IconArrowRW.svg") 100% 50% no-repeat;
+    background: url("../img/icon/IconArrowRW.svg") 100% 50% no-repeat;
     background-size: auto 13px; }
   .navbar .ServiceDropdown .dropdown-item:nth-child(6) {
     background: unset; }
@@ -428,7 +428,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   padding-top: 50px; }
   .IndexServiceItems .IndexServiceMainTitle {
     padding-right: 20px;
-    background: url("/assets/img/icon/IconArrowR.svg") 100% 50% no-repeat;
+    background: url("../img/icon/IconArrowR.svg") 100% 50% no-repeat;
     background-size: auto 15px;
     color: #737373;
     font-size: 18px;
@@ -463,10 +463,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     .IndexServiceItems .IndexServicesForm .ServicesForm:nth-child(2) {
       border-left: 1px solid #d6d6d6; }
   .IndexServiceItems .WebMonitor {
-    background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, url("/assets/img/indexServices/WebMonitorBg.jpg") 50% 50% no-repeat;
-    background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("/assets/img/indexServices/WebMonitorBg.jpg") 50% 50% no-repeat;
-    background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("/assets/img/indexServices/WebMonitorBg.jpg") 50% 50% no-repeat;
-    background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("/assets/img/indexServices/WebMonitorBg.jpg") 50% 50% no-repeat;
+    background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, url("../img/indexServices/WebMonitorBg.jpg") 50% 50% no-repeat;
+    background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("../img/indexServices/WebMonitorBg.jpg") 50% 50% no-repeat;
+    background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("../img/indexServices/WebMonitorBg.jpg") 50% 50% no-repeat;
+    background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("../img/indexServices/WebMonitorBg.jpg") 50% 50% no-repeat;
     background-size: 100% 1px, 100% 1px, cover; }
   .IndexServiceItems .MessageMonitor {
     background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, #f8f9fa;
@@ -475,10 +475,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
     background-size: 100% 1px, 100% 1px, 100%; }
   .IndexServiceItems .AppMonitor {
-    background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, url("/assets/img/indexServices/AppMonitorBg.jpg") 50% 50% no-repeat;
-    background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("/assets/img/indexServices/AppMonitorBg.jpg") 50% 50% no-repeat;
-    background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("/assets/img/indexServices/AppMonitorBg.jpg") 50% 50% no-repeat;
-    background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("/assets/img/indexServices/AppMonitorBg.jpg") 50% 50% no-repeat;
+    background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, url("../img/indexServices/AppMonitorBg.jpg") 50% 50% no-repeat;
+    background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("../img/indexServices/AppMonitorBg.jpg") 50% 50% no-repeat;
+    background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("../img/indexServices/AppMonitorBg.jpg") 50% 50% no-repeat;
+    background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("../img/indexServices/AppMonitorBg.jpg") 50% 50% no-repeat;
     background-size: 100% 1px, 100% 1px, cover; }
   .IndexServiceItems .WebMonitor .CardItem, .IndexServiceItems .MessageMonitor .CardItem, .IndexServiceItems .AppMonitor .CardItem {
     width: 100%;
@@ -552,9 +552,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     -o-transition: opacity 0.15s ease;
     transition: opacity 0.15s ease; }
     .IndexServiceItems .carousel-control-prev .carousel-control-prev-icon, .IndexServiceItems .carousel-control-next .carousel-control-prev-icon {
-      background: url("/assets/img/icon/IconArrowL.svg") no-repeat; }
+      background: url("../img/icon/IconArrowL.svg") no-repeat; }
     .IndexServiceItems .carousel-control-prev .carousel-control-next-icon, .IndexServiceItems .carousel-control-next .carousel-control-next-icon {
-      background: url("/assets/img/icon/IconArrowR.svg") no-repeat; }
+      background: url("../img/icon/IconArrowR.svg") no-repeat; }
 
 @media screen and (max-width: 425px) {
   .IndexServiceItems .IndexServicesForm {
@@ -568,7 +568,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
 .Service .ServiceItem .ServiceItemImg {
   max-width: 360;
   height: 240px;
-  background: url("/assets/img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
+  background: url("../img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
   background-size: 100px, 100%;
   border-radius: 4px; }
 
@@ -603,7 +603,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     .News .NewsLink .NewsImg {
       max-width: 360;
       height: 240px;
-      background: url("/assets/img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
+      background: url("../img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
       background-size: 100px, 100%; }
     .News .NewsLink .NewsTag {
       display: -webkit-box;
@@ -680,7 +680,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     .NewsDetail .NewsDetailCont .NewsDetailImg {
       height: 240px;
       max-height: 240px;
-      background: url("/assets/img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
+      background: url("../img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
       background-size: 100px, 100%; }
     .NewsDetail .NewsDetailCont .NewsDetailTag {
       display: -webkit-box;
@@ -734,7 +734,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     .Shop .ShopList .ShopCont .ShopImg {
       max-width: 250px;
       height: 200px;
-      background: url("/assets/img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
+      background: url("../img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
       background-size: 100px, 100%; }
     .Shop .ShopList .ShopCont .ShopName {
       padding: 20px 0 0;
@@ -777,7 +777,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   .ServiceShop .ShopList .ShopCont .ShopImg {
     max-width: 250px;
     height: 200px;
-    background: url("/assets/img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
+    background: url("../img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
     background-size: 100px, 100%; }
   .ServiceShop .ShopList .ShopCont .ShopName {
     padding: 20px 0 0;
@@ -897,7 +897,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     .Member .ShopCont .ShopImg {
       max-width: 250px;
       height: 200px;
-      background: url("/assets/img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
+      background: url("../img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
       background-size: 100px, 100%; }
     .Member .ShopCont .ShopName {
       padding: 20px 0 0;
@@ -936,7 +936,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     .Cart .CartList .CartListImg {
       max-width: 125px;
       height: 100px;
-      background: url("/assets/img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
+      background: url("../img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
       background-size: 100px, 100%; }
     .Cart .CartList .CartListTitle {
       min-width: 80px; }
@@ -944,7 +944,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
       margin: unset; }
 
 .IndexContact {
-  background: url("/assets/img/contact/MapImg.png") 50% 50% no-repeat, #212529;
+  background: url("../img/contact/MapImg.png") 50% 50% no-repeat, #212529;
   background-size: auto 100%; }
   .IndexContact .IndexContactNotes {
     padding-bottom: 20px;
