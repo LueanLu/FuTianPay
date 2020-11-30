@@ -40,7 +40,7 @@ html
       gtag('js', new Date());
       gtag('config', 'UA-159427042-1');
   body
-    #app
+    //- #app
       //- Navigation
       include navi.pug
       //- Fixed
@@ -107,6 +107,38 @@ html
         include company.pug
       //- Footer Copyright
       include footer.pug
+
+    #app
+      main#top.main.min-vh-100
+        //- Preloader
+        include preloader.pug
+        //- End of Preloader
+        //- <section> begin
+        section#page-404.py-0
+          .container-fluid
+            .row
+              .col-lg-6.px-0.order-lg-2
+                .sticky-top.vh-lg-100.py-9
+                  .bg-holder(style="background-image:url(assets/img/error/404.jpg);" data-zanim-trigger="scroll" data-zanim-lg='{"animation":"zoom-out-slide-left","delay":0.4}')
+                  // /.bg-holder
+              .col-lg-6.bg-white.py-6
+                .row.h-100.align-items-center.justify-content-center
+                  .col-lg-8
+                    h1.display-4.fs-2.fs-lg-3.fs-xl-4
+                      span.d-block.overflow-hidden.pb-1
+                        span.d-inline-block(data-zanim-xs='{"delay":0.4}' data-zanim-trigger="scroll") 404
+                      span.d-block.overflow-hidden.pb-1
+                        span.d-inline-block(data-zanim-xs='{"delay":0.4}' data-zanim-trigger="scroll") Trying to get
+                      span.d-block.overflow-hidden.pb-1
+                        span.d-inline-block(data-zanim-xs='{"delay":0.4}' data-zanim-trigger="scroll") where you want
+                      span.d-block.overflow-hidden.pb-1
+                        span.d-inline-block(data-zanim-xs='{"delay":0.4}' data-zanim-trigger="scroll") to go?
+                    .overflow-hidden
+                      p.fs-1.mt-4(data-zanim-xs='{"delay":0.5}' data-zanim-trigger="scroll") This page isn't it.
+                    //- .overflow-hidden
+                      div(data-zanim-xs='{"delay":0.6}' data-zanim-trigger="scroll")
+                        a.btn.btn-outline-dark.mt-6.mb-1(href="index.html") take me home
+
     //- Bootstrap JavaScript
     script(src="assets/js/jquery.min.js")
     script(src="assets/js/popper.min.js")
