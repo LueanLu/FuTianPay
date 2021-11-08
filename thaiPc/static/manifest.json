@@ -1,0 +1,43 @@
+{
+    "name" : "18老虎城(需要10~15秒，添加完成前请别离开页面)",
+    "short_name" : "18老虎城",
+    "description" : "An example PWA website",
+    "start_url" : "/?source=homescreen",
+    "scope": "/",
+    "display" : "standalone",
+    "orientation" : "any",
+    "background_color" : "#002766",
+    "theme_color" : "#002766",
+    "icons": [
+        {
+            "sizes": "60x60",
+            "src": "/static/img/icon@60x60.png",
+            "type": "image/png"
+        },
+        {
+            "sizes": "76x76",
+            "src": "/static/img/icon@76x76.png",
+            "type": "image/png"
+        },
+        {
+            "sizes": "120x120",
+            "src": "/static/img/icon@120x120.png",
+            "type": "image/png"
+        },
+        {
+            "sizes": "152x152",
+            "src": "/static/img/icon@152x152.png",
+            "type": "image/png"
+        },
+        {
+            "sizes": "192x192",
+            "src": "/static/img/icon@192x192.png",
+            "type": "image/png"
+        },
+        {
+            "sizes": "512x512",
+            "src": "/static/img/icon@512x512.png",
+            "type": "image/png"
+        }
+    ]
+}
