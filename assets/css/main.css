@@ -57,49 +57,51 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   .Pagination.is-background .el-pager li:not(.disabled).active:hover {
     color: white !important; }
 
-.TitleFormW {
+.TitleFormW, .TitleFormB {
   padding-bottom: 20px; }
-  .TitleFormW .Title {
-    color: white;
-    font-size: 38px;
+  .TitleFormW .Title, .TitleFormB .Title {
+    padding: 0 0 25px;
+    background: -webkit-gradient(linear, left top, right top, from(#f03264), to(#f03264)) 50% 100% no-repeat;
+    background: -webkit-linear-gradient(left, #f03264, #f03264) 50% 100% no-repeat;
+    background: -o-linear-gradient(left, #f03264, #f03264) 50% 100% no-repeat;
+    background: linear-gradient(90deg, #f03264, #f03264) 50% 100% no-repeat;
+    background-size: 70px 1px;
     word-break: break-word; }
-  .TitleFormW .MainTitle {
-    color: #d6d6d6;
-    font-size: 18px;
-    font-weight: 600;
+  .TitleFormW .MainTitle, .TitleFormB .MainTitle {
+    padding: 5px 0 0;
     word-break: break-word; }
 
-.TitleFormB {
-  padding-bottom: 20px; }
-  .TitleFormB .Title {
-    color: #202020;
-    font-size: 38px;
-    word-break: break-word; }
-  .TitleFormB .MainTitle {
-    color: #737373;
-    font-size: 18px;
-    font-weight: 600;
-    word-break: break-word; }
-  .TitleFormB .MainTitleR {
-    padding: 5px 0;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(40%, rgba(24, 24, 24, 0.75)), to(rgba(0, 0, 0, 0)));
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(24, 24, 24, 0.75) 40% 60%, rgba(0, 0, 0, 0));
-    background: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(24, 24, 24, 0.75) 40% 60%, rgba(0, 0, 0, 0));
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(24, 24, 24, 0.75) 40% 60%, rgba(0, 0, 0, 0));
-    color: #fdd337;
-    font-size: 20px;
-    font-weight: 600;
-    word-break: break-word; }
+.TitleFormW .Title {
+  color: white;
+  font-size: 32px; }
+
+.TitleFormW .MainTitle {
+  color: #d6d6d6;
+  font-size: 18px;
+  font-weight: 600; }
+
+.TitleFormB .Title {
+  color: #202020;
+  font-size: 32px; }
+
+.TitleFormB .MainTitle {
+  color: #5a5a5a;
+  font-size: 18px;
+  font-weight: 600; }
 
 .navbar {
   padding: 10px 15px;
   font-size: 15px;
   z-index: 1500; }
   .navbar .navbar-brand {
+    width: 70%;
+    max-width: 240px;
     padding: 5px;
     font-size: unset; }
+    .navbar .navbar-brand img {
+      width: 100%; }
   .navbar .nav-item .nav-link:hover {
-    color: #fdd337; }
+    color: #f03264; }
   .navbar .navbar-toggler {
     padding: unset;
     border-color: rgba(255, 255, 255, 0.5);
@@ -124,14 +126,15 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     height: 1px;
     background: rgba(255, 255, 255, 0.25); }
   .navbar .NavFlag img {
-    width: 30px;
-    height: 20px; }
+    height: 15px; }
   .navbar .MenuFlag img {
-    width: 30px;
-    height: 20px; }
+    height: 15px; }
   .navbar .DropdownForm .dropdown-menu {
     min-width: unset;
-    background: #181818; }
+    margin: unset;
+    padding: unset;
+    background: #232323;
+    border: unset; }
     .navbar .DropdownForm .dropdown-menu .dropdown-item {
       padding: 15px 15px;
       color: #d6d6d6;
@@ -142,24 +145,23 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
       background-size: 1px 10px;
       cursor: pointer; }
       .navbar .DropdownForm .dropdown-menu .dropdown-item:hover, .navbar .DropdownForm .dropdown-menu .dropdown-item:focus {
-        color: #fdd337; }
-  .navbar .ServiceDropdown .dropdown-item:nth-child(1) {
-    padding-right: 20px;
-    background: url("../img/icon/IconArrowRW.svg") 100% 50% no-repeat;
-    background-size: auto 13px; }
-  .navbar .ServiceDropdown .dropdown-item:nth-child(6) {
+        color: #f03264; }
+  .navbar .DropdownForm .LanguageDropdown {
+    left: unset;
+    right: 0; }
+  .navbar .ServiceDropdown .dropdown-item:last-child {
     background: unset; }
-  .navbar .MemberDropdown .dropdown-item:nth-child(3) {
+  .navbar .MemberDropdown .dropdown-item:last-child {
     background: unset; }
-  .navbar .FlagDropdown .dropdown-item:nth-child(1), .navbar .FlagDropdown .dropdown-item:nth-child(2), .navbar .FlagDropdown .dropdown-item:nth-child(3), .navbar .FlagDropdown .dropdown-item:nth-child(4), .navbar .FlagDropdown .dropdown-item:nth-child(5), .navbar .FlagDropdown .dropdown-item:nth-child(6), .navbar .FlagDropdown .dropdown-item:nth-child(7) {
+  .navbar .FlagDropdown .dropdown-item:last-child {
     background: unset; }
 
 .bg-black {
-  background: #212529 !important; }
+  background: #232323 !important; }
 
 .Fixed {
   position: fixed;
-  top: 370px;
+  bottom: 30px;
   right: 0;
   z-index: 1200; }
   .Fixed .FixedForm .FixedBtn {
@@ -173,10 +175,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
       border-radius: 4px 0 0 4px;
       cursor: pointer; }
       .Fixed .FixedForm .FixedBtn .FixedBackTop .FixedContactCont, .Fixed .FixedForm .FixedBtn .FixedCart .FixedContactCont, .Fixed .FixedForm .FixedBtn .FixedContact .FixedContactCont, .Fixed .FixedForm .FixedBtn .FixedTelegram .FixedContactCont, .Fixed .FixedForm .FixedBtn .FixedSkype .FixedContactCont {
-        opacity: 0.75; }
+        opacity: 1; }
       .Fixed .FixedForm .FixedBtn .FixedBackTop img, .Fixed .FixedForm .FixedBtn .FixedCart img, .Fixed .FixedForm .FixedBtn .FixedContact img, .Fixed .FixedForm .FixedBtn .FixedTelegram img, .Fixed .FixedForm .FixedBtn .FixedSkype img {
         width: 30px;
-        opacity: 0.75; }
+        opacity: 1; }
       .Fixed .FixedForm .FixedBtn .FixedBackTop:hover, .Fixed .FixedForm .FixedBtn .FixedCart:hover, .Fixed .FixedForm .FixedBtn .FixedContact:hover, .Fixed .FixedForm .FixedBtn .FixedTelegram:hover, .Fixed .FixedForm .FixedBtn .FixedSkype:hover {
         width: 50px;
         -webkit-transition: all 0.3s;
@@ -192,16 +194,16 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
       height: 40px;
       padding: 5px; }
     .Fixed .FixedForm .FixedBtn .FixedBackTop {
-      background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))) 100% 50% no-repeat, #56382f;
-      background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 100% 50% no-repeat, #56382f;
-      background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 100% 50% no-repeat, #56382f;
-      background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 100% 50% no-repeat, #56382f;
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))) 100% 50% no-repeat, #f0b914;
+      background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 100% 50% no-repeat, #f0b914;
+      background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 100% 50% no-repeat, #f0b914;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 100% 50% no-repeat, #f0b914;
       background-size: 5px 100%, 100%; }
       .Fixed .FixedForm .FixedBtn .FixedBackTop:hover {
-        background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))) 100% 50% no-repeat, #56382f;
-        background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 100% 50% no-repeat, #56382f;
-        background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 100% 50% no-repeat, #56382f;
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 100% 50% no-repeat, #56382f;
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))) 100% 50% no-repeat, #f0b914;
+        background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 100% 50% no-repeat, #f0b914;
+        background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 100% 50% no-repeat, #f0b914;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 100% 50% no-repeat, #f0b914;
         background-size: 5px 100%, 100%; }
     .Fixed .FixedForm .FixedBtn .FixedTelegram {
       background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))) 100% 50% no-repeat, #23a1e4;
@@ -250,16 +252,16 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
       -ms-flex-align: center;
       align-items: center;
       height: 90px;
-      background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))) 100% 50% no-repeat, #b0260f;
-      background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 100% 50% no-repeat, #b0260f;
-      background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 100% 50% no-repeat, #b0260f;
-      background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 100% 50% no-repeat, #b0260f;
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))) 100% 50% no-repeat, #f03264;
+      background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 100% 50% no-repeat, #f03264;
+      background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 100% 50% no-repeat, #f03264;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 100% 50% no-repeat, #f03264;
       background-size: 5px 100%, 100%; }
       .Fixed .FixedForm .FixedBtn .FixedContact:hover {
-        background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))) 100% 50% no-repeat, #b0260f;
-        background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 100% 50% no-repeat, #b0260f;
-        background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 100% 50% no-repeat, #b0260f;
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 100% 50% no-repeat, #b0260f;
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))) 100% 50% no-repeat, #f03264;
+        background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 100% 50% no-repeat, #f03264;
+        background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 100% 50% no-repeat, #f03264;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 100% 50% no-repeat, #f03264;
         background-size: 5px 100%, 100%; }
     .Fixed .FixedForm .FixedBtn .FixedContact .FixedContactCont {
       font-weight: 600;
@@ -280,16 +282,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     top: unset;
     bottom: 30px; } }
 
-.Login .LoginForm .OtherLinkForm, .Login .RegisterForm .OtherLinkForm, .Login .ForgetForm .OtherLinkForm, .Login .MemberForm .OtherLinkForm, .Register .LoginForm .OtherLinkForm, .Register .RegisterForm .OtherLinkForm, .Register .ForgetForm .OtherLinkForm, .Register .MemberForm .OtherLinkForm, .Forget .LoginForm .OtherLinkForm, .Forget .RegisterForm .OtherLinkForm, .Forget .ForgetForm .OtherLinkForm, .Forget .MemberForm .OtherLinkForm, .Member .LoginForm .OtherLinkForm, .Member .RegisterForm .OtherLinkForm, .Member .ForgetForm .OtherLinkForm, .Member .MemberForm .OtherLinkForm {
-  padding: 10px 0 30px; }
-  .Login .LoginForm .OtherLinkForm .OtherLink, .Login .RegisterForm .OtherLinkForm .OtherLink, .Login .ForgetForm .OtherLinkForm .OtherLink, .Login .MemberForm .OtherLinkForm .OtherLink, .Register .LoginForm .OtherLinkForm .OtherLink, .Register .RegisterForm .OtherLinkForm .OtherLink, .Register .ForgetForm .OtherLinkForm .OtherLink, .Register .MemberForm .OtherLinkForm .OtherLink, .Forget .LoginForm .OtherLinkForm .OtherLink, .Forget .RegisterForm .OtherLinkForm .OtherLink, .Forget .ForgetForm .OtherLinkForm .OtherLink, .Forget .MemberForm .OtherLinkForm .OtherLink, .Member .LoginForm .OtherLinkForm .OtherLink, .Member .RegisterForm .OtherLinkForm .OtherLink, .Member .ForgetForm .OtherLinkForm .OtherLink, .Member .MemberForm .OtherLinkForm .OtherLink {
-    padding: 0 20px;
-    color: #219bd9;
-    font-size: 15px;
-    font-weight: 600; }
-    .Login .LoginForm .OtherLinkForm .OtherLink:nth-child(2), .Login .RegisterForm .OtherLinkForm .OtherLink:nth-child(2), .Login .ForgetForm .OtherLinkForm .OtherLink:nth-child(2), .Login .MemberForm .OtherLinkForm .OtherLink:nth-child(2), .Register .LoginForm .OtherLinkForm .OtherLink:nth-child(2), .Register .RegisterForm .OtherLinkForm .OtherLink:nth-child(2), .Register .ForgetForm .OtherLinkForm .OtherLink:nth-child(2), .Register .MemberForm .OtherLinkForm .OtherLink:nth-child(2), .Forget .LoginForm .OtherLinkForm .OtherLink:nth-child(2), .Forget .RegisterForm .OtherLinkForm .OtherLink:nth-child(2), .Forget .ForgetForm .OtherLinkForm .OtherLink:nth-child(2), .Forget .MemberForm .OtherLinkForm .OtherLink:nth-child(2), .Member .LoginForm .OtherLinkForm .OtherLink:nth-child(2), .Member .RegisterForm .OtherLinkForm .OtherLink:nth-child(2), .Member .ForgetForm .OtherLinkForm .OtherLink:nth-child(2), .Member .MemberForm .OtherLinkForm .OtherLink:nth-child(2) {
-      border-left: 1px solid rgba(52, 58, 64, 0.2); }
-
 .IndexBanner .IndexBannerContent {
   z-index: 3; }
   .IndexBanner .IndexBannerContent .Title {
@@ -297,16 +289,15 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   .IndexBanner .IndexBannerContent .MainTitle {
     border-bottom: 1px solid white; }
   .IndexBanner .IndexBannerContent .MainTitleOne {
-    font-size: 42px; }
+    padding: 5px 0;
+    font-size: 32px; }
   .IndexBanner .IndexBannerContent .MainTitleTwo {
-    font-size: 72px; }
-  .IndexBanner .IndexBannerContent .MainTitleThree {
-    padding: 5px 0 20px;
-    font-size: 52px; }
+    padding: 5px 0;
+    font-size: 24px; }
   .IndexBanner .IndexBannerContent .Subheading {
     font-size: 18px;
     font-weight: 600; }
-  .IndexBanner .IndexBannerContent .Title, .IndexBanner .IndexBannerContent .MainTitleOne, .IndexBanner .IndexBannerContent .MainTitleTwo, .IndexBanner .IndexBannerContent .MainTitleThree, .IndexBanner .IndexBannerContent .Subheading {
+  .IndexBanner .IndexBannerContent .Title, .IndexBanner .IndexBannerContent .MainTitleOne, .IndexBanner .IndexBannerContent .MainTitleTwo, .IndexBanner .IndexBannerContent .Subheading {
     color: white; }
   .IndexBanner .IndexBannerContent .indicator {
     width: 40px;
@@ -335,34 +326,32 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   position: absolute;
   top: 0; }
   .IndexBanner .AnimateBg .BgR {
-    width: 700px;
-    margin-left: 20px;
+    width: 600px;
+    margin-right: 60px;
     position: absolute;
     z-index: 2;
-    top: 30%; }
+    top: 35%; }
     .IndexBanner .AnimateBg .BgR img {
       opacity: 0.75; }
   .IndexBanner .AnimateBg .BgY {
-    width: 800px;
-    margin-left: 50px;
+    width: 700px;
+    margin-right: 50px;
     position: absolute;
     z-index: 1;
-    top: 15%; }
+    top: 20%; }
     .IndexBanner .AnimateBg .BgY img {
       opacity: 0.75; }
 
 @media screen and (max-width: 425px) {
   .IndexBanner .IndexBannerContent .Title {
-    font-size: 26px; }
+    font-size: 36px; }
   .IndexBanner .IndexBannerContent .MainTitle {
     border-bottom: 1px solid white; }
   .IndexBanner .IndexBannerContent .MainTitleOne {
-    font-size: 21px; }
+    font-size: 22px; }
   .IndexBanner .IndexBannerContent .MainTitleTwo {
-    font-size: 36px; }
-  .IndexBanner .IndexBannerContent .MainTitleThree {
     padding: 5px 0 10px;
-    font-size: 26px; }
+    font-size: 22px; }
   .IndexBanner .IndexBannerContent .Subheading {
     font-size: 15px; }
   .IndexBanner .AnimateBg {
@@ -380,15 +369,15 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
       width: 490px;
       position: absolute;
       z-index: 2;
-      top: 27vh; }
+      top: 42vh; }
       .IndexBanner .AnimateBg .BgR img {
         opacity: 0.75; }
     .IndexBanner .AnimateBg .BgY {
-      width: 560px;
+      width: 500px;
       margin-right: 80px;
       position: absolute;
       z-index: 1;
-      top: 20vh; }
+      top: 37vh; }
       .IndexBanner .AnimateBg .BgY img {
         opacity: 0.75; } }
 
@@ -424,524 +413,78 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     border-right: unset;
     border-bottom: 1px dashed #d6d6d6; } }
 
-.IndexServiceItems {
-  padding-top: 50px; }
-  .IndexServiceItems .IndexServiceMainTitle {
-    padding-right: 20px;
-    background: url("../img/icon/IconArrowR.svg") 100% 50% no-repeat;
-    background-size: auto 15px;
-    color: #737373;
-    font-size: 18px;
-    font-weight: 600; }
-  .IndexServiceItems .IndexServicesForm {
-    border: 1px solid #d6d6d6;
-    border-radius: 4px; }
-    .IndexServiceItems .IndexServicesForm .ServicesForm .MainTitle img {
-      width: 100px; }
-    .IndexServiceItems .IndexServicesForm .ServicesForm .MainTitle .Subheading {
-      color: #737373; }
-    .IndexServiceItems .IndexServicesForm .ServicesForm .ServicesFormCont {
+.Catalogue .categories {
+  padding-bottom: 30px;
+  text-align: center; }
+  .Catalogue .categories ul.cat li {
+    display: inline-block; }
+    .Catalogue .categories ul.cat li ol.type li {
+      display: inline-block;
+      margin-left: 20px; }
+      .Catalogue .categories ul.cat li ol.type li::after {
+        content: ' | ';
+        margin-left: 20px; }
+      .Catalogue .categories ul.cat li ol.type li:last-child::after {
+        content: ''; }
+      .Catalogue .categories ul.cat li ol.type li a {
+        color: #222222; }
+        .Catalogue .categories ul.cat li ol.type li a:active, .Catalogue .categories ul.cat li ol.type li a:hover {
+          color: #D2527F;
+          font-weight: bold; }
+  .Catalogue .categories .portfolioItems .hover-bg {
+    height: 381px;
+    overflow: hidden;
+    position: relative; }
+    .Catalogue .categories .portfolioItems .hover-bg .hover-text {
+      position: absolute;
+      text-align: center;
+      margin: 0 auto;
+      color: #ffffff;
+      background: rgba(0, 0, 0, 0.66);
+      padding: 25% 0;
       height: 100%;
-      line-height: 30px; }
-      .IndexServiceItems .IndexServicesForm .ServicesForm .ServicesFormCont ul {
-        padding: unset;
-        list-style: none; }
-        .IndexServiceItems .IndexServicesForm .ServicesForm .ServicesFormCont ul li {
-          padding-left: 10px;
-          background: -webkit-gradient(linear, left bottom, left top, from(#d84323), to(#d84323)) 0 9px no-repeat;
-          background: -webkit-linear-gradient(bottom, #d84323, #d84323) 0 9px no-repeat;
-          background: -o-linear-gradient(bottom, #d84323, #d84323) 0 9px no-repeat;
-          background: linear-gradient(0deg, #d84323, #d84323) 0 9px no-repeat;
-          background-size: 3px 12px; }
-          .IndexServiceItems .IndexServicesForm .ServicesForm .ServicesFormCont ul li ul {
-            padding: unset; }
-            .IndexServiceItems .IndexServicesForm .ServicesForm .ServicesFormCont ul li ul li {
-              padding: unset;
-              background: unset; }
-      .IndexServiceItems .IndexServicesForm .ServicesForm .ServicesFormCont img {
-        height: 20px; }
-    .IndexServiceItems .IndexServicesForm .ServicesForm:nth-child(2) {
-      border-left: 1px solid #d6d6d6; }
-  .IndexServiceItems .WebMonitor {
-    background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, url("../img/indexServices/WebMonitorBg.jpg") 50% 50% no-repeat;
-    background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("../img/indexServices/WebMonitorBg.jpg") 50% 50% no-repeat;
-    background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("../img/indexServices/WebMonitorBg.jpg") 50% 50% no-repeat;
-    background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("../img/indexServices/WebMonitorBg.jpg") 50% 50% no-repeat;
-    background-size: 100% 1px, 100% 1px, cover; }
-  .IndexServiceItems .MessageMonitor {
-    background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, #f8f9fa;
-    background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-    background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-    background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-    background-size: 100% 1px, 100% 1px, 100%; }
-  .IndexServiceItems .AppMonitor {
-    background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, url("../img/indexServices/AppMonitorBg.jpg") 50% 50% no-repeat;
-    background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("../img/indexServices/AppMonitorBg.jpg") 50% 50% no-repeat;
-    background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("../img/indexServices/AppMonitorBg.jpg") 50% 50% no-repeat;
-    background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 100% no-repeat, url("../img/indexServices/AppMonitorBg.jpg") 50% 50% no-repeat;
-    background-size: 100% 1px, 100% 1px, cover; }
-  .IndexServiceItems .WebMonitor .CardItem, .IndexServiceItems .MessageMonitor .CardItem, .IndexServiceItems .AppMonitor .CardItem {
-    width: 100%;
-    max-width: 320px;
-    min-height: 80px;
-    border-radius: 8px; }
-    .IndexServiceItems .WebMonitor .CardItem .CardImg, .IndexServiceItems .MessageMonitor .CardItem .CardImg, .IndexServiceItems .AppMonitor .CardItem .CardImg {
-      width: 50px;
-      min-width: 50px;
-      height: 50px;
-      margin-right: 15px;
-      padding: 3px;
-      border-radius: 100px;
-      overflow: hidden; }
-      .IndexServiceItems .WebMonitor .CardItem .CardImg img, .IndexServiceItems .MessageMonitor .CardItem .CardImg img, .IndexServiceItems .AppMonitor .CardItem .CardImg img {
-        width: 100%; }
-    .IndexServiceItems .WebMonitor .CardItem .CardInfo .MainTitle, .IndexServiceItems .MessageMonitor .CardItem .CardInfo .MainTitle, .IndexServiceItems .AppMonitor .CardItem .CardInfo .MainTitle {
-      font-size: 18px; }
-    .IndexServiceItems .WebMonitor .CardItem .CardInfo .Subheading, .IndexServiceItems .MessageMonitor .CardItem .CardInfo .Subheading, .IndexServiceItems .AppMonitor .CardItem .CardInfo .Subheading {
-      font-size: 13px; }
-  .IndexServiceItems .WebMonitor .CardItem, .IndexServiceItems .MessageMonitor .CardItem {
-    background: white;
-    border: 1px solid #e1e1e1;
-    border-radius: 8px; }
-    .IndexServiceItems .WebMonitor .CardItem .CardImg, .IndexServiceItems .MessageMonitor .CardItem .CardImg {
-      border: 1px solid #e1e1e1; }
-    .IndexServiceItems .WebMonitor .CardItem .CardInfo, .IndexServiceItems .MessageMonitor .CardItem .CardInfo {
-      color: #737373; }
-  .IndexServiceItems .AppMonitor .CardItem {
-    background: rgba(70, 70, 70, 0.75);
-    border: 1px solid #555555;
-    border-radius: 8px; }
-    .IndexServiceItems .AppMonitor .CardItem .CardImg {
-      background: white;
-      border: 1px solid #e1e1e1; }
-    .IndexServiceItems .AppMonitor .CardItem .CardInfo {
-      color: #d7d7d7; }
-  .IndexServiceItems .carousel-indicators {
-    position: unset;
-    margin: 0; }
-    .IndexServiceItems .carousel-indicators li {
-      width: unset;
-      height: unset;
-      margin: 0 5px;
-      text-indent: unset;
-      color: #737373;
-      font-size: 18px;
-      font-weight: 600;
+      width: 100%;
+      opacity: 0;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+    .Catalogue .categories .portfolioItems .hover-bg .hover-text {
+      padding: 12% 10%;
       opacity: 1; }
-    .IndexServiceItems .carousel-indicators .active {
-      color: #d84323; }
-  .IndexServiceItems .carousel-control-prev, .IndexServiceItems .carousel-control-next {
-    position: absolute;
-    top: 280px;
-    bottom: 0;
-    z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: flex-start;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 15%;
-    color: #fff;
-    text-align: center;
-    opacity: 0.5;
-    -webkit-transition: opacity 0.15s ease;
-    -o-transition: opacity 0.15s ease;
-    transition: opacity 0.15s ease; }
-    .IndexServiceItems .carousel-control-prev .carousel-control-prev-icon, .IndexServiceItems .carousel-control-next .carousel-control-prev-icon {
-      background: url("../img/icon/IconArrowL.svg") no-repeat; }
-    .IndexServiceItems .carousel-control-prev .carousel-control-next-icon, .IndexServiceItems .carousel-control-next .carousel-control-next-icon {
-      background: url("../img/icon/IconArrowR.svg") no-repeat; }
+    .Catalogue .categories .portfolioItems .hover-bg .hover-text > h4 {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      transform: translateY(100%);
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .Catalogue .categories .portfolioItems .hover-bg .hover-text > i {
+      opacity: 0;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .Catalogue .categories .portfolioItems .hover-bg:hover .hover-text > h4 {
+      opacity: 1;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+    .Catalogue .categories .portfolioItems .hover-bg:hover .hover-text > i {
+      opacity: 1;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      transform: translateY(100%); }
 
-@media screen and (max-width: 425px) {
-  .IndexServiceItems .IndexServicesForm {
-    border: unset; }
-    .IndexServiceItems .IndexServicesForm .ServicesForm .MainTitle img {
-      width: 80px; }
-    .IndexServiceItems .IndexServicesForm .ServicesForm:nth-child(2) {
-      border-left: unset;
-      border-top: 1px solid #d6d6d6; } }
-
-.Service .ServiceItem .ServiceItemImg {
-  max-width: 360;
-  height: 240px;
-  background: url("../img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
-  background-size: 100px, 100%;
-  border-radius: 4px; }
-
-.Service .ServiceItem .ServiceItemTitle {
-  max-width: 100%;
-  padding: 10px 0;
-  color: #d84323;
-  font-size: 18px;
-  font-weight: 600; }
-
-.Service .ServiceItem .ServiceItemInfo {
-  color: #737373;
-  font-size: 15px;
-  line-height: 25px; }
-
-.News {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, #f8f9fa;
-  background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-  background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-  background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-  background-size: 100% 1px, 100% 1px, 100%; }
-  .News .NewsLink {
-    display: block;
-    max-width: 360px;
-    min-height: 430px;
-    margin-top: 0;
-    border-bottom: 1px dashed #d6d6d6;
-    text-decoration: none;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
-    .News .NewsLink .NewsImg {
-      max-width: 360;
-      height: 240px;
-      background: url("../img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
-      background-size: 100px, 100%; }
-    .News .NewsLink .NewsTag {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      min-width: 60px;
-      height: 20px;
-      padding: 0 10px;
-      background: #d84323;
-      color: white;
-      font-size: 13px;
-      font-weight: 600;
-      border-radius: 4px; }
-    .News .NewsLink .NewsTitle {
-      max-width: 100%;
-      padding: 10px 0;
-      color: #d84323;
-      font-size: 18px;
-      -o-text-overflow: ellipsis;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden; }
-    .News .NewsLink .NewsDate {
-      padding-bottom: 10px;
-      color: #d6d6d6;
-      font-size: 15px; }
-    .News .NewsLink .NewsInfo {
-      color: #737373;
-      font-size: 15px;
-      line-height: 25px;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
-      overflow: hidden; }
-  .News .NewsLink:hover {
-    margin-top: -15px;
-    border-bottom: 0px dashed #d6d6d6;
-    -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
-
-.NewsDetail {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, #f8f9fa;
-  background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-  background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-  background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-  background-size: 100% 1px, 100% 1px, 100%; }
-  .NewsDetail .NewsDetailPrev, .NewsDetail .NewsDetailNext {
-    min-width: 60px;
-    height: 28px;
-    background: #d84323;
-    color: white;
-    border: unset;
-    cursor: pointer; }
-    .NewsDetail .NewsDetailPrev:hover, .NewsDetail .NewsDetailPrev:focus, .NewsDetail .NewsDetailNext:hover, .NewsDetail .NewsDetailNext:focus {
-      background: #d95d41;
-      color: white;
-      outline: unset; }
-    .NewsDetail .NewsDetailPrev:active, .NewsDetail .NewsDetailNext:active {
-      background: #d84323;
-      color: white;
-      outline: unset; }
-  .NewsDetail .NewsDetailCont {
-    border-top: 1px dashed #d6d6d6;
-    border-bottom: 1px dashed #d6d6d6; }
-    .NewsDetail .NewsDetailCont .NewsDetailImg {
-      height: 240px;
-      max-height: 240px;
-      background: url("../img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
-      background-size: 100px, 100%; }
-    .NewsDetail .NewsDetailCont .NewsDetailTag {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      min-width: 60px;
-      height: 20px;
-      padding: 0 10px;
-      background: #d84323;
-      color: white;
-      font-size: 13px;
-      font-weight: 600;
-      border-radius: 4px; }
-    .NewsDetail .NewsDetailCont .NewsDetailTitle {
-      max-width: 100%;
-      padding: 10px 0;
-      color: #d84323;
-      font-size: 18px; }
-    .NewsDetail .NewsDetailCont .NewsDetailDate {
-      padding-bottom: 10px;
-      color: #d6d6d6;
-      font-size: 15px; }
-    .NewsDetail .NewsDetailCont .NewsDetailInfo {
-      color: #737373;
-      font-size: 15px;
-      line-height: 30px; }
-
-.Shop {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, #f8f9fa;
-  background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-  background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-  background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-  background-size: 100% 1px, 100% 1px, 100%; }
-  .Shop .ShopPagination {
-    margin: 4px 0 26px; }
-  .Shop .ShopList .ShopCont {
-    display: block;
-    min-width: 250px;
-    height: 430px;
-    border-bottom: 1px dashed #d6d6d6;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    cursor: pointer; }
-    .Shop .ShopList .ShopCont .ShopImg {
-      max-width: 250px;
-      height: 200px;
-      background: url("../img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
-      background-size: 100px, 100%; }
-    .Shop .ShopList .ShopCont .ShopName {
-      padding: 20px 0 0;
-      color: #737373;
-      font-size: 15px;
-      line-height: 30px; }
-    .Shop .ShopList .ShopCont .ShopAmount {
-      padding: 20px 0;
-      font-size: 15px;
-      line-height: 30px; }
-      .Shop .ShopList .ShopCont .ShopAmount .Rebate {
-        padding: 0 10px;
-        color: #d6d6d6; }
-      .Shop .ShopList .ShopCont .ShopAmount .NewAmount {
-        padding: 0 10px;
-        color: #d84323; }
-  .Shop .ShopList .ShopCont:hover {
-    margin-top: -15px;
-    border-bottom: 0px dashed #d6d6d6;
-    -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
-  .Shop .ShopBanner {
-    width: 290px; }
-
-.ServiceShop .ShopPagination {
-  margin: 4px 0 26px; }
-
-.ServiceShop .ShopList .ShopCont {
-  display: block;
-  min-width: 250px;
-  height: 430px;
-  border-bottom: 1px dashed #d6d6d6;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  cursor: pointer; }
-  .ServiceShop .ShopList .ShopCont .ShopImg {
-    max-width: 250px;
-    height: 200px;
-    background: url("../img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
-    background-size: 100px, 100%; }
-  .ServiceShop .ShopList .ShopCont .ShopName {
-    padding: 20px 0 0;
-    color: #737373;
-    font-size: 15px;
-    line-height: 30px; }
-  .ServiceShop .ShopList .ShopCont .ShopAmount {
-    padding: 20px 0;
-    font-size: 15px;
-    line-height: 30px; }
-    .ServiceShop .ShopList .ShopCont .ShopAmount .Rebate {
-      padding: 0 10px;
-      color: #d6d6d6; }
-    .ServiceShop .ShopList .ShopCont .ShopAmount .NewAmount {
-      padding: 0 10px;
-      color: #d84323; }
-
-.ServiceShop .ShopList .ShopCont:hover {
-  margin-top: -15px;
-  border-bottom: 0px dashed #d6d6d6;
-  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
-
-.ServiceShop .ShopBanner {
-  width: 290px; }
-
-.Member {
-  background-size: 100% 1px, 100% 1px, 100%; }
-  .Member .MemberTab .el-tabs__nav-wrap .el-tabs__nav-scroll {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background: #f4f4f4;
-    border-radius: 4px; }
-  .Member .MemberTab .el-tabs__nav-wrap .el-tabs__item {
-    height: 60px;
-    color: #737373;
-    font-size: 18px;
-    line-height: 60px; }
-    .Member .MemberTab .el-tabs__nav-wrap .el-tabs__item:hover {
-      color: rgba(216, 67, 35, 0.5);
-      font-weight: 600; }
-  .Member .MemberTab .el-tabs__nav-wrap .el-tabs__item.is-active {
-    color: #d84323;
-    font-size: 18px;
-    font-weight: 600; }
-  .Member .MemberTab .el-tabs__nav-wrap .el-tabs__active-bar {
-    height: 2px;
-    background: #d84323; }
-  .Member .MemberTab .el-tabs__nav-wrap::after {
-    height: unset; }
-  .Member .MemberDetail {
-    margin: 0 0 15px;
-    padding: 0 0 15px;
-    border-bottom: 1px dashed #d6d6d6; }
-    .Member .MemberDetail .MemberInfo .MemberTitle {
-      padding: 0 0 10px;
-      color: #737373;
-      font-size: 18px;
-      font-weight: 600; }
-    .Member .MemberDetail .MemberInfo .MemberCont {
-      font-size: 15px; }
-  .Member .SearchForm .el-select {
-    width: 100%;
-    max-width: 240px; }
-  .Member .SearchForm .el-input {
-    width: 100%;
-    max-width: 240px; }
-  .Member .OrderPagination {
-    margin: 4px 0 26px; }
-  .Member .OrderListItem {
-    border-top: 1px dashed #d6d6d6;
-    border-bottom: 1px dashed #d6d6d6; }
-    .Member .OrderListItem .OrderListItemName {
-      color: #737373;
-      font-size: 15px; }
-  .Member .OrderList {
-    color: #737373;
-    font-size: 15px;
-    border-bottom: 1px dashed #d6d6d6; }
-    .Member .OrderList:nth-child(1) {
-      border-top: 1px dashed #d6d6d6; }
-    .Member .OrderList .OrderListTitle {
-      min-width: 80px; }
-  .Member .modal-dialog .modal-content .modal-header {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    color: #737373;
-    font-size: 18px;
-    font-weight: 600;
-    border-bottom: 1px dashed #d6d6d6; }
-    .Member .modal-dialog .modal-content .modal-header .el-button {
-      padding: unset;
-      font-size: 20px; }
-    .Member .modal-dialog .modal-content .modal-header .el-button--text {
-      color: #8d8d8d; }
-  .Member .modal-dialog .modal-content .modal-footer {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: 20px;
-    border-top: 1px dashed #d6d6d6; }
-  .Member .ShopCont {
-    display: block;
-    min-width: 250px;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    cursor: pointer; }
-    .Member .ShopCont .ShopImg {
-      max-width: 250px;
-      height: 200px;
-      background: url("../img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
-      background-size: 100px, 100%; }
-    .Member .ShopCont .ShopName {
-      padding: 20px 0 0;
-      color: #737373;
-      font-size: 15px;
-      line-height: 30px; }
-    .Member .ShopCont .ShopAmount {
-      padding: 20px 0;
-      font-size: 15px;
-      line-height: 30px; }
-      .Member .ShopCont .ShopAmount .Rebate {
-        padding: 0 10px;
-        color: #d6d6d6; }
-      .Member .ShopCont .ShopAmount .NewAmount {
-        padding: 0 10px;
-        color: #d84323; }
-
-.Cart {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, #f8f9fa;
-  background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-  background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-  background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
-  background-size: 100% 1px, 100% 1px, 100%; }
-  .Cart .CartListItem {
-    border-top: 1px dashed #d6d6d6;
-    border-bottom: 1px dashed #d6d6d6; }
-    .Cart .CartListItem .CartListItemName {
-      color: #737373;
-      font-size: 15px; }
-  .Cart .CartList {
-    color: #737373;
-    font-size: 15px;
-    border-bottom: 1px dashed #d6d6d6; }
-    .Cart .CartList:nth-child(1) {
-      border-top: 1px dashed #d6d6d6; }
-    .Cart .CartList .CartListImg {
-      max-width: 125px;
-      height: 100px;
-      background: url("../img/icon/IconNoImg.svg") 50% 50% no-repeat, #d6d6d6;
-      background-size: 100px, 100%; }
-    .Cart .CartList .CartListTitle {
-      min-width: 80px; }
-    .Cart .CartList .el-form .el-form-item {
-      margin: unset; }
+.IndexAbout {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, #f8f9fa;
+  background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, #f8f9fa;
+  background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, #f8f9fa;
+  background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, #f8f9fa; }
 
 .IndexContact {
   background: url("../img/contact/MapImg.png") 50% 50% no-repeat, #212529;
@@ -959,9 +502,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   .IndexContact .IndexContactForm .IndexContactTextarea textarea {
     min-height: 164px !important; }
 
-.Advertising .AdvertisingForm {
-  overflow: hidden; }
-
 .Company {
   background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, #f8f9fa;
   background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, #f8f9fa;
@@ -978,7 +518,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     background: rgba(52, 58, 64, 0.2); }
 
 .footer {
-  padding: 25px 10px;
-  background: #343a40;
-  color: #8d8d8d;
+  padding: 25px 30px;
+  background: #222222;
+  color: #a0a0a0;
   line-height: 20px; }
