@@ -153,7 +153,7 @@ export default {
       { info: '2001年，電影製片公司Double Edge Entertainment在美國成立，除策劃工作之外並跨足電影特效領域與3D動畫製作包括《Cast Away浩劫重生》、《Batman Begins蝙蝠俠：開戰時刻》、《Driven生死極速》等。' },
       { info: "自2002年起，得藝文創持續參與好萊塢電影投資與製作，並將範圍擴大至兩岸三地華語電影，得藝製作及投資的電影，迄今已有十多部，包括《Mail Order wife 伊媚兒新娘》、《Sledge : The Untold Story》、《Minotaur牛頭人》、《Smother 老媽愛死你》、《The Lazarus Project 撕裂記憶體》、《The Women 女人至上》、《Step by Step練戀舞》、《The King of Fighters 極限格鬥》、《MAYDAY 3DNA五月天追夢3DNA》、《The Soul of Bread愛的麵包魂》、《Partners In Crime共犯》、《Second Chance逆轉勝》、《We Are Family 我們全家不太熟》、《The Bridge Curse 女鬼橋》、《My Best Friend's Breakfast我吃了那男孩一整年的早餐》、《哈勇他們家》等。" },
       { info: "2007年起，得藝文創也跨足電影發行與國際版權販賣的業務，截至目前為止，已經在台灣發行超過20部電影，例如《Mushishi蟲師》、《Peaceful Warrior深夜加油站遇見蘇格拉底》、《The Eye變眼》、《THE WOMEN女人至上》、《Painted Skin畫皮》、《少年手指虎》、《Mom Thinks I'm Crazy to Marry a Japanese Guy雖然媽媽說我不能嫁去日本》、《Kiseki: Anohi no sobito唱吧！奇蹟！》、《The King金權性內幕》…等。得藝文創亦協助華語電影，進行國際版權販賣，例如《The Treasure Hunter刺陵》、《Spin Kid電哪吒》、《Love is sin白天的星星》、 《Forever Love阿嬤的夢中情人》等等。" },
-      { info: '2021年起開始參與投資製作劇集《What The Hell Is Love愛的混混》、《中元大餐》、《妮波自由式》…等等，將帶給觀眾全方位影視作品。' },
+      { info: '2021年起開始參與投資製作影集《What The Hell Is Love愛的混混》、《中元大餐》、《妮波自由式》…等等，將帶給觀眾全方位影視作品。' },
       { info: '得藝文創通常以製片人或投資方的身分，扮演投資方、製作方與創作者之間的橋樑，以產業化模式進行企業經營。' },
     ],
   },
