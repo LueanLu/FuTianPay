@@ -21,10 +21,25 @@ export default {
   },
   // IndexBanner
   IndexBanner: {
-    Title: '單身動物園',
-    MainTitleOne: 'The Lobster',
-    MainTitleTwo: '黑色幽默愛情片',
-    SubheadingOne: '柯林法洛、蕾雅瑟杜、瑞秋懷茲、班維蕭主演',
+    Title01: '我吃了那男孩一整年的早餐',
+    MainTitleOne01: "My Best Friend's Breakfast",
+    MainTitleTwo01: '最受矚目的校園愛情電影',
+    SubheadingOne01: '周興哲、李沐、宋柏緯、何思靜、婁峻碩、林鶴軒',
+
+    Title02: '女鬼橋',
+    MainTitleOne02: 'The Bridge Curse',
+    MainTitleTwo02: '臺灣懸疑驚悚電影',
+    SubheadingOne02: '詹宛儒、張寗、林哲熹、嚴正嵐、葛丞、謝毅宏、孟耿如',
+
+    Title03: '雖然媽媽說我不可以嫁去日本',
+    MainTitleOne03: "Mom Thinks I'm Crazy To Marry A Japanese Guy",
+    MainTitleTwo03: '愛情喜劇電影',
+    SubheadingOne03: '簡嫚書、中野裕太',
+
+    Title04: '單身動物園',
+    MainTitleOne04: 'The Lobster',
+    MainTitleTwo04: '黑色幽默愛情片',
+    SubheadingOne04: '柯林法洛、蕾雅瑟杜、瑞秋懷茲、班維蕭主演',
   },
   // Advantage
   Advantage: {

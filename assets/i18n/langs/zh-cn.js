@@ -21,10 +21,25 @@ export default {
   },
   // IndexBanner
   IndexBanner: {
-    Title: '单身动物园',
-    MainTitleOne: 'The Lobster',
-    MainTitleTwo: '黑色幽默爱情片',
-    SubheadingOne: '柯林法洛、蕾雅瑟杜、瑞秋怀兹、班维萧主演',
+    Title01: '我吃了那男孩一整年的早餐',
+    MainTitleOne01: "My Best Friend's Breakfast",
+    MainTitleTwo01: '最受瞩目的校园爱情电影',
+    SubheadingOne01: '周兴哲、李沐、宋柏纬、何思静、娄峻硕、林鹤轩',
+
+    Title02: '女鬼桥',
+    MainTitleOne02: 'The Bridge Curse',
+    MainTitleTwo02: '台湾悬疑惊悚电影',
+    SubheadingOne02: '詹宛儒、张寗、林哲熹、严正岚、葛丞、谢毅宏、孟耿如',
+
+    Title03: '虽然妈妈说我不可以嫁去日本',
+    MainTitleOne03: "Mom Thinks I'm Crazy To Marry A Japanese Guy",
+    MainTitleTwo03: '爱情喜剧电影',
+    SubheadingOne03: '简嫚书、中野裕太',
+
+    Title04: '单身动物园',
+    MainTitleOne04: 'The Lobster',
+    MainTitleTwo04: '黑色幽默爱情片',
+    SubheadingOne04: '柯林法洛、蕾雅瑟杜、瑞秋怀兹、班维萧主演',
   },
   // Advantage
   Advantage: {

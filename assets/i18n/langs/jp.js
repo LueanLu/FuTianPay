@@ -21,10 +21,25 @@ export default {
   },
   // IndexBanner
   IndexBanner: {
-    Title: 'The Lobster',
-    MainTitleOne: 'The Lobster',
-    MainTitleTwo: 'Black Humor Romance',
-    SubheadingOne: 'Colin Farrell、Léa Seydoux、Rachel Weisz、Ben Whishaw',
+    Title01: "My Best Friend's Breakfast",
+    MainTitleOne01: "My Best Friend's Breakfast",
+    MainTitleTwo01: '最も注目されているキャンパスの愛',
+    SubheadingOne01: '周兴哲、李沐、宋柏纬、何思静、娄峻硕、林鹤轩',
+
+    Title02: 'The Bridge Curse',
+    MainTitleOne02: 'The Bridge Curse',
+    MainTitleTwo02: '台湾サスペンススリラー',
+    SubheadingOne02: '詹宛儒、张寗、林哲熹、严正岚、葛丞、谢毅宏、孟耿如',
+
+    Title03: "ママは日本へ嫁に行っちゃダメと言うけれど",
+    MainTitleOne03: "Mom Thinks I'm Crazy To Marry A Japanese Guy",
+    MainTitleTwo03: 'ラブコメ',
+    SubheadingOne03: '简嫚书、中野裕太',
+
+    Title04: 'The Lobster',
+    MainTitleOne04: 'The Lobster',
+    MainTitleTwo04: 'ブラックユーモアロマンス',
+    SubheadingOne04: 'Colin Farrell、Léa Seydoux、Rachel Weisz、Ben Whishaw',
   },
   // Advantage
   Advantage: {
