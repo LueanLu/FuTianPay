@@ -1,0 +1,122 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    //- Document Title
+    title 得藝文創國際股份有限公司 Double Edge Entertainment Corp.
+    //- Favicons
+    link(rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png")
+    link(rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico")
+    link(rel="manifest" href="assets/img/favicons/manifest.json")
+    meta(name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png")
+    meta(name="theme-color" content="#ffffff")
+    //- Stylesheets
+    link(rel="stylesheet" href="assets/lib/loaders.css/loaders.min.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900")
+    link(rel="stylesheet" href="assets/lib/fancybox/jquery.fancybox.min.css")
+    link(rel="stylesheet" href="assets/lib/owl.carousel/owl.carousel.css")
+    link(rel="stylesheet" href="assets/css/theme.css")
+    //- Theme CSS
+    link(rel="stylesheet" href="assets/css/main.css")
+    //- Element
+    link(rel="stylesheet" href="assets/css/element-ui.css")
+    //- Other
+    link(rel="stylesheet" href="assets/css/font-awesome.css")
+    link(rel="stylesheet" href="assets/css/style.css")
+    link(rel="stylesheet" href="assets/css/prettyPhoto.css")
+    link(rel="stylesheet" href="assets/css/owl.carousel.css")
+    link(rel="stylesheet" href="assets/css/owl.theme.css")
+    link(rel="stylesheet" href="assets/css/responsive.css")
+  body
+    #film
+      //- Navigation
+      include navi.pug
+
+      //- Fixed
+      include fixed.pug
+
+      //- Main Content
+      main#top.main.min-vh-100
+        //- Preloader
+        include preloader.pug
+
+        //- <section> NewsBanner
+        include newsBanner.pug
+
+        //- <section> NewsDetail
+        section#page-newsDetail.py-lg-5.NewsDetail.overflow-hidden
+          .container
+            .row.justify-content-center.text-center
+              .col-lg-7.TitleFormB
+                h2.Title {{ $t('NewsDetail.Title'/*NEWS DETAIL*/) }}
+                .MainTitle {{ $t('NewsDetail.MainTitle'/*最新消息內容*/) }} / 聚合支付平台官網正式上線
+
+              //- Pagination
+              //- .col-12.d-flex.flex-row.justify-content-between.align-items-center.py-4
+                el-button.NewsDetailPrev.d-flex.align-items-center(@click='') 上一篇
+                el-button.NewsDetailNext.d-flex.align-items-center(@click='') 下一篇
+
+              //- NewsList Content
+              .NewsDetailCont.col-12.d-flex.flex-column.justify-content-center.py-4.text-left(data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll")
+                .NewsDetailImg.overflow-hidden.d-flex.justify-content-center.align-items-center
+                  img.w-lg-100.h-lg-auto.img-fluid.h-100(src="assets/img/newsImg/NewsImg01.jpg" alt="" data-zanim-xs='{"delay":0.1,"animation":"zoom-in"}')
+                .overflow-hidden.d-flex.flex-column.align-items-start.p-4
+                  .NewsDetailTag(data-zanim-xs='{"delay":0.2}') 未分類
+                  .NewsDetailTitle(data-zanim-xs='{"delay":0.3}') F.T聚合支付平台官網正式上線
+                  .NewsDetailDate(data-zanim-xs='{"delay":0.4}') 2020/11/01
+                  .NewsDetailInfo(data-zanim-xs='{"delay":0.5}')
+                    p 最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。
+                    br
+                    p 最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。
+                    br
+                    p 最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。
+                    br
+                    p 最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。
+                    br
+                    p 最新消息內文：F.T聚合支付平台官網正式上線。
+                    br
+                    p 最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。
+                    br
+                    p 最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。
+
+              //- Pagination
+              //- .col-12.d-flex.flex-row.justify-content-between.align-items-center.pt-4
+                el-button.NewsDetailPrev.d-flex.align-items-center(@click='') 上一篇
+                el-button.NewsDetailNext.d-flex.align-items-center(@click='') 下一篇
+
+        //- <section> Company
+        //- include company.pug
+
+      //- Footer Copyright
+      include footer.pug
+
+    //- jQuery JavaScript
+    script(src="assets/js/jquery.min.js")
+    script(src="assets/js/jquery.prettyPhoto.js")
+    script(src="assets/js/jquery.isotope.js")
+    //- Bootstrap JavaScript
+    script(src="assets/js/bootstrap.js")
+    //- JavaScript
+    script(src="assets/js/popper.min.js")
+    script(src="assets/js/plugins.js")
+    script(src="assets/lib/loaders.css/loaders.css.js")
+    script(src="assets/js/stickyfill.min.js")
+    script(src="assets/lib/is_js/is.min.js")
+    script(src="assets/lib/jtap/jquery.tap.js")
+    script(src="assets/js/rellax.min.js")
+    script(src="assets/lib/fancybox/jquery.fancybox.min.js")
+    script(src="assets/lib/owl.carousel/owl.carousel.js")
+    script(src="assets/js/theme.js")
+    //- Vue
+    script(src='assets/js/vue.min.js')
+    script(src='assets/js/httpVueLoader.js')
+    //- i18n
+    script(src='assets/js/vue-i18n.min.js')
+    //- Element
+    script(src="assets/js/element-ui.js")
+    //- Function
+    script(src='assets/js/filmMain.js' type='module')

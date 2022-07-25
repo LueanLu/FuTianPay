@@ -103,6 +103,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   .navbar .nav-item .nav-link:hover {
     color: #f03264; }
   .navbar .navbar-toggler {
+    max-width: 50px;
     padding: unset;
     border-color: rgba(255, 255, 255, 0.5);
     border-radius: 4px; }
@@ -342,6 +343,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     .IndexBanner .AnimateBg .BgY img {
       opacity: 0.75; }
 
+.IndexBanner .controlIcon {
+  z-index: 3; }
+
 @media screen and (max-width: 425px) {
   .IndexBanner .IndexBannerContent .Title {
     font-size: 36px; }
@@ -485,6 +489,45 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, #f8f9fa;
   background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, #f8f9fa;
   background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, #f8f9fa; }
+
+.News {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 0 no-repeat, -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(#e1e1e1)) 50% 100% no-repeat, #f8f9fa;
+  background: -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -webkit-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
+  background: -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 0 no-repeat, -o-linear-gradient(bottom, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
+  background: linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 0 no-repeat, linear-gradient(0deg, #e1e1e1, #e1e1e1) 50% 100% no-repeat, #f8f9fa;
+  background-size: 100% 1px, 100% 1px, 100%; }
+  .News .NewsLink {
+    display: block;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    .News .NewsLink .NewsTitle {
+      max-width: 100%;
+      padding: 10px 0;
+      color: #d84323;
+      font-size: 18px;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+    .News .NewsLink .NewsInfo {
+      color: #737373;
+      font-size: 15px;
+      line-height: 25px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden; }
+    .News .NewsLink .NewsDate {
+      color: #d6d6d6;
+      font-size: 15px; }
+  .News .NewsLink:hover {
+    -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
 
 .IndexContact {
   background: url("../img/contact/MapImg.png") 50% 50% no-repeat, #212529;

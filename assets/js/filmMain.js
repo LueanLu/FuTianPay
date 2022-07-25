@@ -47,11 +47,11 @@ new Vue({
     },
     cartAmount: 0,
     // 每頁顯示條目個數
-    pageSize: 6,
+    pageSize: 3,
     // 頁碼按鈕數量
-    pagerCount: 5,
+    pagerCount: 3,
     // 總條數目
-    total: 600,
+    total: 0,
     // 當前頁數
     curretPage: null,
     // Member Tab
@@ -226,6 +226,13 @@ function main() {
   // Pretty Photo
   $("a[rel^='prettyPhoto']").prettyPhoto({
     social_tools: false
+  });
+
+  // Index Banner
+  $('.carousel').carousel({
+    interval: 5000,
+    ride: true,
+    wrap: true,
   });
 };
 

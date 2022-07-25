@@ -1,0 +1,89 @@
+nav.navbar.navbar-expand-lg.navbar-dark.fixed-top.navbar-sparrow
+  .container.d-flex.flex-row
+    //- Logo
+    a.navbar-brand(href="./index.html")
+      img(src="./assets/img/logo.png" alt="Double Edge Entertainment")
+
+    //- Nav Button
+    .navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNavDropdown1" aria-controls="navbarNavDropdown1" aria-expanded="false" aria-label="Toggle navigation")
+      .fancynavbar(type="button" data-toggle="collapse" data-target="#navbarNavDropdown1" aria-controls="navbarNavDropdown1" aria-expanded="false" aria-label="Toggle navigation")
+        .fancynavbar-togglerbar
+          .fancynavbar-toggler
+            svg.fancynavbar-toggler-icon(viewbox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.5}' data-zanim-trigger="scroll")
+              path#path-top(d="M20,25c0,0,22,0,30,0c16,0,18.89,40.71-.15,21.75C38.7,35.65,19.9,16.8,19.9,16.8")
+              path#path-middle(d="M20,32h30")
+              path#path-bottom(d="M19.9,46.98c0,0,18.8-18.85,29.95-29.95C68.89-1.92,66,38.78,50,38.78c-8,0-30,0-30,0")
+
+    //- Nav Menu
+    #navbarNavDropdown1.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto.d-lg-flex.align-items-lg-center
+
+        .navLineTwo.d-block.d-lg-none.my-3
+
+        //- 首頁
+        li.nav-item
+          a.nav-link(href="./index.html#top" data-zanim-timeline='{"delay":1}' data-fancyscroll="data-fancyscroll" data-offset="70") {{ $t('Nav.Index'/*首頁*/) }}
+
+        //- 歷年作品
+        li.nav-item
+          a.nav-link(href="index.html#page-Catalogue" data-zanim-timeline='{"delay":1}' data-fancyscroll="data-fancyscroll" data-offset="70") {{ $t('Nav.Catalogue'/*歷年作品*/) }}
+
+          //- Important Can't Delete !
+          a.d-none(href="#page-Catalogue" data-zanim-timeline='{"delay":1}' data-fancyscroll="data-fancyscroll" data-offset="70")
+          //- Important Can't Delete ! End
+
+        //- 會員中心
+        //- li.nav-item.dropdown.DropdownForm
+          a#navbarDropdownMenuLink2.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") {{ $t('Nav.Member'/*會員中心*/) }}
+          .dropdown-menu.dropdown-menu-center(aria-labelledby="navbarDropdownMenuLink2")
+            .d-flex.flex-row.text-center.MemberDropdown.overflow-hidden-y
+              a.dropdown-item(href="#" v-on:click='goMember("information")') {{ $t('Nav.Information'/*會員資料*/) }}
+              a.dropdown-item(href="#" v-on:click='goMember("order")') {{ $t('Nav.Order'/*訂單查詢*/) }}
+              a.dropdown-item(href="#") {{ $t('Nav.Cart'/*購物車*/) }}
+
+        //- 關於得藝
+        li.nav-item
+          a.nav-link(href="index.html#digital-about" data-zanim-timeline='{"delay":1}' data-fancyscroll="data-fancyscroll" data-offset="70") {{ $t('Nav.About'/*關於得藝*/) }}
+
+          //- Important Can't Delete !
+          a.d-none(href="#digital-about" data-zanim-timeline='{"delay":1}' data-fancyscroll="data-fancyscroll" data-offset="70")
+          //- Important Can't Delete ! End
+
+        //- 最新消息
+        //- li.nav-item
+          a.nav-link(href="news.html") {{ $t('Nav.News'/*最新消息*/) }}
+
+        //- 聯絡我們
+        li.nav-item.d-lg-none.d-block
+          a.nav-link(href="index.html#digital-footer" data-zanim-timeline='{"delay":1}' data-fancyscroll="data-fancyscroll" data-offset="70") {{ $t('Nav.Contact'/*聯絡我們*/) }}
+
+          //- Important Can't Delete !
+          a.d-none(href="#digital-footer" data-zanim-timeline='{"delay":1}' data-fancyscroll="data-fancyscroll" data-offset="70")
+          //- Important Can't Delete ! End
+
+        .navLineOne.d-none.d-lg-block.mx-3
+        .navLineTwo.d-block.d-lg-none.my-3
+
+        //- Language
+        li.nav-item.dropdown.DropdownForm
+          a#navbarDropdownMenuLink3.nav-link.dropdown-toggle.NavFlag.d-flex.flex-row.align-items-center(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+            //- img.mr-2(:src='"./assets/img/flag/"+language+".svg"')
+            span {{ $t(`Nav.${language}`/*繁體中文*/) }}
+          .dropdown-menu.dropdown-menu-center.LanguageDropdown(aria-labelledby="navbarDropdownMenuLink3")
+            .d-flex.flex-row.text-center.FlagDropdown.overflow-hidden-y
+              //- 繁體中文
+              a.dropdown-item.MenuFlag.d-flex.flex-row.justify-content-center.align-items-center(@click='switchLanguage("zh-tw")')
+                //- img.mr-2(src='./assets/img/flag/zh-tw.svg')
+                span {{ $t('Nav.zh-tw'/*繁體中文*/) }}
+              //- 简体中文
+              a.dropdown-item.MenuFlag.d-flex.flex-row.justify-content-center.align-items-center(@click='switchLanguage("zh-cn")')
+                //- img.mr-2(src='./assets/img/flag/zh-cn.svg')
+                span {{ $t('Nav.zh-cn'/*简体中文*/) }}
+              //- English
+              a.dropdown-item.MenuFlag.d-flex.flex-row.justify-content-center.align-items-center(@click='switchLanguage("en")')
+                //- img.mr-2(src='./assets/img/flag/en.svg')
+                span {{ $t('Nav.en'/*English*/) }}
+              //- 日文
+              a.dropdown-item.MenuFlag.d-flex.flex-row.justify-content-center.align-items-center(@click='switchLanguage("jp")')
+                //- img.mr-2(src='./assets/img/flag/jp.svg')
+                span {{ $t('Nav.jp'/*日文*/) }}

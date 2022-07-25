@@ -29,7 +29,7 @@
   <body>
     <div id="film">
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-sparrow">
-        <div class="container d-flex flex-row"><a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Double Edge Entertainment"></a>
+        <div class="container d-flex flex-row"><a class="navbar-brand" href="./index.html"><img src="./assets/img/logo.png" alt="Double Edge Entertainment"></a>
           <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown1" aria-controls="navbarNavDropdown1" aria-expanded="false" aria-label="Toggle navigation">
             <div class="fancynavbar" type="button" data-toggle="collapse" data-target="#navbarNavDropdown1" aria-controls="navbarNavDropdown1" aria-expanded="false" aria-label="Toggle navigation">
               <div class="fancynavbar-togglerbar">
@@ -46,10 +46,10 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown1">
             <ul class="navbar-nav ml-auto d-lg-flex align-items-lg-center">
               <div class="navLineTwo d-block d-lg-none my-3"></div>
-              <li class="nav-item"><a class="nav-link" href="index.html#top" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.Index'/*首頁*/) }}</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#page-Catalogue" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.Catalogue'/*歷年作品*/) }}</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#digital-about" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.About'/*關於得藝*/) }}</a></li>
-              <li class="nav-item d-lg-none d-block"><a class="nav-link" href="index.html#digital-footer" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.Contact'/*聯絡我們*/) }}</a></li>
+              <li class="nav-item"><a class="nav-link" href="./index.html#top" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.Index'/*首頁*/) }}</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#page-Catalogue" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.Catalogue'/*歷年作品*/) }}</a><a class="d-none" href="#page-Catalogue" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70"></a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#digital-about" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.About'/*關於得藝*/) }}</a><a class="d-none" href="#digital-about" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70"></a></li>
+              <li class="nav-item d-lg-none d-block"><a class="nav-link" href="index.html#digital-footer" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.Contact'/*聯絡我們*/) }}</a><a class="d-none" href="#digital-footer" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70"></a></li>
               <div class="navLineOne d-none d-lg-block mx-3"></div>
               <div class="navLineTwo d-block d-lg-none my-3"></div>
               <li class="nav-item dropdown DropdownForm"><a class="nav-link dropdown-toggle NavFlag d-flex flex-row align-items-center" id="navbarDropdownMenuLink3" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>{{ $t(`Nav.${language}`/*繁體中文*/) }}</span></a>
@@ -82,29 +82,89 @@
           </div>
         </div>
         <section class="py-0 overflow-hidden IndexBanner" id="digital-header">
-          <div class="bg-holder digital-header overlay-1 d-none d-lg-block" style="background-image:url(assets/img/indexBanner/Banner.jpg);" data-zanim-xs="{&quot;delay&quot;:0,&quot;animation&quot;:&quot;zoom-out&quot;}" data-zanim-trigger="scroll"></div>
-          <div class="bg-holder digital-header overlay-1 d-block d-lg-none" style="background-image:url(assets/img/indexBanner/Banner_s.jpg);" data-zanim-xs="{&quot;delay&quot;:0,&quot;animation&quot;:&quot;zoom-out&quot;}" data-zanim-trigger="scroll"></div>
-          <div class="container IndexBannerContent">
-            <div class="row min-vh-100 align-items-center align-items-lg-end py-lg-10 pt-10 justify-content-center text-left">
-              <div class="col-lg-8 col-xl-7" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="text-white overflow-hidden parallax" data-rellax-speed="3">
-                  <div class="font-weight-normal" data-zanim-xs="{&quot;delay&quot;:2,&quot;duration&quot;:1.5}">
-                    <h3 class="Title">{{ $t('IndexBanner.Title'/*單身動物園*/) }}</h3>
+          <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="bg-holder digital-header overlay-1 d-none d-lg-block" style="background-image:url(assets/img/indexBanner/Banner.jpg);" data-zanim-xs="{&quot;delay&quot;:0,&quot;animation&quot;:&quot;zoom-out&quot;}" data-zanim-trigger="scroll"></div>
+                <div class="bg-holder digital-header overlay-1 d-block d-lg-none" style="background-image:url(assets/img/indexBanner/Banner_s.jpg);" data-zanim-xs="{&quot;delay&quot;:0,&quot;animation&quot;:&quot;zoom-out&quot;}" data-zanim-trigger="scroll"></div>
+                <div class="container IndexBannerContent">
+                  <div class="row min-vh-100 align-items-center align-items-lg-end py-lg-10 pt-10 justify-content-center text-left">
+                    <div class="col-lg-8 col-xl-7" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                      <div class="text-white overflow-hidden parallax" data-rellax-speed="3">
+                        <div class="font-weight-normal" data-zanim-xs="{&quot;delay&quot;:1,&quot;duration&quot;:1.5}">
+                          <h3 class="Title">{{ $t('IndexBanner.Title'/*單身動物園*/) }}</h3>
+                        </div>
+                      </div>
+                      <div class="text-white parallax" data-rellax-speed="2"><span class="overflow-hidden d-block" v-if="language !== &quot;en&quot; &amp;&amp; language !== &quot;jp&quot;"><span class="d-inline-block MainTitle" data-zanim-xs="{&quot;delay&quot;:1,&quot;duration&quot;:1.5}">
+                            <h6 class="MainTitleOne d-inline">{{ $t('IndexBanner.MainTitleOne'/*The Lobster*/) }}</h6></span></span><span class="overflow-hidden d-block">
+                          <h6 class="MainTitleTwo d-inline-block d-block" data-zanim-xs="{&quot;delay&quot;:1,&quot;duration&quot;:1.5}">{{ $t('IndexBanner.MainTitleTwo'/*黑色幽默愛情片*/) }}</h6></span></div>
+                      <div class="text-white overflow-hidden parallax" data-rellax-speed="1">
+                        <div class="font-weight-normal d-flex flex-column" data-zanim-xs="{&quot;delay&quot;:1,&quot;duration&quot;:1.5}"><span class="Subheading d-inline-block">{{ $t('IndexBanner.SubheadingOne'/*柯林法洛、蕾雅瑟杜、瑞秋懷茲、班維蕭主演*/) }}</span></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="text-white parallax" data-rellax-speed="2"><span class="overflow-hidden d-block" v-if="language !== &quot;en&quot; &amp;&amp; language !== &quot;jp&quot;"><span class="d-inline-block MainTitle" data-zanim-xs="{&quot;delay&quot;:3,&quot;duration&quot;:1.5}">
-                      <h6 class="MainTitleOne d-inline">{{ $t('IndexBanner.MainTitleOne'/*The Lobster*/) }}</h6></span></span><span class="overflow-hidden d-block">
-                    <h6 class="MainTitleTwo d-inline-block d-block" data-zanim-xs="{&quot;delay&quot;:4,&quot;duration&quot;:1.5}">{{ $t('IndexBanner.MainTitleTwo'/*黑色幽默愛情片*/) }}</h6></span></div>
-                <div class="text-white overflow-hidden parallax" data-rellax-speed="1">
-                  <div class="font-weight-normal d-flex flex-column" data-zanim-xs="{&quot;delay&quot;:5,&quot;duration&quot;:1.5}"><span class="Subheading d-inline-block">{{ $t('IndexBanner.SubheadingOne'/*柯林法洛、蕾雅瑟杜、瑞秋懷茲、班維蕭主演*/) }}</span></div>
+                <div class="AnimateBg" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="BgR" data-rellax-speed="1" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:150,&quot;scale&quot;:1},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:0,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:1.5,&quot;delay&quot;:2}"><img src="assets/img/indexBanner/BgR.svg"></div>
+                  <div class="BgY" data-rellax-speed="1" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:-150,&quot;scale&quot;:1},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:0,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:1.5,&quot;delay&quot;:1}"><img src="assets/img/indexBanner/BgY.svg"></div>
                 </div>
               </div>
-            </div><a class="indicator indicator-down" data-zanim-timeline="{&quot;delay&quot;:2}" data-zanim-trigger="scroll" href="#target-down" data-fancyscroll="data-fancyscroll" data-offset="70">
-              <div class="IndicatorDown" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:15},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:-5,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:0.5,&quot;delay&quot;:0.25}"><img src="assets/img/icon/IconArrow.svg"></div></a>
-          </div>
-          <div class="AnimateBg" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-            <div class="BgR" data-rellax-speed="1" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:150,&quot;scale&quot;:1},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:0,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:1.5,&quot;delay&quot;:2}"><img src="assets/img/indexBanner/BgR.svg"></div>
-            <div class="BgY" data-rellax-speed="1" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:-150,&quot;scale&quot;:1},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:0,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:1.5,&quot;delay&quot;:1}"><img src="assets/img/indexBanner/BgY.svg"></div>
+              <div class="carousel-item">
+                <div class="bg-holder digital-header overlay-1 d-none d-lg-block" style="background-image:url(assets/img/indexBanner/Banner.jpg);" data-zanim-xs="{&quot;delay&quot;:0,&quot;animation&quot;:&quot;zoom-out&quot;}" data-zanim-trigger="scroll"></div>
+                <div class="bg-holder digital-header overlay-1 d-block d-lg-none" style="background-image:url(assets/img/indexBanner/Banner_s.jpg);" data-zanim-xs="{&quot;delay&quot;:0,&quot;animation&quot;:&quot;zoom-out&quot;}" data-zanim-trigger="scroll"></div>
+                <div class="container IndexBannerContent">
+                  <div class="row min-vh-100 align-items-center align-items-lg-end py-lg-10 pt-10 justify-content-center text-left">
+                    <div class="col-lg-8 col-xl-7" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                      <div class="text-white overflow-hidden parallax" data-rellax-speed="3">
+                        <div class="font-weight-normal" data-zanim-xs="{&quot;delay&quot;:1,&quot;duration&quot;:1.5}">
+                          <h3 class="Title">{{ $t('IndexBanner.Title'/*單身動物園*/) }}</h3>
+                        </div>
+                      </div>
+                      <div class="text-white parallax" data-rellax-speed="2"><span class="overflow-hidden d-block" v-if="language !== &quot;en&quot; &amp;&amp; language !== &quot;jp&quot;"><span class="d-inline-block MainTitle" data-zanim-xs="{&quot;delay&quot;:1,&quot;duration&quot;:1.5}">
+                            <h6 class="MainTitleOne d-inline">{{ $t('IndexBanner.MainTitleOne'/*The Lobster*/) }}</h6></span></span><span class="overflow-hidden d-block">
+                          <h6 class="MainTitleTwo d-inline-block d-block" data-zanim-xs="{&quot;delay&quot;:1,&quot;duration&quot;:1.5}">{{ $t('IndexBanner.MainTitleTwo'/*黑色幽默愛情片*/) }}</h6></span></div>
+                      <div class="text-white overflow-hidden parallax" data-rellax-speed="1">
+                        <div class="font-weight-normal d-flex flex-column" data-zanim-xs="{&quot;delay&quot;:1,&quot;duration&quot;:1.5}"><span class="Subheading d-inline-block">{{ $t('IndexBanner.SubheadingOne'/*柯林法洛、蕾雅瑟杜、瑞秋懷茲、班維蕭主演*/) }}</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="AnimateBg" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="BgR" data-rellax-speed="1" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:150,&quot;scale&quot;:1},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:0,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:1.5,&quot;delay&quot;:2}"><img src="assets/img/indexBanner/BgR.svg"></div>
+                  <div class="BgY" data-rellax-speed="1" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:-150,&quot;scale&quot;:1},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:0,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:1.5,&quot;delay&quot;:1}"><img src="assets/img/indexBanner/BgY.svg"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="bg-holder digital-header overlay-1 d-none d-lg-block" style="background-image:url(assets/img/indexBanner/Banner.jpg);" data-zanim-xs="{&quot;delay&quot;:0,&quot;animation&quot;:&quot;zoom-out&quot;}" data-zanim-trigger="scroll"></div>
+                <div class="bg-holder digital-header overlay-1 d-block d-lg-none" style="background-image:url(assets/img/indexBanner/Banner_s.jpg);" data-zanim-xs="{&quot;delay&quot;:0,&quot;animation&quot;:&quot;zoom-out&quot;}" data-zanim-trigger="scroll"></div>
+                <div class="container IndexBannerContent">
+                  <div class="row min-vh-100 align-items-center align-items-lg-end py-lg-10 pt-10 justify-content-center text-left">
+                    <div class="col-lg-8 col-xl-7" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                      <div class="text-white overflow-hidden parallax" data-rellax-speed="3">
+                        <div class="font-weight-normal" data-zanim-xs="{&quot;delay&quot;:1,&quot;duration&quot;:1.5}">
+                          <h3 class="Title">{{ $t('IndexBanner.Title'/*單身動物園*/) }}</h3>
+                        </div>
+                      </div>
+                      <div class="text-white parallax" data-rellax-speed="2"><span class="overflow-hidden d-block" v-if="language !== &quot;en&quot; &amp;&amp; language !== &quot;jp&quot;"><span class="d-inline-block MainTitle" data-zanim-xs="{&quot;delay&quot;:1,&quot;duration&quot;:1.5}">
+                            <h6 class="MainTitleOne d-inline">{{ $t('IndexBanner.MainTitleOne'/*The Lobster*/) }}</h6></span></span><span class="overflow-hidden d-block">
+                          <h6 class="MainTitleTwo d-inline-block d-block" data-zanim-xs="{&quot;delay&quot;:1,&quot;duration&quot;:1.5}">{{ $t('IndexBanner.MainTitleTwo'/*黑色幽默愛情片*/) }}</h6></span></div>
+                      <div class="text-white overflow-hidden parallax" data-rellax-speed="1">
+                        <div class="font-weight-normal d-flex flex-column" data-zanim-xs="{&quot;delay&quot;:1,&quot;duration&quot;:1.5}"><span class="Subheading d-inline-block">{{ $t('IndexBanner.SubheadingOne'/*柯林法洛、蕾雅瑟杜、瑞秋懷茲、班維蕭主演*/) }}</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="AnimateBg" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="BgR" data-rellax-speed="1" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:150,&quot;scale&quot;:1},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:0,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:1.5,&quot;delay&quot;:2}"><img src="assets/img/indexBanner/BgR.svg"></div>
+                  <div class="BgY" data-rellax-speed="1" data-zanim-xs="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;y&quot;:-150,&quot;scale&quot;:1},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:0,&quot;scale&quot;:1},&quot;ease&quot;:&quot;Back.easeOut&quot;,&quot;duration&quot;:1.5,&quot;delay&quot;:1}"><img src="assets/img/indexBanner/BgY.svg"></div>
+                </div>
+              </div>
+            </div><a class="carousel-control-prev controlIcon" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next controlIcon" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
           </div>
         </section>
         <div id="target-down"></div>
@@ -134,7 +194,11 @@
                   <div class="portfolioItems w-100">
                     <div class="col-sm-6 col-md-3 col-lg-3" v-for="(item, index) in catalogueData" :key="index" :class="item.BusinessType">
                       <div class="portfolio-item">
-                        <div class="hover-bg"><a :href="item.Youtube" rel="prettyPhoto">
+                        <div class="hover-bg"><a v-if="item.Youtube" :href="item.Youtube" rel="prettyPhoto">
+                            <div class="hover-text">
+                              <h4>{{ item.Title }}</h4><small>{{ item.Business }}</small>
+                              <div class="clearfix"></div><i class="fa fa-plus"></i>
+                            </div><img class="img-responsive" :src="item.Img" :alt="item.ImgAlt"></a><a v-else>
                             <div class="hover-text">
                               <h4>{{ item.Title }}</h4><small>{{ item.Business }}</small>
                               <div class="clearfix"></div><i class="fa fa-plus"></i>
@@ -175,11 +239,6 @@
         </div>
       </footer>
     </div>
-    <script src="assets/js/vue.min.js"></script>
-    <script src="assets/js/httpVueLoader.js"></script>
-    <script src="assets/js/vue-i18n.min.js"></script>
-    <script src="assets/js/element-ui.js"></script>
-    <script src="assets/js/filmMain.js" type="module"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.prettyPhoto.js"></script>
     <script src="assets/js/jquery.isotope.js"></script>
@@ -194,6 +253,10 @@
     <script src="assets/lib/fancybox/jquery.fancybox.min.js"></script>
     <script src="assets/lib/owl.carousel/owl.carousel.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/vue.min.js"></script>
+    <script src="assets/js/httpVueLoader.js"></script>
+    <script src="assets/js/vue-i18n.min.js"></script>
+    <script src="assets/js/element-ui.js"></script>
+    <script src="assets/js/filmMain.js" type="module"></script>
   </body>
 </html>

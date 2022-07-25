@@ -132,6 +132,7 @@ input, textarea, select {
     };
   };
   .navbar-toggler {
+    max-width: 50px;
     padding: unset;
     border-color: rgba(255,255,255,0.5);
     border-radius: 4px;
@@ -408,6 +409,9 @@ input, textarea, select {
       };
     };
   };
+  .controlIcon {
+    z-index: 3;
+  }
 }
 @media screen and (max-width: 425px) {
   .IndexBanner {
@@ -584,6 +588,44 @@ input, textarea, select {
 .IndexAbout {
   background: linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 0 no-repeat, rgba(248,249,250,1);
 }
+
+.News {
+  background: linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 0 no-repeat, linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 100% no-repeat, rgba(248,249,250,1);
+  background-size: 100% 1px, 100% 1px, 100%;
+  .NewsLink {
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s;
+    .NewsTitle {
+      max-width: 100%;
+      padding: 10px 0;
+      color: rgba(216,67,35,1);
+      font-size: 18px;
+      text-overflow : ellipsis; //- 單行省略
+      white-space : nowrap; //- 單行省略
+      overflow : hidden; //- 單行省略
+    };
+    .NewsInfo {
+      color: rgba(115,115,115,1);
+      font-size: 15px;
+      line-height: 25px;
+      display: -webkit-box; //- 多行省略
+      -webkit-box-orient: vertical; //- 多行省略
+      -webkit-line-clamp: 2; //- 多行省略
+      overflow: hidden; //- 多行省略
+    };
+    .NewsDate {
+      color: rgba(214,214,214,1);
+      font-size: 15px;
+    };
+  };
+  .NewsLink:hover {
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    transition: all 0.3s;
+  };
+}
+
+.NewsDetail {}
 
 .IndexContact {
   background: url('../img/contact/MapImg.png') 50% 50% no-repeat, rgba(33,37,41,1);

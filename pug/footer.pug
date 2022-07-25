@@ -1,0 +1,10 @@
+footer#digital-footer.footer.text-center.overflow-hidden(data-zanim-timeline="{}" data-zanim-trigger="scroll")
+  .container
+    .row.align-items-center
+      .col-12
+        p.fs--1.text-uppercase.ls.font-weight-bold.mb-0 Copyright © 2018 - 2022 Double Edge Entertainment Corp., LTD. All Rights Reserved.
+        p.fs--1.text-uppercase.ls.font-weight-bold.mb-0(v-if='language !== "en" && language !== "jp"') {{ $t('Footer.Info'/*本網站內容屬「 得藝文創國際股份有限公司 」所有*/) }}
+        p.fs--1.text-uppercase.ls.font-weight-bold.mb-0.d-flex.flex-lg-row.flex-column.justify-content-center
+          span {{ $t('Footer.Address'/*地址：106台北市大安區敦化南路二段77號19樓之3*/) }}
+          span.px-3 {{ $t('Footer.Telephone'/*電話：+886(2)-2325-3126*/) }}
+          span {{ $t('Footer.Fax'/*傳真：+886(2)-2325-3128*/) }}
