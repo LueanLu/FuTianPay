@@ -41,6 +41,7 @@ new Vue({
     // 最新消息
     news: '',
     newsId: 0,
+    newsDetail: '',
     // 聯絡我們
     contact: {
       Name: '',
@@ -141,6 +142,7 @@ new Vue({
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
     this.newsId = params.newsId;
+    if (params.newsId) this.newsDetail = this.news[this.newsId] || this.news[0];
   },
 });
 

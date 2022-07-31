@@ -55,7 +55,7 @@ html
                 h2.Title {{ $t('NewsDetail.Title'/*NEWS DETAIL*/) }}
                 .MainTitle
                   a(href='news.html') {{ $t('NewsDetail.MainTitle'/*最新消息*/) }}
-                  span  / {{ news[newsId].title }}
+                  span  / {{ newsDetail.title }}
 
               //- Pagination
               //- .col-12.d-flex.flex-row.justify-content-between.align-items-center.py-4
@@ -69,19 +69,19 @@ html
                   img.w-lg-100.h-lg-auto.img-fluid.h-100(src="assets/img/newsDetail/01/img01.jpg" alt="" data-zanim-xs='{"delay":0.1,"animation":"zoom-in"}')
                 .col.px-lg-11
                   .embed-responsive.embed-responsive-16by9
-                    .bg-holder.rounded(:style="'background-image:url(' + news[newsId].filmImg + ');'")
+                    .bg-holder.rounded(:style="'background-image:url(' + newsDetail.filmImg + ');'")
                     //- .bg-holder
                     .embed-responsive-item.d-flex.align-items-center.justify-content-center
-                      a.text-white(:href="news[newsId].youtube", data-fancybox="data-fancybox", data-options='{"youtube":{"start":0,"end":0}}')
+                      a.text-white(:href="newsDetail.youtube", data-fancybox="data-fancybox", data-options='{"youtube":{"start":0,"end":0}}')
                         span.fa-layers.fa-fw.fs-5
                           i.fas.fa-circle
                           i.text-dark.fas.fa-play(data-fa-transform="shrink-12 right-0.5")
 
                 .overflow-hidden.d-flex.flex-column.align-items-start.p-4
-                  .NewsDetailTitle(data-zanim-xs='{"delay":0.2}') {{ news[newsId].info }}
-                  .NewsDetailTag(data-zanim-xs='{"delay":0.3}') {{ $t('News.FilmLength'/*片長*/) }}: {{ news[newsId].filmLength }}{{ $t('News.Minute'/*分*/) }}
-                  .NewsDetailDate(data-zanim-xs='{"delay":0.4}') {{ $t('News.ReleaseDate'/*上映日期*/) }}: {{ news[newsId].releaseDate }}
-                  .NewsDetailInfo(data-zanim-xs='{"delay":0.5}' v-html="news[newsId].content")
+                  .NewsDetailTitle(data-zanim-xs='{"delay":0.2}') {{ newsDetail.info }}
+                  .NewsDetailTag(data-zanim-xs='{"delay":0.3}') {{ $t('News.FilmLength'/*片長*/) }}: {{ newsDetail.filmLength }}{{ $t('News.Minute'/*分*/) }}
+                  .NewsDetailDate(data-zanim-xs='{"delay":0.4}') {{ $t('News.ReleaseDate'/*上映日期*/) }}: {{ newsDetail.releaseDate }}
+                  .NewsDetailInfo(data-zanim-xs='{"delay":0.5}' v-html="newsDetail.content")
 
               //- Pagination
               //- .col-12.d-flex.flex-row.justify-content-between.align-items-center.pt-4
