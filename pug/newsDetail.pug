@@ -53,7 +53,9 @@ html
             .row.justify-content-center.text-center
               .col-lg-7.TitleFormB
                 h2.Title {{ $t('NewsDetail.Title'/*NEWS DETAIL*/) }}
-                .MainTitle {{ $t('NewsDetail.MainTitle'/*最新消息內容*/) }} / 聚合支付平台官網正式上線
+                .MainTitle
+                  a(href='news.html') {{ $t('NewsDetail.MainTitle'/*最新消息*/) }}
+                  span  / {{ news[newsId].title }}
 
               //- Pagination
               //- .col-12.d-flex.flex-row.justify-content-between.align-items-center.py-4
@@ -61,27 +63,25 @@ html
                 el-button.NewsDetailNext.d-flex.align-items-center(@click='') 下一篇
 
               //- NewsList Content
-              .NewsDetailCont.col-12.d-flex.flex-column.justify-content-center.py-4.text-left(data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll")
-                .NewsDetailImg.overflow-hidden.d-flex.justify-content-center.align-items-center
-                  img.w-lg-100.h-lg-auto.img-fluid.h-100(src="assets/img/newsImg/NewsImg01.jpg" alt="" data-zanim-xs='{"delay":0.1,"animation":"zoom-in"}')
+              .NewsDetailCont.col-12.d-flex.flex-column.justify-content-center.align-items-center.py-4.text-left(data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll")
+
+                //- .NewsDetailImg.overflow-hidden.d-flex.justify-content-center.align-items-center
+                  img.w-lg-100.h-lg-auto.img-fluid.h-100(src="assets/img/newsDetail/01/img01.jpg" alt="" data-zanim-xs='{"delay":0.1,"animation":"zoom-in"}')
+                .col.px-11
+                  .embed-responsive.embed-responsive-16by9
+                    .bg-holder.rounded(:style="'background-image:url(' + news[newsId].filmImg + ');'")
+                    //- .bg-holder
+                    .embed-responsive-item.d-flex.align-items-center.justify-content-center
+                      a.text-white(:href="news[newsId].youtube", data-fancybox="data-fancybox", data-options='{"youtube":{"start":0,"end":0}}')
+                        span.fa-layers.fa-fw.fs-5
+                          i.fas.fa-circle
+                          i.text-dark.fas.fa-play(data-fa-transform="shrink-12 right-0.5")
+
                 .overflow-hidden.d-flex.flex-column.align-items-start.p-4
-                  .NewsDetailTag(data-zanim-xs='{"delay":0.2}') 未分類
-                  .NewsDetailTitle(data-zanim-xs='{"delay":0.3}') F.T聚合支付平台官網正式上線
-                  .NewsDetailDate(data-zanim-xs='{"delay":0.4}') 2020/11/01
-                  .NewsDetailInfo(data-zanim-xs='{"delay":0.5}')
-                    p 最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。
-                    br
-                    p 最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。
-                    br
-                    p 最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。
-                    br
-                    p 最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。
-                    br
-                    p 最新消息內文：F.T聚合支付平台官網正式上線。
-                    br
-                    p 最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。
-                    br
-                    p 最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。
+                  .NewsDetailTitle(data-zanim-xs='{"delay":0.2}') {{ news[newsId].info }}
+                  .NewsDetailTag(data-zanim-xs='{"delay":0.3}') {{ $t('News.FilmLength'/*片長*/) }}: {{ news[newsId].filmLength }}{{ $t('News.Minute'/*分*/) }}
+                  .NewsDetailDate(data-zanim-xs='{"delay":0.4}') {{ $t('News.ReleaseDate'/*上映日期*/) }}: {{ news[newsId].releaseDate }}
+                  .NewsDetailInfo(data-zanim-xs='{"delay":0.5}' v-html="news[newsId].content")
 
               //- Pagination
               //- .col-12.d-flex.flex-row.justify-content-between.align-items-center.pt-4

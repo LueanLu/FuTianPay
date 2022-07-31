@@ -49,6 +49,7 @@
               <li class="nav-item"><a class="nav-link" href="./index.html#top" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.Index'/*首頁*/) }}</a></li>
               <li class="nav-item"><a class="nav-link" href="index.html#page-Catalogue" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.Catalogue'/*歷年作品*/) }}</a><a class="d-none" href="#page-Catalogue" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70"></a></li>
               <li class="nav-item"><a class="nav-link" href="index.html#digital-about" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.About'/*關於得藝*/) }}</a><a class="d-none" href="#digital-about" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70"></a></li>
+              <li class="nav-item"><a class="nav-link" href="news.html">{{ $t('Nav.News'/*最新消息*/) }}</a></li>
               <li class="nav-item d-lg-none d-block"><a class="nav-link" href="index.html#digital-footer" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70">{{ $t('Nav.Contact'/*聯絡我們*/) }}</a><a class="d-none" href="#digital-footer" data-zanim-timeline="{&quot;delay&quot;:1}" data-fancyscroll="data-fancyscroll" data-offset="70"></a></li>
               <div class="navLineOne d-none d-lg-block mx-3"></div>
               <div class="navLineTwo d-block d-lg-none my-3"></div>
@@ -105,23 +106,20 @@
             <div class="row justify-content-center text-center">
               <div class="col-lg-7 TitleFormB">
                 <h2 class="Title">{{ $t('NewsDetail.Title'/*NEWS DETAIL*/) }}</h2>
-                <div class="MainTitle">{{ $t('NewsDetail.MainTitle'/*最新消息內容*/) }} / 聚合支付平台官網正式上線</div>
+                <div class="MainTitle"><a href="news.html">{{ $t('NewsDetail.MainTitle'/*最新消息*/) }}</a><span> / {{ news[newsId].title }}</span></div>
               </div>
-              <div class="NewsDetailCont col-12 d-flex flex-column justify-content-center py-4 text-left" data-zanim-timeline="{&quot;delay&quot;:0.1}" data-zanim-trigger="scroll">
-                <div class="NewsDetailImg overflow-hidden d-flex justify-content-center align-items-center"><img class="w-lg-100 h-lg-auto img-fluid h-100" src="assets/img/newsImg/NewsImg01.jpg" alt="" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;zoom-in&quot;}"></div>
-                <div class="overflow-hidden d-flex flex-column align-items-start p-4">
-                  <div class="NewsDetailTag" data-zanim-xs="{&quot;delay&quot;:0.2}">未分類</div>
-                  <div class="NewsDetailTitle" data-zanim-xs="{&quot;delay&quot;:0.3}">F.T聚合支付平台官網正式上線</div>
-                  <div class="NewsDetailDate" data-zanim-xs="{&quot;delay&quot;:0.4}">2020/11/01</div>
-                  <div class="NewsDetailInfo" data-zanim-xs="{&quot;delay&quot;:0.5}">
-                    <p>最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。</p><br>
-                    <p>最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。</p><br>
-                    <p>最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。</p><br>
-                    <p>最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。</p><br>
-                    <p>最新消息內文：F.T聚合支付平台官網正式上線。</p><br>
-                    <p>最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。</p><br>
-                    <p>最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線，最新消息內文：F.T聚合支付平台官網正式上線。</p>
+              <div class="NewsDetailCont col-12 d-flex flex-column justify-content-center align-items-center py-4 text-left" data-zanim-timeline="{&quot;delay&quot;:0.1}" data-zanim-trigger="scroll">
+                <div class="col px-11">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <div class="bg-holder rounded" :style="'background-image:url(' + news[newsId].filmImg + ');'"></div>
+                    <div class="embed-responsive-item d-flex align-items-center justify-content-center"><a class="text-white" :href="news[newsId].youtube" data-fancybox="data-fancybox" data-options="{&quot;youtube&quot;:{&quot;start&quot;:0,&quot;end&quot;:0}}"><span class="fa-layers fa-fw fs-5"><i class="fas fa-circle"></i><i class="text-dark fas fa-play" data-fa-transform="shrink-12 right-0.5"></i></span></a></div>
                   </div>
+                </div>
+                <div class="overflow-hidden d-flex flex-column align-items-start p-4">
+                  <div class="NewsDetailTitle" data-zanim-xs="{&quot;delay&quot;:0.2}">{{ news[newsId].info }}</div>
+                  <div class="NewsDetailTag" data-zanim-xs="{&quot;delay&quot;:0.3}">{{ $t('News.FilmLength'/*片長*/) }}: {{ news[newsId].filmLength }}{{ $t('News.Minute'/*分*/) }}</div>
+                  <div class="NewsDetailDate" data-zanim-xs="{&quot;delay&quot;:0.4}">{{ $t('News.ReleaseDate'/*上映日期*/) }}: {{ news[newsId].releaseDate }}</div>
+                  <div class="NewsDetailInfo" data-zanim-xs="{&quot;delay&quot;:0.5}" v-html="news[newsId].content"></div>
                 </div>
               </div>
             </div>

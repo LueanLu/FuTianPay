@@ -615,7 +615,7 @@ input, textarea, select {
       overflow: hidden; //- 多行省略
     };
     .NewsDate {
-      color: rgba(214,214,214,1);
+      color: rgba(0,0,0,0.6);
       font-size: 15px;
     };
   };
@@ -625,7 +625,68 @@ input, textarea, select {
   };
 }
 
-.NewsDetail {}
+.NewsDetail {
+  background: linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 0 no-repeat, linear-gradient(0deg, rgba(225,225,225,1), rgba(225,225,225,1)) 50% 100% no-repeat, rgba(248,249,250,1);
+  background-size: 100% 1px, 100% 1px, 100%;
+  .NewsDetailPrev, .NewsDetailNext {
+    min-width: 60px;
+    height: 28px;
+    background: rgba(216,67,35,1);
+    color: rgba(255,255,255,1);
+    border: unset;
+    cursor: pointer;
+    &:hover, &:focus {
+      background: rgba(217,93,65,1);
+      color: rgba(255,255,255,1);
+      outline: unset;
+    };
+    &:active {
+      background: rgba(216,67,35,1);
+      color: rgba(255,255,255,1);
+      outline: unset;
+    };
+  };
+  .NewsDetailCont {
+    border-top: 1px dashed rgba(214,214,214,1);
+    // border-bottom: 1px dashed rgba(214,214,214,1);
+    .NewsDetailImg {
+      height: 240px;
+      max-height: 240px;
+      background: url('../img/icon/IconNoImg.svg') 50% 50% no-repeat, rgba(214,214,214,1);
+      background-size: 100px, 100%;
+    };
+    .NewsDetailTag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 60px;
+      height: 20px;
+      margin: 0 0 10px;
+      padding: 0 10px;
+      background: rgba(216,67,35,1);
+      color: rgba(255,255,255,1);
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 4px;
+    };
+    .NewsDetailTitle {
+      max-width: 100%;
+      padding: 10px 0 20px;
+      color: rgba(216,67,35,1);
+      font-size: 18px;
+    };
+    .NewsDetailDate {
+      padding-bottom: 10px;
+      color: rgba(0,0,0,0.4);
+      font-size: 15px;
+    };
+    .NewsDetailInfo {
+      color: rgba(115,115,115,1);
+      font-size: 15px;
+      line-height: 30px;
+    };
+  };
+}
 
 .IndexContact {
   background: url('../img/contact/MapImg.png') 50% 50% no-repeat, rgba(33,37,41,1);

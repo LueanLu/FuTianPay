@@ -38,6 +38,9 @@ new Vue({
     catalogueData: null,
     // 關於我們
     about: '',
+    // 最新消息
+    news: '',
+    newsId: 0,
     // 聯絡我們
     contact: {
       Name: '',
@@ -134,6 +137,10 @@ new Vue({
     // 取視窗寬度
     this.getWidth();
     this.about = this.$t('IndexAbout.Content');
+    this.news = this.$t('NewsContent');
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    this.newsId = params.newsId;
   },
 });
 

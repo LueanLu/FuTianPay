@@ -61,42 +61,40 @@ html
                 el-pagination.Pagination(@current-change="handleCurrentChange", :page-size='pageSize', :pager-count='pagerCount', :total='total', :current-page.sync="curretPage", layout="prev, pager, next", background)
 
             //- NewsList Content
-            .row.justify-content-center.justify-content-lg-between.py-5
+            .row.justify-content-center.justify-content-lg-between.pt-5(v-for='(item, index) in news' :key='index')
               .col-lg-3
-                #carouselExampleIndicators.carousel.slide(data-ride="carousel")
+                //- 影片
+                //- .h-100.position-relative
+                  .bg-holder.rounded(style="background-image:url(assets/img/necklace-01.jpg);")
+                    .bg-youtube(data-property='{"videoURL":"https://youtu.be/NA4Wa9E5Kpo","startAt":40,"stopAt":27,"mute":true,"showYTLogo":false}')
+                //- 圖片
+                img.h-lg-100.w-100.rounded.fit-cover(:src="item.img" alt="")
+                //- 輪播圖片
+                //- .carousel.slide(data-ride="carousel" :id="'carouselExampleIndicators' + index")
                   ol.carousel-indicators
-                    li.active(data-target="#carouselExampleIndicators", data-slide-to="0")
-                    li(data-target="#carouselExampleIndicators", data-slide-to="1")
-                    li(data-target="#carouselExampleIndicators", data-slide-to="2")
+                    li(v-for='(itemImg, index) in item.imgs' :key='index' :class="index === 0 ? 'active' : ''" :data-target="'#carouselExampleIndicators' + index", :data-slide-to="index")
                   .carousel-inner
-                    .carousel-item.active
-                      img.d-block.w-100(src="assets/img/watch-02.jpg", alt="")
-                    .carousel-item
-                      img.d-block.w-100(src="assets/img/watch-01.jpg", alt="")
-                    .carousel-item
-                      img.d-block.w-100(src="assets/img/watch-03.jpg", alt="")
-                  a.carousel-control-prev(href="#carouselExampleIndicators", role="button", data-slide="prev")
+                    .carousel-item(v-for='(itemImg, index) in item.imgs' :key='index' :class="index === 0 ? 'active' : ''")
+                      img.d-block.w-100(:src="itemImg.url", alt="")
+                  a.carousel-control-prev(:href="'#carouselExampleIndicators' + index", role="button", data-slide="prev")
                     span.carousel-control-prev-icon(aria-hidden="true")
                     span.sr-only Previous
-                  a.carousel-control-next(href="#carouselExampleIndicators", role="button", data-slide="next")
+                  a.carousel-control-next(:href="'#carouselExampleIndicators' + index", role="button", data-slide="next")
                     span.carousel-control-next-icon(aria-hidden="true")
                     span.sr-only Next
-              a.col-lg-9.pl-lg-4.pl-xl-6.mt-4.mt-lg-0.NewsLink(href="newsDetail.html")
+              a.col-lg-9.pl-3.py-3.mt-4.mt-lg-0.NewsLink(:href="'newsDetail.html?newsId=' + index")
                 .text-sans-serif.fs-1.mb-2
-                  span.NewsTitle.text-warning.font-weight-black 女鬼橋 The Bridge Curse
-                  span.fs-0  / 2020-02-27
+                  span.NewsTitle.text-warning.font-weight-black {{ item.title }}
+                  span.fs-0  - {{ item.update }}
                 .text-black
-                  h3.mb-0 真實靈異傳說改編夜闖直播意外鬼入鏡轟動全台
-                p.NewsInfo.lead.text-sans-serif 來自真實傳聞已久的校園靈異傳說，相傳有位女學生被負心男拋棄，午夜跳河自盡，從此那座橋就成了眾多靈異現象之地。由林哲熹.孟耿如.嚴正嵐.張甯.詹宛儒.謝毅宏.葛承聯合主演。
-                ul.list-unstyled.mt-2.mb-0
-                  li
-                    .fs-0.text-900.NewsDate
-                      span.font-weight-bold 片長:
-                      span.font-weight-normal.pl-1 87分
-                  li
-                    .fs-0.text-900.NewsDate
-                      span.font-weight-bold 上映日期:
-                      span.font-weight-normal.pl-1 2020/02/27
+                  h3.mb-0 {{ item.subLabel }}
+                .NewsInfo.lead.text-sans-serif {{ item.info }}
+                .list-unstyled.mt-1.mb-0
+                  .fs-0
+                      span.font-weight-bold {{ $t('News.FilmLength'/*片長*/) }}:
+                      span.font-weight-normal.pl-1.pr-3 {{ item.filmLength }}{{ $t('News.Minute'/*分*/) }}
+                      span.font-weight-bold {{ $t('News.ReleaseDate'/*上映日期*/) }}:
+                      span.font-weight-normal.pl-1 {{ item.releaseDate }}
 
 
             //- Pagination
@@ -126,6 +124,7 @@ html
     script(src="assets/js/rellax.min.js")
     script(src="assets/lib/fancybox/jquery.fancybox.min.js")
     script(src="assets/lib/owl.carousel/owl.carousel.js")
+    script(src="assets/lib/jquery.mb.ytplayer/jquery.mb.YTPlayer.min.js")
     script(src="assets/js/theme.js")
     //- Vue
     script(src='assets/js/vue.min.js')
