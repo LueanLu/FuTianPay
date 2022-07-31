@@ -180,7 +180,7 @@ export default {
     {
       img: 'assets/img/newsImg/01/img01.jpg',
       imgs: [{ url: 'assets/img/newsImg/01/img01.jpg' }, { url: 'assets/img/newsImg/01/img02.jpg' }],
-      filmImg: 'assets/img/newsDetail/01/img01.jpg',
+      filmImg: "background-image:url('assets/img/newsDetail/01/img01.jpg')",
       youtube: 'https://youtu.be/NA4Wa9E5Kpo',
       title: '女鬼橋',
       update: '2020/02/27',
@@ -193,7 +193,7 @@ export default {
     {
       img: 'assets/img/newsImg/02/img01.jpg',
       imgs: [{ url: 'assets/img/newsImg/02/img01.jpg' }, { url: 'assets/img/newsImg/02/img02.jpg' }],
-      filmImg: 'assets/img/newsDetail/02/img01.jpg',
+      filmImg: "background-image:url('assets/img/newsDetail/02/img01.jpg')",
       youtube: 'https://youtu.be/lZDcdCngqFY',
       title: "雖然媽媽說我不可以嫁去日本",
       update: '2017/06/05',
@@ -206,7 +206,7 @@ export default {
     {
       img: 'assets/img/newsImg/03/img01.jpg',
       imgs: [{ url: 'assets/img/newsImg/03/img01.jpg' }, { url: 'assets/img/newsImg/03/img02.jpg' }],
-      filmImg: 'assets/img/newsDetail/03/img01.jpg',
+      filmImg: "background-image:url('assets/img/newsDetail/03/img01.jpg')",
       youtube: 'https://youtu.be/1bBBRJ8D5xA',
       title: "唱吧！奇蹟！",
       update: '2017/04/25',
@@ -219,7 +219,7 @@ export default {
     {
       img: 'assets/img/newsImg/04/img01.jpg',
       imgs: [{ url: 'assets/img/newsImg/04/img01.jpg' }, { url: 'assets/img/newsImg/04/img02.jpg' }],
-      filmImg: 'assets/img/newsDetail/04/img01.jpg',
+      filmImg: "background-image:url('assets/img/newsDetail/04/img01.jpg')",
       youtube: 'https://youtu.be/1e8rvpv5zuA',
       title: "金權性內幕",
       update: '2017/04/10',
