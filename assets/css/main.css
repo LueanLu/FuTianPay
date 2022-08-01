@@ -501,12 +501,19 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
     text-decoration: none;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    border-bottom: 1px dashed #d6d6d6; }
     .News .NewsLink .NewsTitle {
       max-width: 100%;
       padding: 10px 0;
       color: #d84323;
       font-size: 18px;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+    .News .NewsLink .NewsSubLabel {
+      max-width: 100%;
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -519,9 +526,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
       overflow: hidden; }
-    .News .NewsLink .NewsDate {
-      color: rgba(0, 0, 0, 0.6);
-      font-size: 15px; }
   .News .NewsLink:hover {
     -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);

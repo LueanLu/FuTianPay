@@ -178,9 +178,22 @@ export default {
   // NewsContent
   NewsContent: [
     {
-      img: 'assets/img/newsImg/01/img01.jpg',
-      imgs: [{ url: 'assets/img/newsImg/01/img01.jpg' }, { url: 'assets/img/newsImg/01/img02.jpg' }],
-      filmImg: "background-image:url('assets/img/newsDetail/01/img01.jpg')",
+      img: 'assets/img/newsImg/05/img01.jpg',
+      imgs: [{ url: 'assets/img/newsImg/05/img01.jpg' }, { url: 'assets/img/newsImg/05/img02.jpg' }],
+      filmImg: "background-image:url('assets/img/newsDetail/05/img01.jpg')",
+      youtube: 'https://youtu.be/6wCc5QcBkZc',
+      title: '我吃了那男孩一整年的早餐',
+      update: '2022/08/01',
+      subLabel: '2022年春節票房冠軍',
+      info: '台灣校園愛情電影，此部電影為小說改編的同名作品，由杜政哲執導，由周興哲、李沐、婁峻碩、宋柏緯、林鶴軒、何思靜主演。',
+      filmLength: '125',
+      releaseDate: '2022/01/28',
+      content: "<p>劇情簡介<br>17歲、高二的項微心（李沐 飾）視吃為人生最重要也是最療癒的事，而她第一次跟學長陶宥全（周興哲 飾）相遇，就是在學校的福利社。<p>跟全世界的17歲女孩一樣，項微心想像過各種自己在未來的樣子，而她身邊的陶宥全、方琦然、張元碩也一樣，故事開始時的他們，並沒有想過這一年竟然會有這麼多事，人生竟會充滿各式各樣的疑問……"
+    },
+    {
+      img: 'assets/img/newsImg/04/img01.jpg',
+      imgs: [{ url: 'assets/img/newsImg/04/img01.jpg' }, { url: 'assets/img/newsImg/04/img02.jpg' }],
+      filmImg: "background-image:url('assets/img/newsDetail/04/img01.jpg')",
       youtube: 'https://youtu.be/NA4Wa9E5Kpo',
       title: '女鬼橋',
       update: '2020/02/27',
@@ -191,9 +204,9 @@ export default {
       content: "<p>劇情簡介<br>小心！絕不能碰的校園禁忌<p>2016年閏月，六名東湖大學營隊幹部同學，在校園傳說中知名的女鬼橋舉辦試膽大會，這座女鬼橋是流傳已久的校園禁地，傳說中有學姊為了心儀的男生，從橋上跳下去殉情，之後就有許多恐怖傳說。<p>為了幫試膽會做宣傳，不怕死的這群人竟半夜到橋上直播，沒想到直播中竟拍到女鬼現形，這場百萬網友見證的驚人畫面，轟動全台，但從此這群學生卻下落不明……沒有人知道發生了什麼事，女鬼橋的靈異傳說從未停止過....。<p>四年後的同一天，新聞追查主持人連舒宇和攝影師回到女鬼橋事發現場，想找出當年的真相，沒想到他們將迎來的是，女鬼橋下驚悚難解的無間輪迴地獄……"
     },
     {
-      img: 'assets/img/newsImg/02/img01.jpg',
-      imgs: [{ url: 'assets/img/newsImg/02/img01.jpg' }, { url: 'assets/img/newsImg/02/img02.jpg' }],
-      filmImg: "background-image:url('assets/img/newsDetail/02/img01.jpg')",
+      img: 'assets/img/newsImg/03/img01.jpg',
+      imgs: [{ url: 'assets/img/newsImg/03/img01.jpg' }, { url: 'assets/img/newsImg/03/img02.jpg' }],
+      filmImg: "background-image:url('assets/img/newsDetail/03/img01.jpg')",
       youtube: 'https://youtu.be/lZDcdCngqFY',
       title: "雖然媽媽說我不可以嫁去日本",
       update: '2017/06/05',
@@ -204,9 +217,9 @@ export default {
       content: "<p>劇情簡介<br>日本電視、廣告導演谷內田彰久首次執導的電影長片，簡嫚書、中野裕太、王彩樺、林美秀、蛭子能収主演。<p>薏涵（簡嫚書 飾）是個正值花樣年華的台灣女孩，不但熱愛日劇及日本動漫，大學也就讀日文系，是個百分百的哈日族。正當日本311大地震震驚全球，薏涵的Facebook收到了一封來自日本男孩「茂木」的訊息。原來茂木（中野裕太 飾）在震災後感受到台灣全力協助的熱情，鼓起勇氣傳了訊息給幾個台灣人想表達感激，薏涵回覆訊息的同時也開啟了兩人的緣份。<p>茂木放假期間和同事來台旅遊，兩人終於第一次碰面，雖然相處時間短暫，情愫卻悄悄滋長。從那時起，在Facebook上交換訊息成了薏涵和茂木的甜蜜約會時光。即便只是聊些芝麻小事，兩人卻感到無比幸福。網路串連起隔著海洋的兩人，隨著時間累積，薏涵的心意一點一滴的送往日本，而茂木的思念之情也得以飛往台灣。<p>大學畢業後，薏涵打算到日本打工度假。為了一圓自己的夢想，並且拉近和茂木之間的距離，薏涵帶著忐忑不安的心情，踏上了飛往日本的旅程。就在出發前，媽媽特別叮嚀薏涵絕對不可以嫁去日本，殊不知薏涵的心中早已暗自決定，說什麼都要和茂木共度一生……<p>遇見Mr.Right 不顧一切勇敢去愛！<p>茂木太太跨國追愛的故事曾在FB粉絲團「雖然媽媽說我不可以嫁去日本」上感動33萬名網友，除了在上面記錄異國婚姻日常，也分享了很多搞怪逗趣的影片。某天，素昧平生的日本人將這對可愛夫妻的故事po到網路，點閱率一夕爆衝，一口氣連續十幾家日本出版社找上茂木夫妻。先是出了粉絲團同名書籍，現更翻拍成電影，由簡嫚書、中野裕太主演。<p>茂木夫妻的故事搬上大銀幕的消息一釋出，當天馬上引來100萬名網友熱搜，人氣超旺，未演先轟動。究竟當初受到媽媽猛烈反對婚事的茂木太太，用了什麼妙計才嫁給茂木先生呢？甜蜜浪漫的跨海異國戀曲即將風靡台日兩地，引領你尋找追愛的勇氣。"
     },
     {
-      img: 'assets/img/newsImg/03/img01.jpg',
-      imgs: [{ url: 'assets/img/newsImg/03/img01.jpg' }, { url: 'assets/img/newsImg/03/img02.jpg' }],
-      filmImg: "background-image:url('assets/img/newsDetail/03/img01.jpg')",
+      img: 'assets/img/newsImg/02/img01.jpg',
+      imgs: [{ url: 'assets/img/newsImg/02/img01.jpg' }, { url: 'assets/img/newsImg/02/img02.jpg' }],
+      filmImg: "background-image:url('assets/img/newsDetail/02/img01.jpg')",
       youtube: 'https://youtu.be/1bBBRJ8D5xA',
       title: "唱吧！奇蹟！",
       update: '2017/04/25',
@@ -217,9 +230,9 @@ export default {
       content: "<p>劇情簡介<br>本片首度曝光GReeeeN克服萬難，追求夢想的幕後故事，由松坂桃李飾演製作人JIN，菅田將暉飾演團長HIDE，率領另外三位團員，首次獻唱。<p>JIN(松坂桃李 飾)將樂團視為事業經營，為了出道，不惜和頑固的父親(小林薰 飾)決裂而離家出走。隔年弟弟HIDE(菅田將暉 飾)考取牙醫系，偶然拿起哥哥JIN留在家裡的吉他，沉浸在音樂世界裡不能自己的HIDE，邀同學Nabi(横浜流星 飾)、Kuni(成田凌 飾演)及Sou(杉野遙亮 飾)一起組成了GReeeeN樂團，開始了自己的創作。<p>另一方面，JIN的樂團和唱片公司理念分歧，面臨解散。正當陷入低潮的時候，弟弟HIDE拿來了GReeeeN錄好的Demo請哥哥幫忙編曲。聽到這些打從心底覺得快樂而歡唱的樂曲，JIN感受到弟弟的天分，決定傾全力幫忙。兩兄弟決心在音樂路上同心協力，一起在親情、友情的迷惘與衝突之中，逐漸找到一條可以勇往直前的道路。<p>不久後，GReeeeN在學生活動中開了第一場演唱會，HIDE的女朋友理香(忽那汐里 飾演) 也在觀眾席為他加油。JIN也默默為他們打氣，下定決心以製作人身分支持這四個人，同時寄託自己的音樂之夢在他們身上。為了不讓父親阻撓HIDE從事音樂事業， JIN想出妙計，拼命奔走，不惜放下身段去拜託一直挖苦自己樂團的唱片公司人員，讓GReeeeN「不露臉」出道，單純用音樂在市場上分勝負。<p>由HIDE撰寫歌詞，在JIN公寓的衣櫥裡完成錄音的新歌「道」，成為GReeeeN的出道曲並出了第一張專輯。母親與姐姐知情後也為這件事而興奮，但HIDE卻突然覺得自己沉溺音樂太久而疏遠了學業，竟想中止樂團活動。這時被女友理香的一句話「HIDE你到底想要做甚麼呢?」所觸動。尊敬著救助許多生命的醫生父親，也希望能滿足母親的期待，卻放不下對音樂的熱愛，以這樣的心情一路走來的HIDE，不停地問自己到底想做甚麼呢？猶豫不決的HIDE眼前出現了哥哥JIN的身影。<p>這時候，奇蹟之輪轉動了……<p>史上最神秘創作天團GReeeeN出道十年，在日本的地位猶如台灣五月天，總能唱出年輕人青春成長、光明正面的熱血心聲。成名曲「奇蹟」，是棒球日劇「ROOKIES不良學園」的爆紅主題曲，曾突破最短時間下載量100萬次、首日下載18萬次等紀錄，並於同年破金氏世界紀錄，總下載量超過590萬次。<p>GReeeeN的歌曲席捲東洋樂壇，名符其實創造了樂團的奇蹟，影響力不容小覷。GReeeeN出道十年來從未露臉，人氣卻絲毫不減，講述四位牙醫系學生創團初期的故事躍上大銀幕。"
     },
     {
-      img: 'assets/img/newsImg/04/img01.jpg',
-      imgs: [{ url: 'assets/img/newsImg/04/img01.jpg' }, { url: 'assets/img/newsImg/04/img02.jpg' }],
-      filmImg: "background-image:url('assets/img/newsDetail/04/img01.jpg')",
+      img: 'assets/img/newsImg/01/img01.jpg',
+      imgs: [{ url: 'assets/img/newsImg/01/img01.jpg' }, { url: 'assets/img/newsImg/01/img02.jpg' }],
+      filmImg: "background-image:url('assets/img/newsDetail/01/img01.jpg')",
       youtube: 'https://youtu.be/1e8rvpv5zuA',
       title: "金權性內幕",
       update: '2017/04/10',

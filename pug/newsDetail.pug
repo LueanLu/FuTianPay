@@ -55,7 +55,8 @@ html
                 h2.Title {{ $t('NewsDetail.Title'/*NEWS DETAIL*/) }}
                 .MainTitle
                   a(href='news.html') {{ $t('NewsDetail.MainTitle'/*最新消息*/) }}
-                  span  / {{ newsDetail.title }}
+                  span.mx-2 /
+                  span {{ newsDetail.title }}
 
               //- Pagination
               //- .col-12.d-flex.flex-row.justify-content-between.align-items-center.py-4
@@ -69,7 +70,7 @@ html
                   img.w-lg-100.h-lg-auto.img-fluid.h-100(src="assets/img/newsDetail/01/img01.jpg" alt="" data-zanim-xs='{"delay":0.1,"animation":"zoom-in"}')
                 .col.px-lg-11
                   .embed-responsive.embed-responsive-16by9
-                    .bg-holder.rounded(:style="newsDetail.filmImg")
+                    .bg-holder.rounded(:style='newsDetail.filmImg')
                     //- .bg-holder
                     .embed-responsive-item.d-flex.align-items-center.justify-content-center
                       a.text-white(:href="newsDetail.youtube", data-fancybox="data-fancybox", data-options='{"youtube":{"start":0,"end":0}}')

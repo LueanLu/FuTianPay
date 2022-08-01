@@ -596,11 +596,18 @@ input, textarea, select {
     display: block;
     text-decoration: none;
     transition: all 0.3s;
+    border-bottom: 1px dashed rgba(214,214,214,1);
     .NewsTitle {
       max-width: 100%;
       padding: 10px 0;
       color: rgba(216,67,35,1);
       font-size: 18px;
+      text-overflow : ellipsis; //- 單行省略
+      white-space : nowrap; //- 單行省略
+      overflow : hidden; //- 單行省略
+    };
+    .NewsSubLabel {
+      max-width: 100%;
       text-overflow : ellipsis; //- 單行省略
       white-space : nowrap; //- 單行省略
       overflow : hidden; //- 單行省略
@@ -613,10 +620,6 @@ input, textarea, select {
       -webkit-box-orient: vertical; //- 多行省略
       -webkit-line-clamp: 2; //- 多行省略
       overflow: hidden; //- 多行省略
-    };
-    .NewsDate {
-      color: rgba(0,0,0,0.6);
-      font-size: 15px;
     };
   };
   .NewsLink:hover {

@@ -109,17 +109,18 @@
                 <div class="MainTitle">{{ $t('News.MainTitle'/*最新消息*/) }}</div>
               </div>
             </div>
-            <div class="row justify-content-center justify-content-lg-between pt-5" v-for="(item, index) in news" :key="index">
-              <div class="col-lg-3"><img class="h-lg-100 w-100 rounded fit-cover" :src="item.img" alt=""></div><a class="col-lg-9 pl-3 py-3 mt-4 mt-lg-0 NewsLink" :href="'newsDetail.html?newsId=' + index">
-                <div class="text-sans-serif fs-1 mb-2"><span class="NewsTitle text-warning font-weight-black">{{ item.title }}</span><span class="fs-0"> - {{ item.update }}</span></div>
-                <div class="text-black">
-                  <h3 class="mb-0">{{ item.subLabel }}</h3>
-                </div>
-                <div class="NewsInfo lead text-sans-serif">{{ item.info }}</div>
-                <div class="list-unstyled mt-1 mb-0">
-                  <div class="fs-0"><span class="font-weight-bold">{{ $t('News.FilmLength'/*片長*/) }}:</span><span class="font-weight-normal pl-1 pr-3">{{ item.filmLength }}{{ $t('News.Minute'/*分*/) }}</span><span class="font-weight-bold">{{ $t('News.ReleaseDate'/*上映日期*/) }}:</span><span class="font-weight-normal pl-1">{{ item.releaseDate }}</span></div>
-                </div></a>
-            </div>
+            <div class="row justify-content-center justify-content-lg-between pt-3" v-for="(item, index) in news" :key="index"><a class="NewsLink d-lg-flex py-3" :href="'newsDetail.html?newsId=' + index">
+                <div class="col-lg-3"><img class="h-lg-100 w-100 rounded fit-cover" :src="item.img" alt=""></div>
+                <div class="col-lg-9 pl-3 py-3 mt-4 mt-lg-0">
+                  <div class="text-sans-serif fs-1 mb-2"><span class="NewsTitle text-warning font-weight-black">{{ item.title }}</span><span class="fs-0"> - {{ item.update }}</span></div>
+                  <div class="text-black">
+                    <h3 class="NewsSubLabel mb-1">{{ item.subLabel }}</h3>
+                  </div>
+                  <div class="NewsInfo lead text-sans-serif">{{ item.info }}</div>
+                  <div class="list-unstyled mt-1 mb-1">
+                    <div class="fs-0"><span class="font-weight-bold">{{ $t('News.FilmLength'/*片長*/) }}:</span><span class="font-weight-normal pl-1 pr-3">{{ item.filmLength }}{{ $t('News.Minute'/*分*/) }}</span><span class="font-weight-bold">{{ $t('News.ReleaseDate'/*上映日期*/) }}:</span><span class="font-weight-normal pl-1">{{ item.releaseDate }}</span></div>
+                  </div>
+                </div></a></div>
           </div>
         </section>
       </main>

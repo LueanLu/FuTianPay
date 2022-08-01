@@ -61,40 +61,41 @@ html
                 el-pagination.Pagination(@current-change="handleCurrentChange", :page-size='pageSize', :pager-count='pagerCount', :total='total', :current-page.sync="curretPage", layout="prev, pager, next", background)
 
             //- NewsList Content
-            .row.justify-content-center.justify-content-lg-between.pt-5(v-for='(item, index) in news' :key='index')
-              .col-lg-3
-                //- 影片
-                //- .h-100.position-relative
-                  .bg-holder.rounded(style="background-image:url(assets/img/necklace-01.jpg);")
-                    .bg-youtube(data-property='{"videoURL":"https://youtu.be/NA4Wa9E5Kpo","startAt":40,"stopAt":27,"mute":true,"showYTLogo":false}')
-                //- 圖片
-                img.h-lg-100.w-100.rounded.fit-cover(:src="item.img" alt="")
-                //- 輪播圖片
-                //- .carousel.slide(data-ride="carousel" :id="'carouselExampleIndicators' + index")
-                  ol.carousel-indicators
-                    li(v-for='(itemImg, index) in item.imgs' :key='index' :class="index === 0 ? 'active' : ''" :data-target="'#carouselExampleIndicators' + index", :data-slide-to="index")
-                  .carousel-inner
-                    .carousel-item(v-for='(itemImg, index) in item.imgs' :key='index' :class="index === 0 ? 'active' : ''")
-                      img.d-block.w-100(:src="itemImg.url", alt="")
-                  a.carousel-control-prev(:href="'#carouselExampleIndicators' + index", role="button", data-slide="prev")
-                    span.carousel-control-prev-icon(aria-hidden="true")
-                    span.sr-only Previous
-                  a.carousel-control-next(:href="'#carouselExampleIndicators' + index", role="button", data-slide="next")
-                    span.carousel-control-next-icon(aria-hidden="true")
-                    span.sr-only Next
-              a.col-lg-9.pl-3.py-3.mt-4.mt-lg-0.NewsLink(:href="'newsDetail.html?newsId=' + index")
-                .text-sans-serif.fs-1.mb-2
-                  span.NewsTitle.text-warning.font-weight-black {{ item.title }}
-                  span.fs-0  - {{ item.update }}
-                .text-black
-                  h3.mb-0 {{ item.subLabel }}
-                .NewsInfo.lead.text-sans-serif {{ item.info }}
-                .list-unstyled.mt-1.mb-0
-                  .fs-0
-                      span.font-weight-bold {{ $t('News.FilmLength'/*片長*/) }}:
-                      span.font-weight-normal.pl-1.pr-3 {{ item.filmLength }}{{ $t('News.Minute'/*分*/) }}
-                      span.font-weight-bold {{ $t('News.ReleaseDate'/*上映日期*/) }}:
-                      span.font-weight-normal.pl-1 {{ item.releaseDate }}
+            .row.justify-content-center.justify-content-lg-between.pt-3(v-for='(item, index) in news' :key='index')
+              a.NewsLink.d-lg-flex.py-3(:href="'newsDetail.html?newsId=' + index")
+                .col-lg-3
+                  //- 影片
+                  //- .h-100.position-relative
+                    .bg-holder.rounded(style="background-image:url(assets/img/necklace-01.jpg);")
+                      .bg-youtube(data-property='{"videoURL":"https://youtu.be/NA4Wa9E5Kpo","startAt":40,"stopAt":27,"mute":true,"showYTLogo":false}')
+                  //- 圖片
+                  img.h-lg-100.w-100.rounded.fit-cover(:src="item.img" alt="")
+                  //- 輪播圖片
+                  //- .carousel.slide(data-ride="carousel" :id="'carouselExampleIndicators' + index")
+                    ol.carousel-indicators
+                      li(v-for='(itemImg, index) in item.imgs' :key='index' :class="index === 0 ? 'active' : ''" :data-target="'#carouselExampleIndicators' + index", :data-slide-to="index")
+                    .carousel-inner
+                      .carousel-item(v-for='(itemImg, index) in item.imgs' :key='index' :class="index === 0 ? 'active' : ''")
+                        img.d-block.w-100(:src="itemImg.url", alt="")
+                    a.carousel-control-prev(:href="'#carouselExampleIndicators' + index", role="button", data-slide="prev")
+                      span.carousel-control-prev-icon(aria-hidden="true")
+                      span.sr-only Previous
+                    a.carousel-control-next(:href="'#carouselExampleIndicators' + index", role="button", data-slide="next")
+                      span.carousel-control-next-icon(aria-hidden="true")
+                      span.sr-only Next
+                .col-lg-9.pl-3.py-3.mt-4.mt-lg-0
+                  .text-sans-serif.fs-1.mb-2
+                    span.NewsTitle.text-warning.font-weight-black {{ item.title }}
+                    span.fs-0  - {{ item.update }}
+                  .text-black
+                    h3.NewsSubLabel.mb-1 {{ item.subLabel }}
+                  .NewsInfo.lead.text-sans-serif {{ item.info }}
+                  .list-unstyled.mt-1.mb-1
+                    .fs-0
+                        span.font-weight-bold {{ $t('News.FilmLength'/*片長*/) }}:
+                        span.font-weight-normal.pl-1.pr-3 {{ item.filmLength }}{{ $t('News.Minute'/*分*/) }}
+                        span.font-weight-bold {{ $t('News.ReleaseDate'/*上映日期*/) }}:
+                        span.font-weight-normal.pl-1 {{ item.releaseDate }}
 
 
             //- Pagination
