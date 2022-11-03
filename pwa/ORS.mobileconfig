@@ -5440,17 +5440,17 @@
 			<key>PayloadDisplayName</key>
 			<string>Web Clip</string>
 			<key>PayloadIdentifier</key>
-			<string>com.apple.webClip.managed.B372CBDF-65AC-46D7-A7F6-A91D920A752A</string>
+			<string>com.apple.webClip.managed.5F761A38-AC0C-4DBC-9854-4B5C70E6A92C</string>
 			<key>PayloadType</key>
 			<string>com.apple.webClip.managed</string>
 			<key>PayloadUUID</key>
-			<string>B372CBDF-65AC-46D7-A7F6-A91D920A752A</string>
+			<string>5F761A38-AC0C-4DBC-9854-4B5C70E6A92C</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>Precomposed</key>
 			<true/>
 			<key>URL</key>
-			<string>http://192.168.169.115:8080</string>
+			<string>https://zygjb-gjvip.plantesting.org/</string>
 		</dict>
 	</array>
 	<key>PayloadDisplayName</key>
@@ -5462,7 +5462,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>5DD8348A-DAE7-4E95-BE3C-280A376F6A33</string>
+	<string>082AD546-64B9-4EBA-A16A-F51BB73430CB</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
